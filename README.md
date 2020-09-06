@@ -1,15 +1,10 @@
 # EVA5_AI_Projects
-
+  
 ```
 ├── orchestrators
 |  └── mnist.py
 |  └── example.py
 |  └── base.py
-|
-├── run
-|  └── train.py
-|  └── evaluate.py
-|  └── predict.py
 |
 ├── configs
 |  └── base_config.py
@@ -29,7 +24,7 @@
 |     └── base.py
 |
 ├── models
-|  └── architectures
+|  └── networks
 |  |  └── custom_layers
 |  |  |  └── ghost_batch_norm.py
 |  |  |
@@ -50,10 +45,14 @@
 |  |  └── tanh.py
 |  |
 |  └── losses
-|     └── categorical_entropy.py
-|     └── negative_log_likelihood.py
-|     └── mse.py
-|     └── mae.py
+|  |  └── categorical_entropy.py
+|  |  └── negative_log_likelihood.py
+|  |  └── mse.py
+|  |  └── mae.py
+|  └── train.py
+|  └── evaluate.py
+|  └── predict.py
+|  └── get_network.py
 |
 ├── check_points
 |  └── mnist_exps
@@ -82,5 +81,7 @@
 ├── main.py
 ├── projects
 |  └── project1
+|     └── project1.ipynb
 |  └── project2
+|     └── project2.ipynb
 ```
