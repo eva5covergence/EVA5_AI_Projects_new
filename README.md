@@ -1,5 +1,7 @@
 # EVA5_AI_Projects
   
+#### Project template structure
+
 ```
 ├── orchestrators
 |  └── mnist.py
