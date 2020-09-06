@@ -90,6 +90,6 @@
 |     └── project2.ipynb
 ```
 #### Execution flow 
- - project1.ipynb -> main.py -> orchestrator
+ - projects/<project_name>.ipynb -> main.py -> orchestrator
 
 
