@@ -12,9 +12,9 @@
 |  └── predict.py  
 |
 ├── configs
-|  └── base_config.json
-|  └── mnist_exp_0.json
-|  └── example_exp_0.json
+|  └── base_config.py
+|  └── mnist_exp_0.py
+|  └── example_exp_0.py
 |
 ├── datasets
 |  └── mnist.py
@@ -24,7 +24,7 @@
 |  └── base.py
 |  └── mnist_data_loader.py
 |
-├── data_transformers
+├── data_transforms
 |  └── base.py
 |
 ├── models
@@ -68,11 +68,15 @@
 |  └── mnist_exp1.log
 |
 ├── utils
-|  └── misc_utils.py
-|  └── logger_utils
-|     └── visualization.py
-|     └── logger.py
-|  └── docs_utils.py
+|  └── logger.py
+|  └── visualisations.py
+|  └── documentation.py
+|  └── miscellaneous.py
+|
+├── analysis
+|  └── misclassified.py
+├── unit_tests
+|  └── <same as entire project structure which holds corresponding unit tests>
 ├── demo
 ├── main.py
 ```
