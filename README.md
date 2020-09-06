@@ -88,8 +88,8 @@
 |     └── project1.ipynb
 |  └── project2
 |     └── project2.ipynb
-
-Execution flow - project1.ipynb -> main.py -> orchestrator
 ```
+#### Execution flow 
+ - project1.ipynb -> main.py -> orchestrator
 
 
