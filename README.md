@@ -58,10 +58,10 @@
 |  └── mnist_exps
 |     └── mnist_exp0_model_epoch25.h5
 |
-├── pretrained_weights
-|
 ├── docs
 |  └── index.html
+|  └── demo
+|     └── mnist.ipynb
 |
 ├── logs
 |  └── mnist_exp0.log
@@ -75,13 +75,19 @@
 |
 ├── analysis
 |  └── misclassified.py
+|
 ├── unit_tests
 |  └── <same as entire project structure which holds corresponding unit tests>
-├── demo
+|
 ├── main.py
+|
 ├── projects
 |  └── project1
 |     └── project1.ipynb
 |  └── project2
 |     └── project2.ipynb
+
+Execution flow - project1.ipynb -> main.py -> orchestrator
 ```
+
+
