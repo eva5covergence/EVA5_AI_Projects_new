@@ -29,7 +29,7 @@
 |
 ├── models
 |  └── architectures
-|  |  └── custome_layers
+|  |  └── custom_layers
 |  |  |  └── ghost_batch_norm.py
 |  |  |
 |  |  └── vgg16_model.py
