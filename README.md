@@ -1,7 +1,7 @@
- # EVA5_AI_Projects
+# EVA5_AI_Projects
 
 ```
-├── catalysts
+├── orchestrators
 |  └── mnist.py
 |  └── example.py
 |  └── base.py
@@ -9,23 +9,24 @@
 ├── run
 |  └── train.py
 |  └── evaluate.py
-|  └── predict.py  
+|  └── predict.py
 |
 ├── configs
 |  └── base_config.py
 |  └── mnist_exp_0.py
 |  └── example_exp_0.py
 |
-├── datasets
-|  └── mnist.py
-|  └── example.py
-|
-├── data_loaders
-|  └── base.py
-|  └── mnist_data_loader.py
-|
-├── data_transforms
-|  └── base.py
+├── data
+|  └── datasets
+|  |  └── mnist.py
+|  |  └── example.py
+|  |
+|  └── data_loaders
+|  |  └── base.py
+|  |  └── mnist_data_loader.py
+|  |
+|  ├── data_transforms
+|     └── base.py
 |
 ├── models
 |  └── architectures
@@ -42,7 +43,7 @@
 |  |
 |  └── learning_rates
 |  |  └── lr_schedulers.py
-|  |  
+|  |
 |  └── activation_functions
 |  |  └── relu.py
 |  |  └── sigmoid.py
@@ -79,5 +80,7 @@
 |  └── <same as entire project structure which holds corresponding unit tests>
 ├── demo
 ├── main.py
+├── projects
+|  └── project1
+|  └── project2
 ```
-
