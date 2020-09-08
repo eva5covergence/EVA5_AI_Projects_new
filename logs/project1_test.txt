@@ -10,3 +10,8 @@
 09-09-2020:00:11:26 INFO     [misc_utils.py:8] CUDA Available? False
 09-09-2020:00:12:51 INFO     [misc_utils.py:8] CUDA Available? False
 09-09-2020:00:12:51 INFO     [misc_utils.py:8] CUDA Available? False
+09-09-2020:01:05:21 DEBUG    [logger_utils.py:31] This is a debug log
+09-09-2020:01:05:21 INFO     [logger_utils.py:32] This is an info log
+09-09-2020:01:05:21 CRITICAL [logger_utils.py:33] This is critical
+09-09-2020:01:05:21 ERROR    [logger_utils.py:34] An error occurred
+09-09-2020:01:35:48 INFO     [misc_utils.py:8] CUDA Available? False
