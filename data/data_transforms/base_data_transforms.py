@@ -1,7 +1,7 @@
 from torchvision import transforms
 
 
-class DataTransforms:
+class BaseDataTransforms:
     """
     This is a class for data tranformations
     """
@@ -9,9 +9,9 @@ class DataTransforms:
         """
         The constructor for initializing the data transformations parameters
         
-        Parameters: 
+        Parameters example: 
             normalize_paras=[(0.0,),(1.0,)]
-            img_augs = {'random_rotation':{angle_range: (-7.0, 7.0), fill=(1,)}}
+            'img_augs':{'random_rotation':{'angle_range': (-7.0, 7.0), 'fill':(1,)}}
         """
         self.normalize_paras = normalize_paras
         self.img_augs = img_augs
@@ -29,8 +29,9 @@ class DataTransforms:
                 angle_range = self.img_augs[img_aug]['angle_range']
                 fill = self.img_augs[img_aug]['fill']
                 self.img_aug_transforms.append(transforms.RandomRotation(angle_range, fill=fill))
-
-        self.transforms_list.extend(self.img_aug_transforms)
+        
+        if self.img_aug_transforms:
+            self.transforms_list.extend(self.img_aug_transforms)
         self.transforms_list.append(transforms.ToTensor())
         self.transforms_list.append(transforms.Normalize(means, stds))
         self.transforms_result = transforms.Compose(self.transforms_list)
