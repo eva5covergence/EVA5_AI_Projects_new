@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 
+from utils import logger_utils
+logger = logger_utils.get_logger(__name__)
+
 def plot_multigraph(lst_jobs,lst_jobsLegends,title, figsize=(10,8)):
+  logger.info("\n**** Started Plotting multigraph ****\n")
   plt.figure(figsize=figsize)
   plt.suptitle(title)
   total_jobs = len(lst_jobs)
@@ -14,8 +18,10 @@ def plot_multigraph(lst_jobs,lst_jobsLegends,title, figsize=(10,8)):
       count += 1
     plt.legend()
     plt.show()
+  logger.info("\n**** Ended Plotting multigraph ****\n")
 
 def plot_misclassified_images(model, device, test_loader, num_of_images = 25, figsize=(12,12)):
+  logger.info("\n**** Started plot_misclassified_images ****\n")
   plt.figure(figsize=figsize)
   plt.suptitle('Misclassifications')
   num_images = 0
@@ -44,3 +50,4 @@ def plot_misclassified_images(model, device, test_loader, num_of_images = 25, fi
           break
       if num_images == num_of_images:
           break
+  logger.info("\n**** Ended plot_misclassified_images ****\n")

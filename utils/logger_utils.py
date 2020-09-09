@@ -1,6 +1,7 @@
 import logging
 import time
 from configs import basic_config
+import tqdm
 
 frmt = basic_config.logger_config['format']
 level = basic_config.logger_config['level']
@@ -21,12 +22,25 @@ def logger(log_filename, level, logger_filename):
         level=level,
         filename=log_filename)
     logger = logging.getLogger(logger_filename)
+    logger.addHandler(TqdmLoggingHandler())
     return logger
 
 def get_logger(logger_filename):
     return logger(log_filename, level, logger_filename)
 
+class TqdmLoggingHandler(logging.Handler):
+    def __init__(self, level=logging.NOTSET):
+        super().__init__(level)
 
+    def emit(self, record):
+        try:
+            msg = self.format(record)
+            tqdm.tqdm.write(msg)
+            self.flush()
+        except (KeyboardInterrupt, SystemExit):
+            raise
+        except:
+            self.handleError(record) 
 
 if __name__ == "__main__":
     # from configs import basic_config

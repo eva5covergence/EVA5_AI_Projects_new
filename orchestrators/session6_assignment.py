@@ -17,21 +17,29 @@ def get_base_model(is_gbn: bool = False):
   return Net().to(device) if is_gbn else GhostNet().to(device)
 
 def get_data_loaders():
-    train_loader = BaseDataLoader(for_training=True).get_data_loader() # Internally it transforms as well w.r.to configs.basic_config
-    test_loader = BaseDataLoader(for_training=False).get_data_loader() # Internally it transforms as well w.r.to configs.basic_config
-    return train_loader, test_loader
+  logger.info("\n**** Started Loading data ****\n")
+  train_loader = BaseDataLoader(for_training=True).get_data_loader() # Internally it transforms as well w.r.to configs.basic_config
+  test_loader = BaseDataLoader(for_training=False).get_data_loader() # Internally it transforms as well w.r.to configs.basic_config
+  logger.info("\n**** Ended Loading data ****\n")
+  return train_loader, test_loader
 
 def start_training(EPOCHS, device, train_loader, test_loader, **models_dict):
     results = {}
+    logger.info("\n**** Started training ****\n")
     for model_type in models_dict:
-        print("Model: ", model_type)
+        print(f"Model: {model_type}")
+        logger.info(f"\nModel: {model_type}\n")
         train_accs, train_losses, test_acc, test_losses, best_model = build_model(EPOCHS, device, train_loader, test_loader, **models_dict[model_type])
         results[model_type] = [train_accs, train_losses, test_acc, test_losses, best_model]
+        print(results)
+        logger.info(f"\nresults : {results}\n")
         time.sleep(10)
+    logger.info("\n**** Ended training ****\n")
     return results
 
 def plot_results(lst_plottingJobs, lst_plottingLegends, title):
-    plot_multigraph(lst_plottingJobs,lst_plottingLegends,title)
+  logger.info(f"\nPlotting graph for {title}\n")
+  plot_multigraph(lst_plottingJobs,lst_plottingLegends,title)
 
 ## Configuration
 
