@@ -39,6 +39,8 @@ lr_scheduler_steplr_paras = {
 
 l1_lambda = 0.0 ## For L1 regularization
 
+EPOCHS = 25
+
 # def set_ghost_bn_layer_paras(num_features):
 #   ghost_bn_layer_paras['num_features']=num_features
 #   return ghost_bn_layer_paras

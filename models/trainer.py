@@ -3,7 +3,6 @@ import torch.nn.functional as F
 from tqdm import tqdm
 
 from utils import logger_utils
-
 logger = logger_utils.get_logger(__name__)
 
 def get_current_train_acc(model, train_loader, device):
@@ -65,7 +64,7 @@ def train(model, device, train_loader, optimizer, lambda_l1=0, train_acc=[], tra
     processed += len(data)
 
     pbar.set_description(desc= f'Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
-  current_train_acc, current_train_loss = get_current_train_acc(model, train_loader)
+  current_train_acc, current_train_loss = get_current_train_acc(model, train_loader, device)
   train_acc.append(current_train_acc)
   train_losses.append(current_train_loss)
   return train_acc, train_losses

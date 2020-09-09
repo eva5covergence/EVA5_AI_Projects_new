@@ -45,7 +45,7 @@ class BaseDataLoader:
             return torch.utils.data.DataLoader(self.test, **data_loader_args)
 
 if __name__ == "__main__":
-    train_loader = BaseDataLoader(for_training=True)
-    test_loader = BaseDataLoader(for_training=False)
+    train_loader = BaseDataLoader(for_training=True).get_data_loader()
+    test_loader = BaseDataLoader(for_training=False).get_data_loader()
     print(train_loader, test_loader)
 

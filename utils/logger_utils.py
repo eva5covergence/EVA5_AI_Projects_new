@@ -2,7 +2,7 @@ import logging
 import time
 from configs import basic_config
 
-format = basic_config.logger_config['format']
+frmt = basic_config.logger_config['format']
 level = basic_config.logger_config['level']
 log_filename = basic_config.logger_config['log_filename']
 datefmt = basic_config.logger_config['datefmt']
@@ -16,7 +16,7 @@ def logger(log_filename, level, logger_filename):
         level = logging.DEBUG
         filename = '/content/drive/My Drive/GBN_l1_l2_Final_GridSearch_S_E_EVA5_S5_v6_FineTune_LR_scheduler_final_S6'
     """
-    logging.basicConfig(format=format,
+    logging.basicConfig(format=frmt,
         datefmt=datefmt,
         level=level,
         filename=log_filename)
