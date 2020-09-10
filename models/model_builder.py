@@ -37,5 +37,5 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
       best_test_accuracy = test_acc[-1]
       best_model = model
     logger.info(f"best_test_accuracy {best_test_accuracy}")
-    print(f"best_test_accuracy {best_test_accuracy}")
+    #print(f"best_test_accuracy {best_test_accuracy}")
   return train_acc, train_losses, test_acc, test_losses, best_model
