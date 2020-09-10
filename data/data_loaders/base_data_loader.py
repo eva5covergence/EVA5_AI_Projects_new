@@ -13,7 +13,7 @@ data_kind = basic_config.data['data_kind']
 datasets_location = data_kind['datasets_location']
 
 class BaseDataLoader:
-    def __init__(self, for_training=True):
+    def __init__(self, for_training=True, dataset_name='mnist'):
         """
         This constructor is for initilizing the data loader parameters
 
@@ -31,11 +31,16 @@ class BaseDataLoader:
         self.data_transforms = self.data_transforms.tranform_data()
 
         if data_kind['dataset_type']=='open_datasets':
-            if data_kind['dataset_name']=='mnist':
+            if dataset_name =='mnist':
                 if self.for_training:
                     self.train = datasets.MNIST(datasets_location, train=True, download=True, transform=self.data_transforms)
                 else:
                     self.test = datasets.MNIST(datasets_location, train=False, download=True, transform=self.data_transforms)
+            if dataset_name =='CIFAR10':
+                if self.for_training:
+                    self.train = datasets.CIFAR10(datasets_location, train=True, download=True, transform=self.data_transforms)
+                else:
+                    self.test = datasets.CIFAR10(datasets_location, train=False, download=True, transform=self.data_transforms)
         set_manual_seed(SEED)
 
     def get_data_loader(self):
