@@ -29,6 +29,12 @@ class BaseDataTransforms:
                 angle_range = self.img_augs[img_aug]['angle_range']
                 fill = self.img_augs[img_aug]['fill']
                 self.img_aug_transforms.append(transforms.RandomRotation(angle_range, fill=fill))
+            if img_aug == 'horizontal_flip':
+                self.img_aug_transforms.append(transforms.RandomHorizontalFlip())
+            if img_aug == 'random_crop':
+                size = self.img_augs[img_aug]['size']
+                padding = self.img_augs[img_aug]['padding']
+                self.img_aug_transforms.append(transforms.RandomCrop(size, padding))
         
         if self.img_aug_transforms:
             self.transforms_list.extend(self.img_aug_transforms)
