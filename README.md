@@ -73,7 +73,7 @@
 
 ```
 
-#### Execution flow 
+#### How to start a new AI project using this framework?
 
 
 Whenever we need to create a new deep learning project, you need to update/create following files.
