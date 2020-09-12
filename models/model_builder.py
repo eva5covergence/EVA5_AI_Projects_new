@@ -21,17 +21,20 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
   test_acc = []
   test_losses = []
   best_test_accuracy = 0
+  scheduler = None
   best_model = None
   model = kwargs.get('model')
   logger.info(str(kwargs.get('l1_lambda', 0)) + ' ' + str(kwargs.get('l2_lambda', 0)))
   optimizer = optim.SGD(model.parameters(), lr=lr, momentum=momentum, 
                         weight_decay=kwargs.get('l2_lambda', 0))
-  scheduler = StepLR(optimizer, step_size=step_size, gamma=gamma)
+  if step_size and gamma:
+      scheduler = StepLR(optimizer, step_size=step_size, gamma=gamma)
   l1_lambda = kwargs.get('l1_lambda', 0)
   for epoch in range(EPOCHS):
     logger.info(f"[EPOCH:{epoch}]")
     train_acc, train_losses = train(model, device, train_loader, optimizer, l1_lambda, train_acc, train_losses)
-    scheduler.step()
+    if scheduler:
+        scheduler.step()
     test_acc, test_losses = test(model, device, test_loader, test_acc, test_losses)
     if test_acc[-1] > best_test_accuracy:
       best_test_accuracy = test_acc[-1]
