@@ -1,6 +1,9 @@
+from torchvision import transforms
+
 import logging
 import time
 from configs import basic_config
+
 import tqdm
 
 frmt = basic_config.logger_config['format']
@@ -26,6 +29,8 @@ def logger(log_filename, level, logger_filename):
     return logger
 
 def get_logger(logger_filename):
+    global log_filename
+    log_filename = log_filename+"_"+time.ctime().replace(' ','_')+'_log.txt'
     return logger(log_filename, level, logger_filename)
 
 class TqdmLoggingHandler(logging.Handler):
