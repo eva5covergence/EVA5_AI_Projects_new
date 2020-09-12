@@ -1,6 +1,6 @@
-# EVA5_AI_Projects
+# AI Projects in a single framework
   
-#### Project template structure
+#### AI Project template structure
 
 ```
 ├── .vscode/
@@ -76,7 +76,7 @@
 #### Execution flow 
 
 
-When you want to create a new project, you need to update/create following files.
+Whenever we need to create a new deep learning project, you need to update/create following files.
 
 1) orchestrators/<orchestrator.py> - Orchestrator is the file which is ipynb file which interact with all other files in the project and make things done - Create/update required for specific project
 2) basic_config.py - This is a configuration file which has most of the configuration values needed for the entire project - Create/update required for specific project
