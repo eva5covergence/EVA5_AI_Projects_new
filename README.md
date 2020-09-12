@@ -78,12 +78,12 @@
 
 Whenever we need to create a new deep learning project, you need to update/create following files.
 
-1) orchestrators/<orchestrator.py> - Orchestrator is the file which is ipynb file which interact with all other files in the project and make things done - Create/update required for specific project
-2) basic_config.py - This is a configuration file which has most of the configuration values needed for the entire project - Create/update required for specific project
-3) models/networks/<network_architecture>.py - This is the file where you need to define the DNN (ANN/CNN/RNN/LSTMs/GRUs/GANs) architecture - Create/update required for specific project
-4) models/networks/custom_layers/<custom_layer>.py - Customer layers are defined in this location. - Create/update required for specific project (optional)
-4) logs/* - This is where logs of the project are stored.
-5) checkpoints/* - This is where models can be saved.
+1) **orchestrators/<orchestrator.py> -** Orchestrator is the file which is ipynb file which interact with all other files in the project and make things done - Create/update required for specific project
+2) **basic_config.py -** This is a configuration file which has most of the configuration values needed for the entire project - Create/update required for specific project
+3) **models/networks/<network_architecture>.py -** This is the file where you need to define the DNN (ANN/CNN/RNN/LSTMs/GRUs/GANs) architecture - Create/update required for specific project
+4) **models/networks/custom_layers/<custom_layer>.py -** Customer layers are defined in this location. - Create/update required for specific project (optional)
+4) **logs/* -** This is where logs of the project are stored.
+5) **checkpoints/* -** This is where models can be saved.
 6) And other dir/file names in the above directory tree are self explanatory based on their file name
 
 
