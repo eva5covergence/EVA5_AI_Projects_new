@@ -36,7 +36,7 @@ class BaseDataLoader:
                     self.train = datasets.MNIST(datasets_location, train=True, download=True, transform=self.data_transforms)
                 else:
                     self.test = datasets.MNIST(datasets_location, train=False, download=True, transform=self.data_transforms)
-            if dataset_name =='CIFAR10':
+            if dataset_name =='cifar10':
                 if self.for_training:
                     self.train = datasets.CIFAR10(datasets_location, train=True, download=True, transform=self.data_transforms)
                 else:
