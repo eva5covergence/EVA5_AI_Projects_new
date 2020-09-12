@@ -19,7 +19,7 @@ def start_training(EPOCHS, device, train_loader, test_loader, **models_dict):
     logger.info("\n**** Ended training ****\n")
     return results
 
-def display_classwise_accuracy(test_loader,device,model):
+def display_classwise_accuracy(test_loader,device,model, classes):
     class_correct = list(0. for i in range(10))
     class_total = list(0. for i in range(10))
     with torch.no_grad():
