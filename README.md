@@ -1,4 +1,4 @@
-# AI Projects in a single framework
+# AI Projects framework
   
 #### AI Project template structure
 
