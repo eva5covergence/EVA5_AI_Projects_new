@@ -3,6 +3,7 @@ import torch
 from models.model_builder import build_model
 from utils import logger_utils
 
+logger = logger_utils.get_logger(__name__)
 
 def start_training(EPOCHS, device, train_loader, test_loader, **models_dict):
     results = {}
