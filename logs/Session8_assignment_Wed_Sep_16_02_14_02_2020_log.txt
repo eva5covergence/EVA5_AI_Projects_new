@@ -1,0 +1,2921 @@
+16-09-2020:02:14:02 INFO     [base_data_utils.py:11] 
+**** Started Loading data ****
+
+16-09-2020:02:14:04 INFO     [misc_utils.py:8] CUDA Available? True
+16-09-2020:02:14:05 INFO     [misc_utils.py:8] CUDA Available? True
+16-09-2020:02:14:05 INFO     [base_data_utils.py:14] 
+**** Ended Loading data ****
+
+16-09-2020:02:14:08 WARNING  [image.py:709] Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+16-09-2020:02:14:08 INFO     [base_orchestrator.py:10] 
+**** Started training ****
+
+16-09-2020:02:14:08 INFO     [base_orchestrator.py:13] 
+Model: resnet18
+
+16-09-2020:02:14:08 INFO     [model_builder.py:27] 0 0
+16-09-2020:02:14:08 INFO     [model_builder.py:34] [EPOCH:0]
+16-09-2020:02:14:54 INFO     [trainer.py:23] 
+Train set: Average loss: 1.6156, Accuracy: 20111/50000 (40.22%)
+
+16-09-2020:02:14:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 1.6002, Accuracy: 4135/10000 (41.35%)
+
+16-09-2020:02:14:57 INFO     [model_builder.py:42] best_test_accuracy 41.35
+16-09-2020:02:14:57 INFO     [model_builder.py:34] [EPOCH:1]
+16-09-2020:02:15:42 INFO     [trainer.py:23] 
+Train set: Average loss: 1.3652, Accuracy: 25046/50000 (50.09%)
+
+16-09-2020:02:15:45 INFO     [evaluator.py:25] 
+Test set: Average loss: 1.3638, Accuracy: 5028/10000 (50.28%)
+
+16-09-2020:02:15:45 INFO     [model_builder.py:42] best_test_accuracy 50.28
+16-09-2020:02:15:45 INFO     [model_builder.py:34] [EPOCH:2]
+16-09-2020:02:16:30 INFO     [trainer.py:23] 
+Train set: Average loss: 1.1090, Accuracy: 29671/50000 (59.34%)
+
+16-09-2020:02:16:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 1.1225, Accuracy: 5901/10000 (59.01%)
+
+16-09-2020:02:16:33 INFO     [model_builder.py:42] best_test_accuracy 59.01
+16-09-2020:02:16:33 INFO     [model_builder.py:34] [EPOCH:3]
+16-09-2020:02:17:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.9845, Accuracy: 32634/50000 (65.27%)
+
+16-09-2020:02:17:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.9916, Accuracy: 6566/10000 (65.66%)
+
+16-09-2020:02:17:21 INFO     [model_builder.py:42] best_test_accuracy 65.66
+16-09-2020:02:17:21 INFO     [model_builder.py:34] [EPOCH:4]
+16-09-2020:02:18:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.9340, Accuracy: 33381/50000 (66.76%)
+
+16-09-2020:02:18:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.9242, Accuracy: 6799/10000 (67.99%)
+
+16-09-2020:02:18:09 INFO     [model_builder.py:42] best_test_accuracy 67.99
+16-09-2020:02:18:09 INFO     [model_builder.py:34] [EPOCH:5]
+16-09-2020:02:18:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.7779, Accuracy: 36099/50000 (72.20%)
+
+16-09-2020:02:18:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.8097, Accuracy: 7218/10000 (72.18%)
+
+16-09-2020:02:18:57 INFO     [model_builder.py:42] best_test_accuracy 72.18
+16-09-2020:02:18:57 INFO     [model_builder.py:34] [EPOCH:6]
+16-09-2020:02:19:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.7562, Accuracy: 36950/50000 (73.90%)
+
+16-09-2020:02:19:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.7635, Accuracy: 7448/10000 (74.48%)
+
+16-09-2020:02:19:46 INFO     [model_builder.py:42] best_test_accuracy 74.48
+16-09-2020:02:19:46 INFO     [model_builder.py:34] [EPOCH:7]
+16-09-2020:02:20:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.7266, Accuracy: 37869/50000 (75.74%)
+
+16-09-2020:02:20:34 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.7016, Accuracy: 7657/10000 (76.57%)
+
+16-09-2020:02:20:34 INFO     [model_builder.py:42] best_test_accuracy 76.57
+16-09-2020:02:20:34 INFO     [model_builder.py:34] [EPOCH:8]
+16-09-2020:02:21:20 INFO     [trainer.py:23] 
+Train set: Average loss: 0.5780, Accuracy: 39839/50000 (79.68%)
+
+16-09-2020:02:21:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.6118, Accuracy: 7959/10000 (79.59%)
+
+16-09-2020:02:21:23 INFO     [model_builder.py:42] best_test_accuracy 79.59
+16-09-2020:02:21:23 INFO     [model_builder.py:34] [EPOCH:9]
+16-09-2020:02:22:09 INFO     [trainer.py:23] 
+Train set: Average loss: 0.5094, Accuracy: 41087/50000 (82.17%)
+
+16-09-2020:02:22:12 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5546, Accuracy: 8151/10000 (81.51%)
+
+16-09-2020:02:22:12 INFO     [model_builder.py:42] best_test_accuracy 81.51
+16-09-2020:02:22:12 INFO     [model_builder.py:34] [EPOCH:10]
+16-09-2020:02:22:58 INFO     [trainer.py:23] 
+Train set: Average loss: 0.4438, Accuracy: 42091/50000 (84.18%)
+
+16-09-2020:02:23:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4898, Accuracy: 8328/10000 (83.28%)
+
+16-09-2020:02:23:00 INFO     [model_builder.py:42] best_test_accuracy 83.28
+16-09-2020:02:23:00 INFO     [model_builder.py:34] [EPOCH:11]
+16-09-2020:02:23:46 INFO     [trainer.py:23] 
+Train set: Average loss: 0.4791, Accuracy: 41596/50000 (83.19%)
+
+16-09-2020:02:23:49 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5206, Accuracy: 8197/10000 (81.97%)
+
+16-09-2020:02:23:49 INFO     [model_builder.py:42] best_test_accuracy 83.28
+16-09-2020:02:23:49 INFO     [model_builder.py:34] [EPOCH:12]
+16-09-2020:02:24:35 INFO     [trainer.py:23] 
+Train set: Average loss: 0.4106, Accuracy: 42693/50000 (85.39%)
+
+16-09-2020:02:24:37 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4528, Accuracy: 8451/10000 (84.51%)
+
+16-09-2020:02:24:37 INFO     [model_builder.py:42] best_test_accuracy 84.51
+16-09-2020:02:24:37 INFO     [model_builder.py:34] [EPOCH:13]
+16-09-2020:02:25:23 INFO     [trainer.py:23] 
+Train set: Average loss: 0.3807, Accuracy: 43399/50000 (86.80%)
+
+16-09-2020:02:25:26 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4332, Accuracy: 8537/10000 (85.37%)
+
+16-09-2020:02:25:26 INFO     [model_builder.py:42] best_test_accuracy 85.37
+16-09-2020:02:25:26 INFO     [model_builder.py:34] [EPOCH:14]
+16-09-2020:02:26:12 INFO     [trainer.py:23] 
+Train set: Average loss: 0.3908, Accuracy: 43279/50000 (86.56%)
+
+16-09-2020:02:26:15 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4913, Accuracy: 8428/10000 (84.28%)
+
+16-09-2020:02:26:15 INFO     [model_builder.py:42] best_test_accuracy 85.37
+16-09-2020:02:26:15 INFO     [model_builder.py:34] [EPOCH:15]
+16-09-2020:02:27:01 INFO     [trainer.py:23] 
+Train set: Average loss: 0.3740, Accuracy: 43371/50000 (86.74%)
+
+16-09-2020:02:27:03 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4780, Accuracy: 8421/10000 (84.21%)
+
+16-09-2020:02:27:03 INFO     [model_builder.py:42] best_test_accuracy 85.37
+16-09-2020:02:27:03 INFO     [model_builder.py:34] [EPOCH:16]
+16-09-2020:02:27:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.3109, Accuracy: 44502/50000 (89.00%)
+
+16-09-2020:02:27:52 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3997, Accuracy: 8667/10000 (86.67%)
+
+16-09-2020:02:27:52 INFO     [model_builder.py:42] best_test_accuracy 86.67
+16-09-2020:02:27:52 INFO     [model_builder.py:34] [EPOCH:17]
+16-09-2020:02:28:38 INFO     [trainer.py:23] 
+Train set: Average loss: 0.3058, Accuracy: 44584/50000 (89.17%)
+
+16-09-2020:02:28:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4120, Accuracy: 8678/10000 (86.78%)
+
+16-09-2020:02:28:40 INFO     [model_builder.py:42] best_test_accuracy 86.78
+16-09-2020:02:28:40 INFO     [model_builder.py:34] [EPOCH:18]
+16-09-2020:02:29:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.2929, Accuracy: 44834/50000 (89.67%)
+
+16-09-2020:02:29:29 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4210, Accuracy: 8609/10000 (86.09%)
+
+16-09-2020:02:29:29 INFO     [model_builder.py:42] best_test_accuracy 86.78
+16-09-2020:02:29:29 INFO     [model_builder.py:34] [EPOCH:19]
+16-09-2020:02:30:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.2525, Accuracy: 45558/50000 (91.12%)
+
+16-09-2020:02:30:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3781, Accuracy: 8820/10000 (88.20%)
+
+16-09-2020:02:30:17 INFO     [model_builder.py:42] best_test_accuracy 88.2
+16-09-2020:02:30:17 INFO     [model_builder.py:34] [EPOCH:20]
+16-09-2020:02:31:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.2363, Accuracy: 45837/50000 (91.67%)
+
+16-09-2020:02:31:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3609, Accuracy: 8861/10000 (88.61%)
+
+16-09-2020:02:31:06 INFO     [model_builder.py:42] best_test_accuracy 88.61
+16-09-2020:02:31:06 INFO     [model_builder.py:34] [EPOCH:21]
+16-09-2020:02:31:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.2547, Accuracy: 45526/50000 (91.05%)
+
+16-09-2020:02:31:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3848, Accuracy: 8796/10000 (87.96%)
+
+16-09-2020:02:31:54 INFO     [model_builder.py:42] best_test_accuracy 88.61
+16-09-2020:02:31:54 INFO     [model_builder.py:34] [EPOCH:22]
+16-09-2020:02:32:40 INFO     [trainer.py:23] 
+Train set: Average loss: 0.2201, Accuracy: 46103/50000 (92.21%)
+
+16-09-2020:02:32:42 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3722, Accuracy: 8838/10000 (88.38%)
+
+16-09-2020:02:32:42 INFO     [model_builder.py:42] best_test_accuracy 88.61
+16-09-2020:02:32:42 INFO     [model_builder.py:34] [EPOCH:23]
+16-09-2020:02:33:28 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1834, Accuracy: 46779/50000 (93.56%)
+
+16-09-2020:02:33:31 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3436, Accuracy: 8888/10000 (88.88%)
+
+16-09-2020:02:33:31 INFO     [model_builder.py:42] best_test_accuracy 88.88
+16-09-2020:02:33:31 INFO     [model_builder.py:34] [EPOCH:24]
+16-09-2020:02:34:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1755, Accuracy: 46891/50000 (93.78%)
+
+16-09-2020:02:34:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3480, Accuracy: 8888/10000 (88.88%)
+
+16-09-2020:02:34:19 INFO     [model_builder.py:42] best_test_accuracy 88.88
+16-09-2020:02:34:19 INFO     [model_builder.py:34] [EPOCH:25]
+16-09-2020:02:35:05 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1945, Accuracy: 46573/50000 (93.15%)
+
+16-09-2020:02:35:07 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3820, Accuracy: 8889/10000 (88.89%)
+
+16-09-2020:02:35:07 INFO     [model_builder.py:42] best_test_accuracy 88.89
+16-09-2020:02:35:07 INFO     [model_builder.py:34] [EPOCH:26]
+16-09-2020:02:35:53 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1765, Accuracy: 46791/50000 (93.58%)
+
+16-09-2020:02:35:56 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3756, Accuracy: 8860/10000 (88.60%)
+
+16-09-2020:02:35:56 INFO     [model_builder.py:42] best_test_accuracy 88.89
+16-09-2020:02:35:56 INFO     [model_builder.py:34] [EPOCH:27]
+16-09-2020:02:36:42 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1524, Accuracy: 47309/50000 (94.62%)
+
+16-09-2020:02:36:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3448, Accuracy: 8990/10000 (89.90%)
+
+16-09-2020:02:36:44 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:36:44 INFO     [model_builder.py:34] [EPOCH:28]
+16-09-2020:02:37:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1420, Accuracy: 47400/50000 (94.80%)
+
+16-09-2020:02:37:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3371, Accuracy: 8972/10000 (89.72%)
+
+16-09-2020:02:37:33 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:37:33 INFO     [model_builder.py:34] [EPOCH:29]
+16-09-2020:02:38:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1595, Accuracy: 47120/50000 (94.24%)
+
+16-09-2020:02:38:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3746, Accuracy: 8863/10000 (88.63%)
+
+16-09-2020:02:38:21 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:38:21 INFO     [model_builder.py:34] [EPOCH:30]
+16-09-2020:02:39:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1434, Accuracy: 47416/50000 (94.83%)
+
+16-09-2020:02:39:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3590, Accuracy: 8971/10000 (89.71%)
+
+16-09-2020:02:39:10 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:39:10 INFO     [model_builder.py:34] [EPOCH:31]
+16-09-2020:02:39:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1342, Accuracy: 47602/50000 (95.20%)
+
+16-09-2020:02:39:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3689, Accuracy: 8964/10000 (89.64%)
+
+16-09-2020:02:39:58 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:39:58 INFO     [model_builder.py:34] [EPOCH:32]
+16-09-2020:02:40:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1494, Accuracy: 47274/50000 (94.55%)
+
+16-09-2020:02:40:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4039, Accuracy: 8933/10000 (89.33%)
+
+16-09-2020:02:40:46 INFO     [model_builder.py:42] best_test_accuracy 89.9
+16-09-2020:02:40:46 INFO     [model_builder.py:34] [EPOCH:33]
+16-09-2020:02:41:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1158, Accuracy: 47973/50000 (95.95%)
+
+16-09-2020:02:41:34 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3533, Accuracy: 9012/10000 (90.12%)
+
+16-09-2020:02:41:34 INFO     [model_builder.py:42] best_test_accuracy 90.12
+16-09-2020:02:41:34 INFO     [model_builder.py:34] [EPOCH:34]
+16-09-2020:02:42:20 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1100, Accuracy: 48017/50000 (96.03%)
+
+16-09-2020:02:42:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3640, Accuracy: 9009/10000 (90.09%)
+
+16-09-2020:02:42:23 INFO     [model_builder.py:42] best_test_accuracy 90.12
+16-09-2020:02:42:23 INFO     [model_builder.py:34] [EPOCH:35]
+16-09-2020:02:43:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.1149, Accuracy: 47946/50000 (95.89%)
+
+16-09-2020:02:43:11 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3924, Accuracy: 8980/10000 (89.80%)
+
+16-09-2020:02:43:11 INFO     [model_builder.py:42] best_test_accuracy 90.12
+16-09-2020:02:43:11 INFO     [model_builder.py:34] [EPOCH:36]
+16-09-2020:02:43:57 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0979, Accuracy: 48335/50000 (96.67%)
+
+16-09-2020:02:43:59 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3608, Accuracy: 9049/10000 (90.49%)
+
+16-09-2020:02:43:59 INFO     [model_builder.py:42] best_test_accuracy 90.49
+16-09-2020:02:43:59 INFO     [model_builder.py:34] [EPOCH:37]
+16-09-2020:02:44:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0930, Accuracy: 48356/50000 (96.71%)
+
+16-09-2020:02:44:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3576, Accuracy: 9040/10000 (90.40%)
+
+16-09-2020:02:44:47 INFO     [model_builder.py:42] best_test_accuracy 90.49
+16-09-2020:02:44:47 INFO     [model_builder.py:34] [EPOCH:38]
+16-09-2020:02:45:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0916, Accuracy: 48393/50000 (96.79%)
+
+16-09-2020:02:45:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3666, Accuracy: 9044/10000 (90.44%)
+
+16-09-2020:02:45:36 INFO     [model_builder.py:42] best_test_accuracy 90.49
+16-09-2020:02:45:36 INFO     [model_builder.py:34] [EPOCH:39]
+16-09-2020:02:46:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0934, Accuracy: 48338/50000 (96.68%)
+
+16-09-2020:02:46:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3818, Accuracy: 9026/10000 (90.26%)
+
+16-09-2020:02:46:24 INFO     [model_builder.py:42] best_test_accuracy 90.49
+16-09-2020:02:46:24 INFO     [model_builder.py:34] [EPOCH:40]
+16-09-2020:02:47:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0836, Accuracy: 48474/50000 (96.95%)
+
+16-09-2020:02:47:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3656, Accuracy: 9059/10000 (90.59%)
+
+16-09-2020:02:47:13 INFO     [model_builder.py:42] best_test_accuracy 90.59
+16-09-2020:02:47:13 INFO     [model_builder.py:34] [EPOCH:41]
+16-09-2020:02:47:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0806, Accuracy: 48537/50000 (97.07%)
+
+16-09-2020:02:48:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3947, Accuracy: 9050/10000 (90.50%)
+
+16-09-2020:02:48:02 INFO     [model_builder.py:42] best_test_accuracy 90.59
+16-09-2020:02:48:02 INFO     [model_builder.py:34] [EPOCH:42]
+16-09-2020:02:48:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0727, Accuracy: 48682/50000 (97.36%)
+
+16-09-2020:02:48:50 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3473, Accuracy: 9092/10000 (90.92%)
+
+16-09-2020:02:48:50 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:48:50 INFO     [model_builder.py:34] [EPOCH:43]
+16-09-2020:02:49:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0640, Accuracy: 48865/50000 (97.73%)
+
+16-09-2020:02:49:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4024, Accuracy: 9053/10000 (90.53%)
+
+16-09-2020:02:49:39 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:49:39 INFO     [model_builder.py:34] [EPOCH:44]
+16-09-2020:02:50:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0577, Accuracy: 49041/50000 (98.08%)
+
+16-09-2020:02:50:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3865, Accuracy: 9070/10000 (90.70%)
+
+16-09-2020:02:50:27 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:50:27 INFO     [model_builder.py:34] [EPOCH:45]
+16-09-2020:02:51:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0651, Accuracy: 48880/50000 (97.76%)
+
+16-09-2020:02:51:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3872, Accuracy: 9090/10000 (90.90%)
+
+16-09-2020:02:51:16 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:51:16 INFO     [model_builder.py:34] [EPOCH:46]
+16-09-2020:02:52:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0623, Accuracy: 48913/50000 (97.83%)
+
+16-09-2020:02:52:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3986, Accuracy: 9039/10000 (90.39%)
+
+16-09-2020:02:52:04 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:52:04 INFO     [model_builder.py:34] [EPOCH:47]
+16-09-2020:02:52:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0666, Accuracy: 48820/50000 (97.64%)
+
+16-09-2020:02:52:52 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4256, Accuracy: 9008/10000 (90.08%)
+
+16-09-2020:02:52:52 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:52:52 INFO     [model_builder.py:34] [EPOCH:48]
+16-09-2020:02:53:38 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0621, Accuracy: 48930/50000 (97.86%)
+
+16-09-2020:02:53:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4165, Accuracy: 9074/10000 (90.74%)
+
+16-09-2020:02:53:41 INFO     [model_builder.py:42] best_test_accuracy 90.92
+16-09-2020:02:53:41 INFO     [model_builder.py:34] [EPOCH:49]
+16-09-2020:02:54:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0530, Accuracy: 49095/50000 (98.19%)
+
+16-09-2020:02:54:29 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3949, Accuracy: 9094/10000 (90.94%)
+
+16-09-2020:02:54:29 INFO     [model_builder.py:42] best_test_accuracy 90.94
+16-09-2020:02:54:29 INFO     [model_builder.py:34] [EPOCH:50]
+16-09-2020:02:55:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0544, Accuracy: 49046/50000 (98.09%)
+
+16-09-2020:02:55:18 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4036, Accuracy: 9091/10000 (90.91%)
+
+16-09-2020:02:55:18 INFO     [model_builder.py:42] best_test_accuracy 90.94
+16-09-2020:02:55:18 INFO     [model_builder.py:34] [EPOCH:51]
+16-09-2020:02:56:04 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0597, Accuracy: 48969/50000 (97.94%)
+
+16-09-2020:02:56:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4431, Accuracy: 9018/10000 (90.18%)
+
+16-09-2020:02:56:06 INFO     [model_builder.py:42] best_test_accuracy 90.94
+16-09-2020:02:56:06 INFO     [model_builder.py:34] [EPOCH:52]
+16-09-2020:02:56:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0443, Accuracy: 49196/50000 (98.39%)
+
+16-09-2020:02:56:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.3895, Accuracy: 9098/10000 (90.98%)
+
+16-09-2020:02:56:55 INFO     [model_builder.py:42] best_test_accuracy 90.98
+16-09-2020:02:56:55 INFO     [model_builder.py:34] [EPOCH:53]
+16-09-2020:02:57:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0511, Accuracy: 49085/50000 (98.17%)
+
+16-09-2020:02:57:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4213, Accuracy: 9050/10000 (90.50%)
+
+16-09-2020:02:57:43 INFO     [model_builder.py:42] best_test_accuracy 90.98
+16-09-2020:02:57:43 INFO     [model_builder.py:34] [EPOCH:54]
+16-09-2020:02:58:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0448, Accuracy: 49196/50000 (98.39%)
+
+16-09-2020:02:58:31 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4276, Accuracy: 9073/10000 (90.73%)
+
+16-09-2020:02:58:31 INFO     [model_builder.py:42] best_test_accuracy 90.98
+16-09-2020:02:58:31 INFO     [model_builder.py:34] [EPOCH:55]
+16-09-2020:02:59:17 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0615, Accuracy: 48913/50000 (97.83%)
+
+16-09-2020:02:59:20 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4427, Accuracy: 9055/10000 (90.55%)
+
+16-09-2020:02:59:20 INFO     [model_builder.py:42] best_test_accuracy 90.98
+16-09-2020:02:59:20 INFO     [model_builder.py:34] [EPOCH:56]
+16-09-2020:03:00:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0550, Accuracy: 49002/50000 (98.00%)
+
+16-09-2020:03:00:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4297, Accuracy: 9084/10000 (90.84%)
+
+16-09-2020:03:00:08 INFO     [model_builder.py:42] best_test_accuracy 90.98
+16-09-2020:03:00:08 INFO     [model_builder.py:34] [EPOCH:57]
+16-09-2020:03:00:54 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0489, Accuracy: 49137/50000 (98.27%)
+
+16-09-2020:03:00:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4218, Accuracy: 9118/10000 (91.18%)
+
+16-09-2020:03:00:57 INFO     [model_builder.py:42] best_test_accuracy 91.18
+16-09-2020:03:00:57 INFO     [model_builder.py:34] [EPOCH:58]
+16-09-2020:03:01:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0341, Accuracy: 49442/50000 (98.88%)
+
+16-09-2020:03:01:45 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4199, Accuracy: 9133/10000 (91.33%)
+
+16-09-2020:03:01:45 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:01:45 INFO     [model_builder.py:34] [EPOCH:59]
+16-09-2020:03:02:31 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0400, Accuracy: 49312/50000 (98.62%)
+
+16-09-2020:03:02:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4275, Accuracy: 9122/10000 (91.22%)
+
+16-09-2020:03:02:33 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:02:33 INFO     [model_builder.py:34] [EPOCH:60]
+16-09-2020:03:03:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0347, Accuracy: 49402/50000 (98.80%)
+
+16-09-2020:03:03:22 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4209, Accuracy: 9129/10000 (91.29%)
+
+16-09-2020:03:03:22 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:03:22 INFO     [model_builder.py:34] [EPOCH:61]
+16-09-2020:03:04:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0379, Accuracy: 49332/50000 (98.66%)
+
+16-09-2020:03:04:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4258, Accuracy: 9089/10000 (90.89%)
+
+16-09-2020:03:04:10 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:04:10 INFO     [model_builder.py:34] [EPOCH:62]
+16-09-2020:03:04:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0421, Accuracy: 49279/50000 (98.56%)
+
+16-09-2020:03:04:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4163, Accuracy: 9089/10000 (90.89%)
+
+16-09-2020:03:04:58 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:04:58 INFO     [model_builder.py:34] [EPOCH:63]
+16-09-2020:03:05:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0320, Accuracy: 49445/50000 (98.89%)
+
+16-09-2020:03:05:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4516, Accuracy: 9121/10000 (91.21%)
+
+16-09-2020:03:05:47 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:05:47 INFO     [model_builder.py:34] [EPOCH:64]
+16-09-2020:03:06:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0339, Accuracy: 49406/50000 (98.81%)
+
+16-09-2020:03:06:35 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4358, Accuracy: 9125/10000 (91.25%)
+
+16-09-2020:03:06:35 INFO     [model_builder.py:42] best_test_accuracy 91.33
+16-09-2020:03:06:35 INFO     [model_builder.py:34] [EPOCH:65]
+16-09-2020:03:07:21 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0354, Accuracy: 49383/50000 (98.77%)
+
+16-09-2020:03:07:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4415, Accuracy: 9137/10000 (91.37%)
+
+16-09-2020:03:07:23 INFO     [model_builder.py:42] best_test_accuracy 91.37
+16-09-2020:03:07:23 INFO     [model_builder.py:34] [EPOCH:66]
+16-09-2020:03:08:09 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0377, Accuracy: 49320/50000 (98.64%)
+
+16-09-2020:03:08:12 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4774, Accuracy: 9063/10000 (90.63%)
+
+16-09-2020:03:08:12 INFO     [model_builder.py:42] best_test_accuracy 91.37
+16-09-2020:03:08:12 INFO     [model_builder.py:34] [EPOCH:67]
+16-09-2020:03:08:58 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0327, Accuracy: 49425/50000 (98.85%)
+
+16-09-2020:03:09:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4431, Accuracy: 9116/10000 (91.16%)
+
+16-09-2020:03:09:00 INFO     [model_builder.py:42] best_test_accuracy 91.37
+16-09-2020:03:09:00 INFO     [model_builder.py:34] [EPOCH:68]
+16-09-2020:03:09:46 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0327, Accuracy: 49420/50000 (98.84%)
+
+16-09-2020:03:09:49 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4415, Accuracy: 9146/10000 (91.46%)
+
+16-09-2020:03:09:49 INFO     [model_builder.py:42] best_test_accuracy 91.46
+16-09-2020:03:09:49 INFO     [model_builder.py:34] [EPOCH:69]
+16-09-2020:03:10:34 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0258, Accuracy: 49546/50000 (99.09%)
+
+16-09-2020:03:10:37 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4421, Accuracy: 9145/10000 (91.45%)
+
+16-09-2020:03:10:37 INFO     [model_builder.py:42] best_test_accuracy 91.46
+16-09-2020:03:10:37 INFO     [model_builder.py:34] [EPOCH:70]
+16-09-2020:03:11:23 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0321, Accuracy: 49425/50000 (98.85%)
+
+16-09-2020:03:11:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4452, Accuracy: 9146/10000 (91.46%)
+
+16-09-2020:03:11:25 INFO     [model_builder.py:42] best_test_accuracy 91.46
+16-09-2020:03:11:25 INFO     [model_builder.py:34] [EPOCH:71]
+16-09-2020:03:12:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0223, Accuracy: 49606/50000 (99.21%)
+
+16-09-2020:03:12:14 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4216, Accuracy: 9171/10000 (91.71%)
+
+16-09-2020:03:12:14 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:12:14 INFO     [model_builder.py:34] [EPOCH:72]
+16-09-2020:03:13:00 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0279, Accuracy: 49518/50000 (99.04%)
+
+16-09-2020:03:13:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4330, Accuracy: 9143/10000 (91.43%)
+
+16-09-2020:03:13:02 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:13:02 INFO     [model_builder.py:34] [EPOCH:73]
+16-09-2020:03:13:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0263, Accuracy: 49535/50000 (99.07%)
+
+16-09-2020:03:13:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4534, Accuracy: 9130/10000 (91.30%)
+
+16-09-2020:03:13:51 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:13:51 INFO     [model_builder.py:34] [EPOCH:74]
+16-09-2020:03:14:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0227, Accuracy: 49596/50000 (99.19%)
+
+16-09-2020:03:14:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4429, Accuracy: 9143/10000 (91.43%)
+
+16-09-2020:03:14:39 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:14:39 INFO     [model_builder.py:34] [EPOCH:75]
+16-09-2020:03:15:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0258, Accuracy: 49547/50000 (99.09%)
+
+16-09-2020:03:15:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4497, Accuracy: 9152/10000 (91.52%)
+
+16-09-2020:03:15:27 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:15:27 INFO     [model_builder.py:34] [EPOCH:76]
+16-09-2020:03:16:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0249, Accuracy: 49592/50000 (99.18%)
+
+16-09-2020:03:16:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4603, Accuracy: 9114/10000 (91.14%)
+
+16-09-2020:03:16:16 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:16:16 INFO     [model_builder.py:34] [EPOCH:77]
+16-09-2020:03:17:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0232, Accuracy: 49631/50000 (99.26%)
+
+16-09-2020:03:17:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4511, Accuracy: 9143/10000 (91.43%)
+
+16-09-2020:03:17:04 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:17:04 INFO     [model_builder.py:34] [EPOCH:78]
+16-09-2020:03:17:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0202, Accuracy: 49650/50000 (99.30%)
+
+16-09-2020:03:17:53 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4529, Accuracy: 9148/10000 (91.48%)
+
+16-09-2020:03:17:53 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:17:53 INFO     [model_builder.py:34] [EPOCH:79]
+16-09-2020:03:18:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0211, Accuracy: 49646/50000 (99.29%)
+
+16-09-2020:03:18:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4429, Accuracy: 9163/10000 (91.63%)
+
+16-09-2020:03:18:41 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:18:41 INFO     [model_builder.py:34] [EPOCH:80]
+16-09-2020:03:19:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0189, Accuracy: 49679/50000 (99.36%)
+
+16-09-2020:03:19:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4435, Accuracy: 9165/10000 (91.65%)
+
+16-09-2020:03:19:30 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:19:30 INFO     [model_builder.py:34] [EPOCH:81]
+16-09-2020:03:20:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0193, Accuracy: 49668/50000 (99.34%)
+
+16-09-2020:03:20:18 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4559, Accuracy: 9145/10000 (91.45%)
+
+16-09-2020:03:20:18 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:20:18 INFO     [model_builder.py:34] [EPOCH:82]
+16-09-2020:03:21:04 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0190, Accuracy: 49675/50000 (99.35%)
+
+16-09-2020:03:21:07 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4573, Accuracy: 9166/10000 (91.66%)
+
+16-09-2020:03:21:07 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:21:07 INFO     [model_builder.py:34] [EPOCH:83]
+16-09-2020:03:21:53 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0198, Accuracy: 49651/50000 (99.30%)
+
+16-09-2020:03:21:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4449, Accuracy: 9156/10000 (91.56%)
+
+16-09-2020:03:21:55 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:21:55 INFO     [model_builder.py:34] [EPOCH:84]
+16-09-2020:03:22:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0176, Accuracy: 49720/50000 (99.44%)
+
+16-09-2020:03:22:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4677, Accuracy: 9163/10000 (91.63%)
+
+16-09-2020:03:22:44 INFO     [model_builder.py:42] best_test_accuracy 91.71
+16-09-2020:03:22:44 INFO     [model_builder.py:34] [EPOCH:85]
+16-09-2020:03:23:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0144, Accuracy: 49758/50000 (99.52%)
+
+16-09-2020:03:23:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4504, Accuracy: 9176/10000 (91.76%)
+
+16-09-2020:03:23:32 INFO     [model_builder.py:42] best_test_accuracy 91.76
+16-09-2020:03:23:32 INFO     [model_builder.py:34] [EPOCH:86]
+16-09-2020:03:24:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0148, Accuracy: 49740/50000 (99.48%)
+
+16-09-2020:03:24:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4440, Accuracy: 9201/10000 (92.01%)
+
+16-09-2020:03:24:21 INFO     [model_builder.py:42] best_test_accuracy 92.01
+16-09-2020:03:24:21 INFO     [model_builder.py:34] [EPOCH:87]
+16-09-2020:03:25:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0148, Accuracy: 49740/50000 (99.48%)
+
+16-09-2020:03:25:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4770, Accuracy: 9150/10000 (91.50%)
+
+16-09-2020:03:25:10 INFO     [model_builder.py:42] best_test_accuracy 92.01
+16-09-2020:03:25:10 INFO     [model_builder.py:34] [EPOCH:88]
+16-09-2020:03:25:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0176, Accuracy: 49724/50000 (99.45%)
+
+16-09-2020:03:25:59 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4577, Accuracy: 9185/10000 (91.85%)
+
+16-09-2020:03:25:59 INFO     [model_builder.py:42] best_test_accuracy 92.01
+16-09-2020:03:25:59 INFO     [model_builder.py:34] [EPOCH:89]
+16-09-2020:03:26:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0143, Accuracy: 49754/50000 (99.51%)
+
+16-09-2020:03:26:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4490, Accuracy: 9193/10000 (91.93%)
+
+16-09-2020:03:26:47 INFO     [model_builder.py:42] best_test_accuracy 92.01
+16-09-2020:03:26:47 INFO     [model_builder.py:34] [EPOCH:90]
+16-09-2020:03:27:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0228, Accuracy: 49610/50000 (99.22%)
+
+16-09-2020:03:27:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4841, Accuracy: 9132/10000 (91.32%)
+
+16-09-2020:03:27:36 INFO     [model_builder.py:42] best_test_accuracy 92.01
+16-09-2020:03:27:36 INFO     [model_builder.py:34] [EPOCH:91]
+16-09-2020:03:28:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0139, Accuracy: 49772/50000 (99.54%)
+
+16-09-2020:03:28:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4447, Accuracy: 9202/10000 (92.02%)
+
+16-09-2020:03:28:25 INFO     [model_builder.py:42] best_test_accuracy 92.02
+16-09-2020:03:28:25 INFO     [model_builder.py:34] [EPOCH:92]
+16-09-2020:03:29:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0220, Accuracy: 49609/50000 (99.22%)
+
+16-09-2020:03:29:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4706, Accuracy: 9185/10000 (91.85%)
+
+16-09-2020:03:29:13 INFO     [model_builder.py:42] best_test_accuracy 92.02
+16-09-2020:03:29:13 INFO     [model_builder.py:34] [EPOCH:93]
+16-09-2020:03:29:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0151, Accuracy: 49748/50000 (99.50%)
+
+16-09-2020:03:30:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4512, Accuracy: 9187/10000 (91.87%)
+
+16-09-2020:03:30:02 INFO     [model_builder.py:42] best_test_accuracy 92.02
+16-09-2020:03:30:02 INFO     [model_builder.py:34] [EPOCH:94]
+16-09-2020:03:30:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0151, Accuracy: 49760/50000 (99.52%)
+
+16-09-2020:03:30:50 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4789, Accuracy: 9176/10000 (91.76%)
+
+16-09-2020:03:30:50 INFO     [model_builder.py:42] best_test_accuracy 92.02
+16-09-2020:03:30:50 INFO     [model_builder.py:34] [EPOCH:95]
+16-09-2020:03:31:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0138, Accuracy: 49768/50000 (99.54%)
+
+16-09-2020:03:31:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4555, Accuracy: 9188/10000 (91.88%)
+
+16-09-2020:03:31:39 INFO     [model_builder.py:42] best_test_accuracy 92.02
+16-09-2020:03:31:39 INFO     [model_builder.py:34] [EPOCH:96]
+16-09-2020:03:32:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0117, Accuracy: 49793/50000 (99.59%)
+
+16-09-2020:03:32:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4585, Accuracy: 9208/10000 (92.08%)
+
+16-09-2020:03:32:28 INFO     [model_builder.py:42] best_test_accuracy 92.08
+16-09-2020:03:32:28 INFO     [model_builder.py:34] [EPOCH:97]
+16-09-2020:03:33:14 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0206, Accuracy: 49662/50000 (99.32%)
+
+16-09-2020:03:33:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4823, Accuracy: 9113/10000 (91.13%)
+
+16-09-2020:03:33:16 INFO     [model_builder.py:42] best_test_accuracy 92.08
+16-09-2020:03:33:16 INFO     [model_builder.py:34] [EPOCH:98]
+16-09-2020:03:34:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0129, Accuracy: 49800/50000 (99.60%)
+
+16-09-2020:03:34:05 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4605, Accuracy: 9222/10000 (92.22%)
+
+16-09-2020:03:34:05 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:34:05 INFO     [model_builder.py:34] [EPOCH:99]
+16-09-2020:03:34:51 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0142, Accuracy: 49760/50000 (99.52%)
+
+16-09-2020:03:34:53 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4438, Accuracy: 9218/10000 (92.18%)
+
+16-09-2020:03:34:53 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:34:53 INFO     [model_builder.py:34] [EPOCH:100]
+16-09-2020:03:35:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0128, Accuracy: 49768/50000 (99.54%)
+
+16-09-2020:03:35:42 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4613, Accuracy: 9161/10000 (91.61%)
+
+16-09-2020:03:35:42 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:35:42 INFO     [model_builder.py:34] [EPOCH:101]
+16-09-2020:03:36:28 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0123, Accuracy: 49794/50000 (99.59%)
+
+16-09-2020:03:36:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4300, Accuracy: 9216/10000 (92.16%)
+
+16-09-2020:03:36:30 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:36:30 INFO     [model_builder.py:34] [EPOCH:102]
+16-09-2020:03:37:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0116, Accuracy: 49800/50000 (99.60%)
+
+16-09-2020:03:37:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4601, Accuracy: 9220/10000 (92.20%)
+
+16-09-2020:03:37:19 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:37:19 INFO     [model_builder.py:34] [EPOCH:103]
+16-09-2020:03:38:05 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0133, Accuracy: 49770/50000 (99.54%)
+
+16-09-2020:03:38:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4631, Accuracy: 9193/10000 (91.93%)
+
+16-09-2020:03:38:08 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:38:08 INFO     [model_builder.py:34] [EPOCH:104]
+16-09-2020:03:38:53 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0131, Accuracy: 49776/50000 (99.55%)
+
+16-09-2020:03:38:56 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4838, Accuracy: 9196/10000 (91.96%)
+
+16-09-2020:03:38:56 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:38:56 INFO     [model_builder.py:34] [EPOCH:105]
+16-09-2020:03:39:42 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0136, Accuracy: 49792/50000 (99.58%)
+
+16-09-2020:03:39:45 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4783, Accuracy: 9191/10000 (91.91%)
+
+16-09-2020:03:39:45 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:39:45 INFO     [model_builder.py:34] [EPOCH:106]
+16-09-2020:03:40:31 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0166, Accuracy: 49718/50000 (99.44%)
+
+16-09-2020:03:40:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5062, Accuracy: 9167/10000 (91.67%)
+
+16-09-2020:03:40:33 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:40:33 INFO     [model_builder.py:34] [EPOCH:107]
+16-09-2020:03:41:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0118, Accuracy: 49792/50000 (99.58%)
+
+16-09-2020:03:41:22 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4711, Accuracy: 9166/10000 (91.66%)
+
+16-09-2020:03:41:22 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:41:22 INFO     [model_builder.py:34] [EPOCH:108]
+16-09-2020:03:42:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0128, Accuracy: 49791/50000 (99.58%)
+
+16-09-2020:03:42:11 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5047, Accuracy: 9175/10000 (91.75%)
+
+16-09-2020:03:42:11 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:42:11 INFO     [model_builder.py:34] [EPOCH:109]
+16-09-2020:03:42:57 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0115, Accuracy: 49808/50000 (99.62%)
+
+16-09-2020:03:42:59 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4819, Accuracy: 9194/10000 (91.94%)
+
+16-09-2020:03:42:59 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:42:59 INFO     [model_builder.py:34] [EPOCH:110]
+16-09-2020:03:43:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0114, Accuracy: 49818/50000 (99.64%)
+
+16-09-2020:03:43:48 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4743, Accuracy: 9207/10000 (92.07%)
+
+16-09-2020:03:43:48 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:43:48 INFO     [model_builder.py:34] [EPOCH:111]
+16-09-2020:03:44:34 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0129, Accuracy: 49767/50000 (99.53%)
+
+16-09-2020:03:44:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4925, Accuracy: 9189/10000 (91.89%)
+
+16-09-2020:03:44:36 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:44:36 INFO     [model_builder.py:34] [EPOCH:112]
+16-09-2020:03:45:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0123, Accuracy: 49808/50000 (99.62%)
+
+16-09-2020:03:45:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4863, Accuracy: 9191/10000 (91.91%)
+
+16-09-2020:03:45:25 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:45:25 INFO     [model_builder.py:34] [EPOCH:113]
+16-09-2020:03:46:10 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0138, Accuracy: 49772/50000 (99.54%)
+
+16-09-2020:03:46:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4994, Accuracy: 9163/10000 (91.63%)
+
+16-09-2020:03:46:13 INFO     [model_builder.py:42] best_test_accuracy 92.22
+16-09-2020:03:46:13 INFO     [model_builder.py:34] [EPOCH:114]
+16-09-2020:03:46:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0091, Accuracy: 49846/50000 (99.69%)
+
+16-09-2020:03:47:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4636, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:03:47:02 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:47:02 INFO     [model_builder.py:34] [EPOCH:115]
+16-09-2020:03:47:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0092, Accuracy: 49846/50000 (99.69%)
+
+16-09-2020:03:47:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4939, Accuracy: 9192/10000 (91.92%)
+
+16-09-2020:03:47:51 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:47:51 INFO     [model_builder.py:34] [EPOCH:116]
+16-09-2020:03:48:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0116, Accuracy: 49796/50000 (99.59%)
+
+16-09-2020:03:48:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5043, Accuracy: 9188/10000 (91.88%)
+
+16-09-2020:03:48:40 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:48:40 INFO     [model_builder.py:34] [EPOCH:117]
+16-09-2020:03:49:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0110, Accuracy: 49810/50000 (99.62%)
+
+16-09-2020:03:49:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4790, Accuracy: 9216/10000 (92.16%)
+
+16-09-2020:03:49:28 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:49:28 INFO     [model_builder.py:34] [EPOCH:118]
+16-09-2020:03:50:14 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0111, Accuracy: 49810/50000 (99.62%)
+
+16-09-2020:03:50:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4938, Accuracy: 9186/10000 (91.86%)
+
+16-09-2020:03:50:17 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:50:17 INFO     [model_builder.py:34] [EPOCH:119]
+16-09-2020:03:51:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0100, Accuracy: 49834/50000 (99.67%)
+
+16-09-2020:03:51:05 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5035, Accuracy: 9186/10000 (91.86%)
+
+16-09-2020:03:51:05 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:51:05 INFO     [model_builder.py:34] [EPOCH:120]
+16-09-2020:03:51:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0086, Accuracy: 49850/50000 (99.70%)
+
+16-09-2020:03:51:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4752, Accuracy: 9218/10000 (92.18%)
+
+16-09-2020:03:51:54 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:51:54 INFO     [model_builder.py:34] [EPOCH:121]
+16-09-2020:03:52:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0096, Accuracy: 49835/50000 (99.67%)
+
+16-09-2020:03:52:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4824, Accuracy: 9192/10000 (91.92%)
+
+16-09-2020:03:52:43 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:52:43 INFO     [model_builder.py:34] [EPOCH:122]
+16-09-2020:03:53:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0098, Accuracy: 49829/50000 (99.66%)
+
+16-09-2020:03:53:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4819, Accuracy: 9195/10000 (91.95%)
+
+16-09-2020:03:53:32 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:53:32 INFO     [model_builder.py:34] [EPOCH:123]
+16-09-2020:03:54:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0097, Accuracy: 49849/50000 (99.70%)
+
+16-09-2020:03:54:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4865, Accuracy: 9199/10000 (91.99%)
+
+16-09-2020:03:54:21 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:54:21 INFO     [model_builder.py:34] [EPOCH:124]
+16-09-2020:03:55:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0080, Accuracy: 49871/50000 (99.74%)
+
+16-09-2020:03:55:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5138, Accuracy: 9196/10000 (91.96%)
+
+16-09-2020:03:55:09 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:55:09 INFO     [model_builder.py:34] [EPOCH:125]
+16-09-2020:03:55:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0113, Accuracy: 49795/50000 (99.59%)
+
+16-09-2020:03:55:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5143, Accuracy: 9169/10000 (91.69%)
+
+16-09-2020:03:55:58 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:55:58 INFO     [model_builder.py:34] [EPOCH:126]
+16-09-2020:03:56:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0085, Accuracy: 49852/50000 (99.70%)
+
+16-09-2020:03:56:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5106, Accuracy: 9202/10000 (92.02%)
+
+16-09-2020:03:56:47 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:56:47 INFO     [model_builder.py:34] [EPOCH:127]
+16-09-2020:03:57:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0110, Accuracy: 49812/50000 (99.62%)
+
+16-09-2020:03:57:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5074, Accuracy: 9206/10000 (92.06%)
+
+16-09-2020:03:57:36 INFO     [model_builder.py:42] best_test_accuracy 92.51
+16-09-2020:03:57:36 INFO     [model_builder.py:34] [EPOCH:128]
+16-09-2020:03:58:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0077, Accuracy: 49871/50000 (99.74%)
+
+16-09-2020:03:58:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4632, Accuracy: 9265/10000 (92.65%)
+
+16-09-2020:03:58:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:03:58:24 INFO     [model_builder.py:34] [EPOCH:129]
+16-09-2020:03:59:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0080, Accuracy: 49873/50000 (99.75%)
+
+16-09-2020:03:59:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4738, Accuracy: 9260/10000 (92.60%)
+
+16-09-2020:03:59:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:03:59:13 INFO     [model_builder.py:34] [EPOCH:130]
+16-09-2020:03:59:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0089, Accuracy: 49852/50000 (99.70%)
+
+16-09-2020:04:00:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5063, Accuracy: 9209/10000 (92.09%)
+
+16-09-2020:04:00:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:00:02 INFO     [model_builder.py:34] [EPOCH:131]
+16-09-2020:04:00:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0105, Accuracy: 49812/50000 (99.62%)
+
+16-09-2020:04:00:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4923, Accuracy: 9198/10000 (91.98%)
+
+16-09-2020:04:00:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:00:51 INFO     [model_builder.py:34] [EPOCH:132]
+16-09-2020:04:01:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0064, Accuracy: 49891/50000 (99.78%)
+
+16-09-2020:04:01:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4870, Accuracy: 9228/10000 (92.28%)
+
+16-09-2020:04:01:39 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:01:39 INFO     [model_builder.py:34] [EPOCH:133]
+16-09-2020:04:02:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0062, Accuracy: 49890/50000 (99.78%)
+
+16-09-2020:04:02:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4992, Accuracy: 9204/10000 (92.04%)
+
+16-09-2020:04:02:28 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:02:28 INFO     [model_builder.py:34] [EPOCH:134]
+16-09-2020:04:03:14 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0109, Accuracy: 49809/50000 (99.62%)
+
+16-09-2020:04:03:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5347, Accuracy: 9212/10000 (92.12%)
+
+16-09-2020:04:03:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:03:17 INFO     [model_builder.py:34] [EPOCH:135]
+16-09-2020:04:04:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0109, Accuracy: 49823/50000 (99.65%)
+
+16-09-2020:04:04:05 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5205, Accuracy: 9185/10000 (91.85%)
+
+16-09-2020:04:04:05 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:04:05 INFO     [model_builder.py:34] [EPOCH:136]
+16-09-2020:04:04:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0089, Accuracy: 49854/50000 (99.71%)
+
+16-09-2020:04:04:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5379, Accuracy: 9180/10000 (91.80%)
+
+16-09-2020:04:04:54 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:04:54 INFO     [model_builder.py:34] [EPOCH:137]
+16-09-2020:04:05:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0078, Accuracy: 49884/50000 (99.77%)
+
+16-09-2020:04:05:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5250, Accuracy: 9201/10000 (92.01%)
+
+16-09-2020:04:05:43 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:05:43 INFO     [model_builder.py:34] [EPOCH:138]
+16-09-2020:04:06:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0068, Accuracy: 49882/50000 (99.76%)
+
+16-09-2020:04:06:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5236, Accuracy: 9187/10000 (91.87%)
+
+16-09-2020:04:06:32 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:06:32 INFO     [model_builder.py:34] [EPOCH:139]
+16-09-2020:04:07:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0071, Accuracy: 49880/50000 (99.76%)
+
+16-09-2020:04:07:20 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5101, Accuracy: 9199/10000 (91.99%)
+
+16-09-2020:04:07:20 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:07:20 INFO     [model_builder.py:34] [EPOCH:140]
+16-09-2020:04:08:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0049, Accuracy: 49916/50000 (99.83%)
+
+16-09-2020:04:08:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5175, Accuracy: 9206/10000 (92.06%)
+
+16-09-2020:04:08:09 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:08:09 INFO     [model_builder.py:34] [EPOCH:141]
+16-09-2020:04:08:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0086, Accuracy: 49851/50000 (99.70%)
+
+16-09-2020:04:08:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5222, Accuracy: 9193/10000 (91.93%)
+
+16-09-2020:04:08:58 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:08:58 INFO     [model_builder.py:34] [EPOCH:142]
+16-09-2020:04:09:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0081, Accuracy: 49860/50000 (99.72%)
+
+16-09-2020:04:09:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4972, Accuracy: 9199/10000 (91.99%)
+
+16-09-2020:04:09:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:09:47 INFO     [model_builder.py:34] [EPOCH:143]
+16-09-2020:04:10:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0078, Accuracy: 49875/50000 (99.75%)
+
+16-09-2020:04:10:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5098, Accuracy: 9180/10000 (91.80%)
+
+16-09-2020:04:10:36 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:10:36 INFO     [model_builder.py:34] [EPOCH:144]
+16-09-2020:04:11:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0065, Accuracy: 49901/50000 (99.80%)
+
+16-09-2020:04:11:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5044, Accuracy: 9219/10000 (92.19%)
+
+16-09-2020:04:11:25 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:11:25 INFO     [model_builder.py:34] [EPOCH:145]
+16-09-2020:04:12:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0068, Accuracy: 49890/50000 (99.78%)
+
+16-09-2020:04:12:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5046, Accuracy: 9203/10000 (92.03%)
+
+16-09-2020:04:12:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:12:13 INFO     [model_builder.py:34] [EPOCH:146]
+16-09-2020:04:12:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0085, Accuracy: 49858/50000 (99.72%)
+
+16-09-2020:04:13:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5232, Accuracy: 9219/10000 (92.19%)
+
+16-09-2020:04:13:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:13:02 INFO     [model_builder.py:34] [EPOCH:147]
+16-09-2020:04:13:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0099, Accuracy: 49828/50000 (99.66%)
+
+16-09-2020:04:13:50 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5345, Accuracy: 9189/10000 (91.89%)
+
+16-09-2020:04:13:50 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:13:50 INFO     [model_builder.py:34] [EPOCH:148]
+16-09-2020:04:14:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0083, Accuracy: 49856/50000 (99.71%)
+
+16-09-2020:04:14:38 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5228, Accuracy: 9186/10000 (91.86%)
+
+16-09-2020:04:14:38 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:14:38 INFO     [model_builder.py:34] [EPOCH:149]
+16-09-2020:04:15:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0046, Accuracy: 49917/50000 (99.83%)
+
+16-09-2020:04:15:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5443, Accuracy: 9197/10000 (91.97%)
+
+16-09-2020:04:15:27 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:15:27 INFO     [model_builder.py:34] [EPOCH:150]
+16-09-2020:04:16:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0045, Accuracy: 49927/50000 (99.85%)
+
+16-09-2020:04:16:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5423, Accuracy: 9196/10000 (91.96%)
+
+16-09-2020:04:16:16 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:16:16 INFO     [model_builder.py:34] [EPOCH:151]
+16-09-2020:04:17:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0044, Accuracy: 49934/50000 (99.87%)
+
+16-09-2020:04:17:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5380, Accuracy: 9205/10000 (92.05%)
+
+16-09-2020:04:17:04 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:17:04 INFO     [model_builder.py:34] [EPOCH:152]
+16-09-2020:04:17:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0038, Accuracy: 49944/50000 (99.89%)
+
+16-09-2020:04:17:52 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5391, Accuracy: 9202/10000 (92.02%)
+
+16-09-2020:04:17:52 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:17:52 INFO     [model_builder.py:34] [EPOCH:153]
+16-09-2020:04:18:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0037, Accuracy: 49944/50000 (99.89%)
+
+16-09-2020:04:18:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5348, Accuracy: 9205/10000 (92.05%)
+
+16-09-2020:04:18:41 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:18:41 INFO     [model_builder.py:34] [EPOCH:154]
+16-09-2020:04:19:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0030, Accuracy: 49956/50000 (99.91%)
+
+16-09-2020:04:19:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5285, Accuracy: 9216/10000 (92.16%)
+
+16-09-2020:04:19:30 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:19:30 INFO     [model_builder.py:34] [EPOCH:155]
+16-09-2020:04:20:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0027, Accuracy: 49962/50000 (99.92%)
+
+16-09-2020:04:20:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5326, Accuracy: 9220/10000 (92.20%)
+
+16-09-2020:04:20:19 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:20:19 INFO     [model_builder.py:34] [EPOCH:156]
+16-09-2020:04:21:05 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0029, Accuracy: 49949/50000 (99.90%)
+
+16-09-2020:04:21:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5296, Accuracy: 9209/10000 (92.09%)
+
+16-09-2020:04:21:08 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:21:08 INFO     [model_builder.py:34] [EPOCH:157]
+16-09-2020:04:21:54 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0032, Accuracy: 49953/50000 (99.91%)
+
+16-09-2020:04:21:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5233, Accuracy: 9224/10000 (92.24%)
+
+16-09-2020:04:21:57 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:21:57 INFO     [model_builder.py:34] [EPOCH:158]
+16-09-2020:04:22:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0029, Accuracy: 49950/50000 (99.90%)
+
+16-09-2020:04:22:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5253, Accuracy: 9225/10000 (92.25%)
+
+16-09-2020:04:22:46 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:22:46 INFO     [model_builder.py:34] [EPOCH:159]
+16-09-2020:04:23:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0026, Accuracy: 49958/50000 (99.92%)
+
+16-09-2020:04:23:34 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5143, Accuracy: 9230/10000 (92.30%)
+
+16-09-2020:04:23:34 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:23:34 INFO     [model_builder.py:34] [EPOCH:160]
+16-09-2020:04:24:20 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0028, Accuracy: 49959/50000 (99.92%)
+
+16-09-2020:04:24:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5156, Accuracy: 9228/10000 (92.28%)
+
+16-09-2020:04:24:23 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:24:23 INFO     [model_builder.py:34] [EPOCH:161]
+16-09-2020:04:25:09 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0026, Accuracy: 49961/50000 (99.92%)
+
+16-09-2020:04:25:11 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5207, Accuracy: 9233/10000 (92.33%)
+
+16-09-2020:04:25:11 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:25:11 INFO     [model_builder.py:34] [EPOCH:162]
+16-09-2020:04:25:57 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0023, Accuracy: 49965/50000 (99.93%)
+
+16-09-2020:04:26:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5064, Accuracy: 9233/10000 (92.33%)
+
+16-09-2020:04:26:00 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:26:00 INFO     [model_builder.py:34] [EPOCH:163]
+16-09-2020:04:26:46 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0025, Accuracy: 49961/50000 (99.92%)
+
+16-09-2020:04:26:49 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5199, Accuracy: 9227/10000 (92.27%)
+
+16-09-2020:04:26:49 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:26:49 INFO     [model_builder.py:34] [EPOCH:164]
+16-09-2020:04:27:35 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0026, Accuracy: 49955/50000 (99.91%)
+
+16-09-2020:04:27:38 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5124, Accuracy: 9235/10000 (92.35%)
+
+16-09-2020:04:27:38 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:27:38 INFO     [model_builder.py:34] [EPOCH:165]
+16-09-2020:04:28:24 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0025, Accuracy: 49966/50000 (99.93%)
+
+16-09-2020:04:28:26 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5144, Accuracy: 9231/10000 (92.31%)
+
+16-09-2020:04:28:26 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:28:26 INFO     [model_builder.py:34] [EPOCH:166]
+16-09-2020:04:29:12 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0021, Accuracy: 49968/50000 (99.94%)
+
+16-09-2020:04:29:15 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5167, Accuracy: 9235/10000 (92.35%)
+
+16-09-2020:04:29:15 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:29:15 INFO     [model_builder.py:34] [EPOCH:167]
+16-09-2020:04:30:01 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0028, Accuracy: 49956/50000 (99.91%)
+
+16-09-2020:04:30:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5129, Accuracy: 9231/10000 (92.31%)
+
+16-09-2020:04:30:04 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:30:04 INFO     [model_builder.py:34] [EPOCH:168]
+16-09-2020:04:30:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0018, Accuracy: 49975/50000 (99.95%)
+
+16-09-2020:04:30:52 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5130, Accuracy: 9237/10000 (92.37%)
+
+16-09-2020:04:30:52 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:30:52 INFO     [model_builder.py:34] [EPOCH:169]
+16-09-2020:04:31:38 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0020, Accuracy: 49970/50000 (99.94%)
+
+16-09-2020:04:31:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5050, Accuracy: 9241/10000 (92.41%)
+
+16-09-2020:04:31:41 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:31:41 INFO     [model_builder.py:34] [EPOCH:170]
+16-09-2020:04:32:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0018, Accuracy: 49973/50000 (99.95%)
+
+16-09-2020:04:32:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5110, Accuracy: 9240/10000 (92.40%)
+
+16-09-2020:04:32:30 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:32:30 INFO     [model_builder.py:34] [EPOCH:171]
+16-09-2020:04:33:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0019, Accuracy: 49973/50000 (99.95%)
+
+16-09-2020:04:33:18 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5037, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:33:18 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:33:18 INFO     [model_builder.py:34] [EPOCH:172]
+16-09-2020:04:34:04 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0021, Accuracy: 49965/50000 (99.93%)
+
+16-09-2020:04:34:07 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5078, Accuracy: 9241/10000 (92.41%)
+
+16-09-2020:04:34:07 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:34:07 INFO     [model_builder.py:34] [EPOCH:173]
+16-09-2020:04:34:53 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0022, Accuracy: 49957/50000 (99.91%)
+
+16-09-2020:04:34:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5055, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:04:34:55 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:34:55 INFO     [model_builder.py:34] [EPOCH:174]
+16-09-2020:04:35:42 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0018, Accuracy: 49974/50000 (99.95%)
+
+16-09-2020:04:35:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5044, Accuracy: 9232/10000 (92.32%)
+
+16-09-2020:04:35:44 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:35:44 INFO     [model_builder.py:34] [EPOCH:175]
+16-09-2020:04:36:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0021, Accuracy: 49969/50000 (99.94%)
+
+16-09-2020:04:36:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5042, Accuracy: 9232/10000 (92.32%)
+
+16-09-2020:04:36:33 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:36:33 INFO     [model_builder.py:34] [EPOCH:176]
+16-09-2020:04:37:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0017, Accuracy: 49979/50000 (99.96%)
+
+16-09-2020:04:37:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5025, Accuracy: 9238/10000 (92.38%)
+
+16-09-2020:04:37:21 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:37:21 INFO     [model_builder.py:34] [EPOCH:177]
+16-09-2020:04:38:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0019, Accuracy: 49974/50000 (99.95%)
+
+16-09-2020:04:38:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5065, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:38:10 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:38:10 INFO     [model_builder.py:34] [EPOCH:178]
+16-09-2020:04:38:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0022, Accuracy: 49969/50000 (99.94%)
+
+16-09-2020:04:38:59 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5099, Accuracy: 9245/10000 (92.45%)
+
+16-09-2020:04:38:59 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:38:59 INFO     [model_builder.py:34] [EPOCH:179]
+16-09-2020:04:39:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0020, Accuracy: 49976/50000 (99.95%)
+
+16-09-2020:04:39:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5041, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:39:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:39:47 INFO     [model_builder.py:34] [EPOCH:180]
+16-09-2020:04:40:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:04:40:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5045, Accuracy: 9240/10000 (92.40%)
+
+16-09-2020:04:40:36 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:40:36 INFO     [model_builder.py:34] [EPOCH:181]
+16-09-2020:04:41:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49979/50000 (99.96%)
+
+16-09-2020:04:41:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5091, Accuracy: 9236/10000 (92.36%)
+
+16-09-2020:04:41:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:41:24 INFO     [model_builder.py:34] [EPOCH:182]
+16-09-2020:04:42:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:42:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5080, Accuracy: 9233/10000 (92.33%)
+
+16-09-2020:04:42:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:42:13 INFO     [model_builder.py:34] [EPOCH:183]
+16-09-2020:04:42:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0018, Accuracy: 49973/50000 (99.95%)
+
+16-09-2020:04:43:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5030, Accuracy: 9238/10000 (92.38%)
+
+16-09-2020:04:43:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:43:02 INFO     [model_builder.py:34] [EPOCH:184]
+16-09-2020:04:43:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:43:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5083, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:43:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:43:51 INFO     [model_builder.py:34] [EPOCH:185]
+16-09-2020:04:44:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0017, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:44:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5051, Accuracy: 9231/10000 (92.31%)
+
+16-09-2020:04:44:40 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:44:40 INFO     [model_builder.py:34] [EPOCH:186]
+16-09-2020:04:45:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:04:45:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5045, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:04:45:28 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:45:28 INFO     [model_builder.py:34] [EPOCH:187]
+16-09-2020:04:46:14 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0018, Accuracy: 49972/50000 (99.94%)
+
+16-09-2020:04:46:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4988, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:04:46:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:46:17 INFO     [model_builder.py:34] [EPOCH:188]
+16-09-2020:04:47:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0019, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:47:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5034, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:04:47:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:47:06 INFO     [model_builder.py:34] [EPOCH:189]
+16-09-2020:04:47:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:04:47:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5040, Accuracy: 9245/10000 (92.45%)
+
+16-09-2020:04:47:54 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:47:54 INFO     [model_builder.py:34] [EPOCH:190]
+16-09-2020:04:48:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:04:48:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4994, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:48:43 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:48:43 INFO     [model_builder.py:34] [EPOCH:191]
+16-09-2020:04:49:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49975/50000 (99.95%)
+
+16-09-2020:04:49:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5033, Accuracy: 9242/10000 (92.42%)
+
+16-09-2020:04:49:32 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:49:32 INFO     [model_builder.py:34] [EPOCH:192]
+16-09-2020:04:50:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49975/50000 (99.95%)
+
+16-09-2020:04:50:20 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5065, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:04:50:20 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:50:20 INFO     [model_builder.py:34] [EPOCH:193]
+16-09-2020:04:51:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:04:51:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5022, Accuracy: 9234/10000 (92.34%)
+
+16-09-2020:04:51:09 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:51:09 INFO     [model_builder.py:34] [EPOCH:194]
+16-09-2020:04:51:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49975/50000 (99.95%)
+
+16-09-2020:04:51:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5013, Accuracy: 9237/10000 (92.37%)
+
+16-09-2020:04:51:58 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:51:58 INFO     [model_builder.py:34] [EPOCH:195]
+16-09-2020:04:52:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:04:52:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5001, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:04:52:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:52:47 INFO     [model_builder.py:34] [EPOCH:196]
+16-09-2020:04:53:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:04:53:35 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4924, Accuracy: 9242/10000 (92.42%)
+
+16-09-2020:04:53:35 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:53:35 INFO     [model_builder.py:34] [EPOCH:197]
+16-09-2020:04:54:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:04:54:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5003, Accuracy: 9231/10000 (92.31%)
+
+16-09-2020:04:54:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:54:24 INFO     [model_builder.py:34] [EPOCH:198]
+16-09-2020:04:55:10 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0017, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:55:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5030, Accuracy: 9242/10000 (92.42%)
+
+16-09-2020:04:55:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:55:13 INFO     [model_builder.py:34] [EPOCH:199]
+16-09-2020:04:55:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:04:56:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5007, Accuracy: 9243/10000 (92.43%)
+
+16-09-2020:04:56:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:56:02 INFO     [model_builder.py:34] [EPOCH:200]
+16-09-2020:04:56:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:04:56:50 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5007, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:04:56:50 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:56:50 INFO     [model_builder.py:34] [EPOCH:201]
+16-09-2020:04:57:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:04:57:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5040, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:04:57:39 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:57:39 INFO     [model_builder.py:34] [EPOCH:202]
+16-09-2020:04:58:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:04:58:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5037, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:04:58:28 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:58:28 INFO     [model_builder.py:34] [EPOCH:203]
+16-09-2020:04:59:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:04:59:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4975, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:04:59:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:04:59:17 INFO     [model_builder.py:34] [EPOCH:204]
+16-09-2020:05:00:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:05:00:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4986, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:00:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:00:06 INFO     [model_builder.py:34] [EPOCH:205]
+16-09-2020:05:00:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49977/50000 (99.95%)
+
+16-09-2020:05:00:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5015, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:00:54 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:00:54 INFO     [model_builder.py:34] [EPOCH:206]
+16-09-2020:05:01:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:01:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4948, Accuracy: 9241/10000 (92.41%)
+
+16-09-2020:05:01:43 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:01:43 INFO     [model_builder.py:34] [EPOCH:207]
+16-09-2020:05:02:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49979/50000 (99.96%)
+
+16-09-2020:05:02:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4971, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:05:02:32 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:02:32 INFO     [model_builder.py:34] [EPOCH:208]
+16-09-2020:05:03:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:03:20 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5032, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:03:20 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:03:20 INFO     [model_builder.py:34] [EPOCH:209]
+16-09-2020:05:04:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:04:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5014, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:05:04:09 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:04:09 INFO     [model_builder.py:34] [EPOCH:210]
+16-09-2020:05:04:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:04:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4999, Accuracy: 9240/10000 (92.40%)
+
+16-09-2020:05:04:58 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:04:58 INFO     [model_builder.py:34] [EPOCH:211]
+16-09-2020:05:05:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:05:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5038, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:05:46 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:05:46 INFO     [model_builder.py:34] [EPOCH:212]
+16-09-2020:05:06:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:05:06:35 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4985, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:06:35 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:06:35 INFO     [model_builder.py:34] [EPOCH:213]
+16-09-2020:05:07:21 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:07:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5011, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:07:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:07:24 INFO     [model_builder.py:34] [EPOCH:214]
+16-09-2020:05:08:10 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0015, Accuracy: 49975/50000 (99.95%)
+
+16-09-2020:05:08:12 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4950, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:05:08:12 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:08:12 INFO     [model_builder.py:34] [EPOCH:215]
+16-09-2020:05:08:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49979/50000 (99.96%)
+
+16-09-2020:05:09:01 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5042, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:09:01 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:09:01 INFO     [model_builder.py:34] [EPOCH:216]
+16-09-2020:05:09:47 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0017, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:09:50 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4958, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:09:50 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:09:50 INFO     [model_builder.py:34] [EPOCH:217]
+16-09-2020:05:10:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0017, Accuracy: 49973/50000 (99.95%)
+
+16-09-2020:05:10:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4907, Accuracy: 9240/10000 (92.40%)
+
+16-09-2020:05:10:39 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:10:39 INFO     [model_builder.py:34] [EPOCH:218]
+16-09-2020:05:11:25 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:05:11:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4990, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:11:27 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:11:27 INFO     [model_builder.py:34] [EPOCH:219]
+16-09-2020:05:12:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:05:12:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4982, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:05:12:16 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:12:16 INFO     [model_builder.py:34] [EPOCH:220]
+16-09-2020:05:13:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:05:13:05 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4997, Accuracy: 9241/10000 (92.41%)
+
+16-09-2020:05:13:05 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:13:05 INFO     [model_builder.py:34] [EPOCH:221]
+16-09-2020:05:13:51 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:05:13:54 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4943, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:05:13:54 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:13:54 INFO     [model_builder.py:34] [EPOCH:222]
+16-09-2020:05:14:40 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:14:42 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5004, Accuracy: 9245/10000 (92.45%)
+
+16-09-2020:05:14:42 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:14:42 INFO     [model_builder.py:34] [EPOCH:223]
+16-09-2020:05:15:28 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:15:31 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4992, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:05:15:31 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:15:31 INFO     [model_builder.py:34] [EPOCH:224]
+16-09-2020:05:16:17 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:16:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4968, Accuracy: 9243/10000 (92.43%)
+
+16-09-2020:05:16:19 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:16:19 INFO     [model_builder.py:34] [EPOCH:225]
+16-09-2020:05:17:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:17:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4995, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:05:17:08 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:17:08 INFO     [model_builder.py:34] [EPOCH:226]
+16-09-2020:05:17:54 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0016, Accuracy: 49976/50000 (99.95%)
+
+16-09-2020:05:17:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4975, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:05:17:57 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:17:57 INFO     [model_builder.py:34] [EPOCH:227]
+16-09-2020:05:18:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:18:45 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5010, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:05:18:45 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:18:45 INFO     [model_builder.py:34] [EPOCH:228]
+16-09-2020:05:19:31 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:19:34 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4965, Accuracy: 9241/10000 (92.41%)
+
+16-09-2020:05:19:34 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:19:34 INFO     [model_builder.py:34] [EPOCH:229]
+16-09-2020:05:20:20 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:05:20:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4969, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:20:23 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:20:23 INFO     [model_builder.py:34] [EPOCH:230]
+16-09-2020:05:21:09 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:05:21:11 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4964, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:21:11 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:21:11 INFO     [model_builder.py:34] [EPOCH:231]
+16-09-2020:05:21:58 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:05:22:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4970, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:22:00 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:22:00 INFO     [model_builder.py:34] [EPOCH:232]
+16-09-2020:05:22:47 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:05:22:49 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4952, Accuracy: 9239/10000 (92.39%)
+
+16-09-2020:05:22:49 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:22:49 INFO     [model_builder.py:34] [EPOCH:233]
+16-09-2020:05:23:35 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:05:23:38 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4937, Accuracy: 9245/10000 (92.45%)
+
+16-09-2020:05:23:38 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:23:38 INFO     [model_builder.py:34] [EPOCH:234]
+16-09-2020:05:24:24 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:05:24:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4955, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:24:27 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:24:27 INFO     [model_builder.py:34] [EPOCH:235]
+16-09-2020:05:25:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:25:15 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4921, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:25:15 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:25:15 INFO     [model_builder.py:34] [EPOCH:236]
+16-09-2020:05:26:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:26:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5012, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:26:04 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:26:04 INFO     [model_builder.py:34] [EPOCH:237]
+16-09-2020:05:26:51 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:26:53 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4984, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:26:53 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:26:53 INFO     [model_builder.py:34] [EPOCH:238]
+16-09-2020:05:27:40 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:05:27:42 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4971, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:27:42 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:27:42 INFO     [model_builder.py:34] [EPOCH:239]
+16-09-2020:05:28:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:05:28:31 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4989, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:05:28:31 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:28:31 INFO     [model_builder.py:34] [EPOCH:240]
+16-09-2020:05:29:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0014, Accuracy: 49978/50000 (99.96%)
+
+16-09-2020:05:29:20 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4940, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:29:20 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:29:20 INFO     [model_builder.py:34] [EPOCH:241]
+16-09-2020:05:30:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:30:09 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4996, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:30:09 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:30:09 INFO     [model_builder.py:34] [EPOCH:242]
+16-09-2020:05:30:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:05:30:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4986, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:30:58 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:30:58 INFO     [model_builder.py:34] [EPOCH:243]
+16-09-2020:05:31:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:05:31:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4943, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:05:31:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:31:47 INFO     [model_builder.py:34] [EPOCH:244]
+16-09-2020:05:32:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:32:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4984, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:32:36 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:32:36 INFO     [model_builder.py:34] [EPOCH:245]
+16-09-2020:05:33:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:33:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4903, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:33:25 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:33:25 INFO     [model_builder.py:34] [EPOCH:246]
+16-09-2020:05:34:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:34:14 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4887, Accuracy: 9245/10000 (92.45%)
+
+16-09-2020:05:34:14 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:34:14 INFO     [model_builder.py:34] [EPOCH:247]
+16-09-2020:05:35:00 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:35:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4987, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:35:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:35:02 INFO     [model_builder.py:34] [EPOCH:248]
+16-09-2020:05:35:49 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:05:35:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5043, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:35:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:35:51 INFO     [model_builder.py:34] [EPOCH:249]
+16-09-2020:05:36:38 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:05:36:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4978, Accuracy: 9243/10000 (92.43%)
+
+16-09-2020:05:36:40 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:36:40 INFO     [model_builder.py:34] [EPOCH:250]
+16-09-2020:05:37:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:05:37:29 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4954, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:05:37:29 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:37:29 INFO     [model_builder.py:34] [EPOCH:251]
+16-09-2020:05:38:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:05:38:18 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5005, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:05:38:18 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:38:18 INFO     [model_builder.py:34] [EPOCH:252]
+16-09-2020:05:39:04 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49993/50000 (99.99%)
+
+16-09-2020:05:39:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4961, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:05:39:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:39:06 INFO     [model_builder.py:34] [EPOCH:253]
+16-09-2020:05:39:53 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:39:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5026, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:39:55 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:39:55 INFO     [model_builder.py:34] [EPOCH:254]
+16-09-2020:05:40:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:05:40:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4951, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:40:44 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:40:44 INFO     [model_builder.py:34] [EPOCH:255]
+16-09-2020:05:41:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:05:41:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5007, Accuracy: 9237/10000 (92.37%)
+
+16-09-2020:05:41:33 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:41:33 INFO     [model_builder.py:34] [EPOCH:256]
+16-09-2020:05:42:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:05:42:22 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4942, Accuracy: 9243/10000 (92.43%)
+
+16-09-2020:05:42:22 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:42:22 INFO     [model_builder.py:34] [EPOCH:257]
+16-09-2020:05:43:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:43:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4973, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:43:10 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:43:10 INFO     [model_builder.py:34] [EPOCH:258]
+16-09-2020:05:43:57 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49982/50000 (99.96%)
+
+16-09-2020:05:44:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4993, Accuracy: 9235/10000 (92.35%)
+
+16-09-2020:05:44:00 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:44:00 INFO     [model_builder.py:34] [EPOCH:259]
+16-09-2020:05:44:46 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:05:44:48 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4959, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:44:48 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:44:48 INFO     [model_builder.py:34] [EPOCH:260]
+16-09-2020:05:45:35 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:05:45:37 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4945, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:05:45:37 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:45:37 INFO     [model_builder.py:34] [EPOCH:261]
+16-09-2020:05:46:24 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:05:46:26 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4961, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:05:46:26 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:46:26 INFO     [model_builder.py:34] [EPOCH:262]
+16-09-2020:05:47:12 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:47:15 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4937, Accuracy: 9247/10000 (92.47%)
+
+16-09-2020:05:47:15 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:47:15 INFO     [model_builder.py:34] [EPOCH:263]
+16-09-2020:05:48:01 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:05:48:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4942, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:05:48:04 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:48:04 INFO     [model_builder.py:34] [EPOCH:264]
+16-09-2020:05:48:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:05:48:53 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4956, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:48:53 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:48:53 INFO     [model_builder.py:34] [EPOCH:265]
+16-09-2020:05:49:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49994/50000 (99.99%)
+
+16-09-2020:05:49:42 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4988, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:49:42 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:49:42 INFO     [model_builder.py:34] [EPOCH:266]
+16-09-2020:05:50:28 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:50:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5018, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:05:50:30 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:50:30 INFO     [model_builder.py:34] [EPOCH:267]
+16-09-2020:05:51:17 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49993/50000 (99.99%)
+
+16-09-2020:05:51:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5011, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:51:19 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:51:19 INFO     [model_builder.py:34] [EPOCH:268]
+16-09-2020:05:52:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:52:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4966, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:05:52:08 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:52:08 INFO     [model_builder.py:34] [EPOCH:269]
+16-09-2020:05:52:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49980/50000 (99.96%)
+
+16-09-2020:05:52:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4946, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:05:52:57 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:52:57 INFO     [model_builder.py:34] [EPOCH:270]
+16-09-2020:05:53:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:05:53:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4947, Accuracy: 9242/10000 (92.42%)
+
+16-09-2020:05:53:46 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:53:46 INFO     [model_builder.py:34] [EPOCH:271]
+16-09-2020:05:54:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:05:54:35 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5008, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:54:35 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:54:35 INFO     [model_builder.py:34] [EPOCH:272]
+16-09-2020:05:55:21 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:05:55:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4970, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:05:55:23 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:55:23 INFO     [model_builder.py:34] [EPOCH:273]
+16-09-2020:05:56:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49993/50000 (99.99%)
+
+16-09-2020:05:56:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4951, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:05:56:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:56:13 INFO     [model_builder.py:34] [EPOCH:274]
+16-09-2020:05:56:59 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:05:57:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5003, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:05:57:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:57:02 INFO     [model_builder.py:34] [EPOCH:275]
+16-09-2020:05:57:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:05:57:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4991, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:05:57:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:57:51 INFO     [model_builder.py:34] [EPOCH:276]
+16-09-2020:05:58:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:05:58:39 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4956, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:05:58:39 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:58:39 INFO     [model_builder.py:34] [EPOCH:277]
+16-09-2020:05:59:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:05:59:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4951, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:05:59:28 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:05:59:28 INFO     [model_builder.py:34] [EPOCH:278]
+16-09-2020:06:00:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:00:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5005, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:00:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:00:17 INFO     [model_builder.py:34] [EPOCH:279]
+16-09-2020:06:01:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:06:01:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4971, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:01:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:01:06 INFO     [model_builder.py:34] [EPOCH:280]
+16-09-2020:06:01:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:01:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5004, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:06:01:55 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:01:55 INFO     [model_builder.py:34] [EPOCH:281]
+16-09-2020:06:02:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:02:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4954, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:06:02:44 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:02:44 INFO     [model_builder.py:34] [EPOCH:282]
+16-09-2020:06:03:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:03:33 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5000, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:03:33 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:03:33 INFO     [model_builder.py:34] [EPOCH:283]
+16-09-2020:06:04:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:04:22 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4930, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:04:22 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:04:22 INFO     [model_builder.py:34] [EPOCH:284]
+16-09-2020:06:05:08 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:05:11 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4991, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:05:11 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:05:11 INFO     [model_builder.py:34] [EPOCH:285]
+16-09-2020:06:05:57 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:06:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4947, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:06:00 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:06:00 INFO     [model_builder.py:34] [EPOCH:286]
+16-09-2020:06:06:46 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:06:48 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4979, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:06:48 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:06:48 INFO     [model_builder.py:34] [EPOCH:287]
+16-09-2020:06:07:35 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:07:37 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4985, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:07:37 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:07:37 INFO     [model_builder.py:34] [EPOCH:288]
+16-09-2020:06:08:23 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:08:26 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4996, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:08:26 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:08:26 INFO     [model_builder.py:34] [EPOCH:289]
+16-09-2020:06:09:12 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:09:14 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4997, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:06:09:14 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:09:14 INFO     [model_builder.py:34] [EPOCH:290]
+16-09-2020:06:10:01 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0013, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:06:10:03 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5034, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:10:03 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:10:03 INFO     [model_builder.py:34] [EPOCH:291]
+16-09-2020:06:10:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0012, Accuracy: 49978/50000 (99.96%)
+
+16-09-2020:06:10:52 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4945, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:06:10:52 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:10:52 INFO     [model_builder.py:34] [EPOCH:292]
+16-09-2020:06:11:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:06:11:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4954, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:11:41 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:11:41 INFO     [model_builder.py:34] [EPOCH:293]
+16-09-2020:06:12:27 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:12:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4990, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:06:12:30 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:12:30 INFO     [model_builder.py:34] [EPOCH:294]
+16-09-2020:06:13:16 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49995/50000 (99.99%)
+
+16-09-2020:06:13:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5030, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:13:19 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:13:19 INFO     [model_builder.py:34] [EPOCH:295]
+16-09-2020:06:14:05 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:14:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5033, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:06:14:08 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:14:08 INFO     [model_builder.py:34] [EPOCH:296]
+16-09-2020:06:14:54 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:14:56 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5018, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:14:56 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:14:56 INFO     [model_builder.py:34] [EPOCH:297]
+16-09-2020:06:15:43 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:15:45 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4953, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:15:45 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:15:45 INFO     [model_builder.py:34] [EPOCH:298]
+16-09-2020:06:16:32 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:06:16:34 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4988, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:16:34 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:16:34 INFO     [model_builder.py:34] [EPOCH:299]
+16-09-2020:06:17:20 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:17:23 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4962, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:17:23 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:17:23 INFO     [model_builder.py:34] [EPOCH:300]
+16-09-2020:06:18:09 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:18:12 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5000, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:18:12 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:18:12 INFO     [model_builder.py:34] [EPOCH:301]
+16-09-2020:06:18:58 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:19:00 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4976, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:19:00 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:19:00 INFO     [model_builder.py:34] [EPOCH:302]
+16-09-2020:06:19:47 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:19:49 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4935, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:19:49 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:19:49 INFO     [model_builder.py:34] [EPOCH:303]
+16-09-2020:06:20:36 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:20:38 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5007, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:20:38 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:20:38 INFO     [model_builder.py:34] [EPOCH:304]
+16-09-2020:06:21:24 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0007, Accuracy: 49993/50000 (99.99%)
+
+16-09-2020:06:21:27 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4965, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:06:21:27 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:21:27 INFO     [model_builder.py:34] [EPOCH:305]
+16-09-2020:06:22:13 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:22:16 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4983, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:22:16 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:22:16 INFO     [model_builder.py:34] [EPOCH:306]
+16-09-2020:06:23:02 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:23:04 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4978, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:23:04 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:23:04 INFO     [model_builder.py:34] [EPOCH:307]
+16-09-2020:06:23:50 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:06:23:53 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4965, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:23:53 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:23:53 INFO     [model_builder.py:34] [EPOCH:308]
+16-09-2020:06:24:39 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:24:41 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4991, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:24:41 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:24:41 INFO     [model_builder.py:34] [EPOCH:309]
+16-09-2020:06:25:28 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:25:30 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4999, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:06:25:30 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:25:30 INFO     [model_builder.py:34] [EPOCH:310]
+16-09-2020:06:26:17 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:26:19 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4990, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:26:19 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:26:19 INFO     [model_builder.py:34] [EPOCH:311]
+16-09-2020:06:27:06 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:06:27:08 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4986, Accuracy: 9246/10000 (92.46%)
+
+16-09-2020:06:27:08 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:27:08 INFO     [model_builder.py:34] [EPOCH:312]
+16-09-2020:06:27:55 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:27:57 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5023, Accuracy: 9242/10000 (92.42%)
+
+16-09-2020:06:27:57 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:27:57 INFO     [model_builder.py:34] [EPOCH:313]
+16-09-2020:06:28:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:28:46 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4938, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:06:28:46 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:28:46 INFO     [model_builder.py:34] [EPOCH:314]
+16-09-2020:06:29:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49984/50000 (99.97%)
+
+16-09-2020:06:29:35 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4964, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:06:29:35 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:29:35 INFO     [model_builder.py:34] [EPOCH:315]
+16-09-2020:06:30:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:30:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5016, Accuracy: 9258/10000 (92.58%)
+
+16-09-2020:06:30:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:30:24 INFO     [model_builder.py:34] [EPOCH:316]
+16-09-2020:06:31:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:31:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5011, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:31:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:31:13 INFO     [model_builder.py:34] [EPOCH:317]
+16-09-2020:06:32:00 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:32:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5001, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:32:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:32:02 INFO     [model_builder.py:34] [EPOCH:318]
+16-09-2020:06:32:48 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:32:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4971, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:32:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:32:51 INFO     [model_builder.py:34] [EPOCH:319]
+16-09-2020:06:33:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:33:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4923, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:33:40 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:33:40 INFO     [model_builder.py:34] [EPOCH:320]
+16-09-2020:06:34:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:34:28 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4978, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:34:28 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:34:28 INFO     [model_builder.py:34] [EPOCH:321]
+16-09-2020:06:35:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:35:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4984, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:35:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:35:17 INFO     [model_builder.py:34] [EPOCH:322]
+16-09-2020:06:36:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:36:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4992, Accuracy: 9259/10000 (92.59%)
+
+16-09-2020:06:36:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:36:06 INFO     [model_builder.py:34] [EPOCH:323]
+16-09-2020:06:36:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:36:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5047, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:36:55 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:36:55 INFO     [model_builder.py:34] [EPOCH:324]
+16-09-2020:06:37:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:37:43 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4917, Accuracy: 9261/10000 (92.61%)
+
+16-09-2020:06:37:43 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:37:43 INFO     [model_builder.py:34] [EPOCH:325]
+16-09-2020:06:38:29 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:38:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5005, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:06:38:32 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:38:32 INFO     [model_builder.py:34] [EPOCH:326]
+16-09-2020:06:39:18 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:39:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4970, Accuracy: 9257/10000 (92.57%)
+
+16-09-2020:06:39:21 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:39:21 INFO     [model_builder.py:34] [EPOCH:327]
+16-09-2020:06:40:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:06:40:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4996, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:06:40:10 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:40:10 INFO     [model_builder.py:34] [EPOCH:328]
+16-09-2020:06:40:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0007, Accuracy: 49994/50000 (99.99%)
+
+16-09-2020:06:40:59 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5019, Accuracy: 9244/10000 (92.44%)
+
+16-09-2020:06:40:59 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:40:59 INFO     [model_builder.py:34] [EPOCH:329]
+16-09-2020:06:41:45 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:41:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4920, Accuracy: 9248/10000 (92.48%)
+
+16-09-2020:06:41:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:41:47 INFO     [model_builder.py:34] [EPOCH:330]
+16-09-2020:06:42:34 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:42:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4988, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:42:36 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:42:36 INFO     [model_builder.py:34] [EPOCH:331]
+16-09-2020:06:43:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49981/50000 (99.96%)
+
+16-09-2020:06:43:25 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4991, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:43:25 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:43:25 INFO     [model_builder.py:34] [EPOCH:332]
+16-09-2020:06:44:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:44:14 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4938, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:06:44:14 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:44:14 INFO     [model_builder.py:34] [EPOCH:333]
+16-09-2020:06:45:00 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49990/50000 (99.98%)
+
+16-09-2020:06:45:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4976, Accuracy: 9252/10000 (92.52%)
+
+16-09-2020:06:45:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:45:02 INFO     [model_builder.py:34] [EPOCH:334]
+16-09-2020:06:45:49 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0007, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:45:51 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4943, Accuracy: 9249/10000 (92.49%)
+
+16-09-2020:06:45:51 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:45:51 INFO     [model_builder.py:34] [EPOCH:335]
+16-09-2020:06:46:37 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49985/50000 (99.97%)
+
+16-09-2020:06:46:40 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5022, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:46:40 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:46:40 INFO     [model_builder.py:34] [EPOCH:336]
+16-09-2020:06:47:26 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:47:29 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4979, Accuracy: 9258/10000 (92.58%)
+
+16-09-2020:06:47:29 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:47:29 INFO     [model_builder.py:34] [EPOCH:337]
+16-09-2020:06:48:15 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:48:17 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4999, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:48:17 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:48:17 INFO     [model_builder.py:34] [EPOCH:338]
+16-09-2020:06:49:03 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49989/50000 (99.98%)
+
+16-09-2020:06:49:06 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4934, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:06:49:06 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:49:06 INFO     [model_builder.py:34] [EPOCH:339]
+16-09-2020:06:49:52 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:49:55 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4940, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:49:55 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:49:55 INFO     [model_builder.py:34] [EPOCH:340]
+16-09-2020:06:50:41 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:50:44 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4973, Accuracy: 9254/10000 (92.54%)
+
+16-09-2020:06:50:44 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:50:44 INFO     [model_builder.py:34] [EPOCH:341]
+16-09-2020:06:51:30 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:51:32 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5011, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:51:32 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:51:32 INFO     [model_builder.py:34] [EPOCH:342]
+16-09-2020:06:52:19 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49992/50000 (99.98%)
+
+16-09-2020:06:52:21 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4955, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:52:21 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:52:21 INFO     [model_builder.py:34] [EPOCH:343]
+16-09-2020:06:53:07 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0011, Accuracy: 49983/50000 (99.97%)
+
+16-09-2020:06:53:10 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4956, Accuracy: 9256/10000 (92.56%)
+
+16-09-2020:06:53:10 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:53:10 INFO     [model_builder.py:34] [EPOCH:344]
+16-09-2020:06:53:56 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0009, Accuracy: 49987/50000 (99.97%)
+
+16-09-2020:06:53:58 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4997, Accuracy: 9253/10000 (92.53%)
+
+16-09-2020:06:53:58 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:53:58 INFO     [model_builder.py:34] [EPOCH:345]
+16-09-2020:06:54:44 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0007, Accuracy: 49995/50000 (99.99%)
+
+16-09-2020:06:54:47 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4995, Accuracy: 9250/10000 (92.50%)
+
+16-09-2020:06:54:47 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:54:47 INFO     [model_builder.py:34] [EPOCH:346]
+16-09-2020:06:55:33 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:55:36 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4967, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:55:36 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:55:36 INFO     [model_builder.py:34] [EPOCH:347]
+16-09-2020:06:56:22 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0008, Accuracy: 49991/50000 (99.98%)
+
+16-09-2020:06:56:24 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5027, Accuracy: 9255/10000 (92.55%)
+
+16-09-2020:06:56:24 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:56:24 INFO     [model_builder.py:34] [EPOCH:348]
+16-09-2020:06:57:11 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49988/50000 (99.98%)
+
+16-09-2020:06:57:13 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.4969, Accuracy: 9251/10000 (92.51%)
+
+16-09-2020:06:57:13 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:57:13 INFO     [model_builder.py:34] [EPOCH:349]
+16-09-2020:06:58:00 INFO     [trainer.py:23] 
+Train set: Average loss: 0.0010, Accuracy: 49986/50000 (99.97%)
+
+16-09-2020:06:58:02 INFO     [evaluator.py:25] 
+Test set: Average loss: 0.5039, Accuracy: 9261/10000 (92.61%)
+
+16-09-2020:06:58:02 INFO     [model_builder.py:42] best_test_accuracy 92.65
+16-09-2020:06:58:02 INFO     [base_orchestrator.py:17] 
+results : {'resnet18': [[40.222, 50.092, 59.342, 65.268, 66.762, 72.198, 73.9, 75.738, 79.678, 82.174, 84.182, 83.192, 85.386, 86.798, 86.558, 86.742, 89.004, 89.168, 89.668, 91.116, 91.674, 91.052, 92.206, 93.558, 93.782, 93.146, 93.582, 94.618, 94.8, 94.24, 94.832, 95.204, 94.548, 95.946, 96.034, 95.892, 96.67, 96.712, 96.786, 96.676, 96.948, 97.074, 97.364, 97.73, 98.082, 97.76, 97.826, 97.64, 97.86, 98.19, 98.092, 97.938, 98.392, 98.17, 98.392, 97.826, 98.004, 98.274, 98.884, 98.624, 98.804, 98.664, 98.558, 98.89, 98.812, 98.766, 98.64, 98.85, 98.84, 99.092, 98.85, 99.212, 99.036, 99.07, 99.192, 99.094, 99.184, 99.262, 99.3, 99.292, 99.358, 99.336, 99.35, 99.302, 99.44, 99.516, 99.48, 99.48, 99.448, 99.508, 99.22, 99.544, 99.218, 99.496, 99.52, 99.536, 99.586, 99.324, 99.6, 99.52, 99.536, 99.588, 99.6, 99.54, 99.552, 99.584, 99.436, 99.584, 99.582, 99.616, 99.636, 99.534, 99.616, 99.544, 99.692, 99.692, 99.592, 99.62, 99.62, 99.668, 99.7, 99.67, 99.658, 99.698, 99.742, 99.59, 99.704, 99.624, 99.742, 99.746, 99.704, 99.624, 99.782, 99.78, 99.618, 99.646, 99.708, 99.768, 99.764, 99.76, 99.832, 99.702, 99.72, 99.75, 99.802, 99.78, 99.716, 99.656, 99.712, 99.834, 99.854, 99.868, 99.888, 99.888, 99.912, 99.924, 99.898, 99.906, 99.9, 99.916, 99.918, 99.922, 99.93, 99.922, 99.91, 99.932, 99.936, 99.912, 99.95, 99.94, 99.946, 99.946, 99.93, 99.914, 99.948, 99.938, 99.958, 99.948, 99.938, 99.952, 99.96, 99.958, 99.954, 99.946, 99.954, 99.954, 99.966, 99.944, 99.954, 99.968, 99.966, 99.95, 99.95, 99.964, 99.95, 99.972, 99.966, 99.96, 99.954, 99.962, 99.97, 99.966, 99.97, 99.954, 99.966, 99.954, 99.962, 99.958, 99.962, 99.962, 99.974, 99.976, 99.96, 99.97, 99.95, 99.958, 99.962, 99.946, 99.966, 99.96, 99.98, 99.964, 99.97, 99.97, 99.974, 99.976, 99.952, 99.962, 99.962, 99.966, 99.964, 99.968, 99.964, 99.964, 99.968, 99.976, 99.976, 99.976, 99.978, 99.978, 99.956, 99.974, 99.966, 99.968, 99.976, 99.976, 99.97, 99.974, 99.984, 99.978, 99.962, 99.966, 99.986, 99.974, 99.98, 99.968, 99.978, 99.97, 99.964, 99.972, 99.984, 99.98, 99.976, 99.96, 99.98, 99.988, 99.976, 99.986, 99.974, 99.96, 99.974, 99.976, 99.97, 99.986, 99.978, 99.982, 99.972, 99.98, 99.982, 99.978, 99.976, 99.976, 99.976, 99.974, 99.982, 99.98, 99.976, 99.974, 99.976, 99.974, 99.966, 99.956, 99.978, 99.982, 99.99, 99.974, 99.972, 99.98, 99.968, 99.982, 99.98, 99.984, 99.982, 99.976, 99.986, 99.984, 99.976, 99.978, 99.982, 99.972, 99.982, 99.978, 99.984, 99.982, 99.968, 99.98, 99.974, 99.982, 99.982, 99.976, 99.974, 99.972, 99.974, 99.974, 99.976, 99.972, 99.974, 99.97, 99.988, 99.982, 99.98, 99.962, 99.976, 99.98, 99.984, 99.97, 99.984, 99.976, 99.978, 99.972, 99.982, 99.976, 99.984, 99.966, 99.974, 99.99, 99.972, 99.982, 99.976, 99.972], [1.6155797338867188, 1.3652204518127442, 1.1090286651611327, 0.9845147575378418, 0.9339604643249512, 0.7779282623291016, 0.7562273425292969, 0.7265626556396484, 0.5779643853759766, 0.5093557940673828, 0.44376762840270995, 0.47907884212493895, 0.4105500461578369, 0.38065889892578125, 0.3907965531158447, 0.3740323083114624, 0.3108501432418823, 0.30583225551605225, 0.2928897172546387, 0.25252584857940674, 0.23626019653320313, 0.2546889650917053, 0.22014843954086305, 0.18339911222457886, 0.17554634167671204, 0.19445407242774965, 0.17650981345176697, 0.15238113074302673, 0.14196583404541016, 0.15945020323753356, 0.14344570350646974, 0.13417926109313966, 0.1493896607685089, 0.11583865754127502, 0.10997350353240967, 0.11488822700023651, 0.09788515010595322, 0.09297232745170593, 0.09162463906764984, 0.09337785349369049, 0.08358978779315948, 0.08060643782615662, 0.07273587093830108, 0.0640212969994545, 0.05766935307741165, 0.06512913519382477, 0.0622771376991272, 0.06664469313144684, 0.06214904832243919, 0.05296087280035019, 0.05440434557676315, 0.05968656279325485, 0.044290202453136446, 0.05111177029371262, 0.04482180856227875, 0.06154698515415192, 0.05500795698523522, 0.04893579443335533, 0.03414393440395594, 0.03995162164628506, 0.034734966813325885, 0.03789910226225853, 0.04207759240746498, 0.0319747832942009, 0.03391252129226923, 0.03541756852000952, 0.03765982310831547, 0.03265342653870583, 0.0327098033118248, 0.025833159525990485, 0.03208454399287701, 0.02231811118811369, 0.027892948318719864, 0.026291387959718703, 0.022713804944306613, 0.02584626312315464, 0.02487673941373825, 0.023159204149544237, 0.02024498315602541, 0.021060787288546563, 0.018908728100806474, 0.01931636337161064, 0.019007597187906504, 0.01979773874089122, 0.017640403899550437, 0.01443942155636847, 0.014829027486592532, 0.014761359732374548, 0.017557694758325814, 0.014341336255669595, 0.022786547148302198, 0.013878370409682393, 0.021987250621244313, 0.015053332495763898, 0.015057846542745829, 0.013830708987377585, 0.011666998647451401, 0.020636357538923622, 0.012907450503706933, 0.01417698719896376, 0.012835433406941594, 0.012315139508023858, 0.011642669695280492, 0.013338735043331981, 0.01308726559959352, 0.013599622213467956, 0.01655576243236661, 0.01183687980465591, 0.012814023483134806, 0.011542213080115616, 0.011367993938103319, 0.012897081813104451, 0.012315913299098612, 0.013763466736264527, 0.009123202829174698, 0.009244140663221479, 0.011590526075642557, 0.011020592723749579, 0.011094711832478642, 0.009950354732722044, 0.008640452528372406, 0.009609044690579176, 0.009761684198901057, 0.009717949790172278, 0.007965973791256548, 0.011267405918557197, 0.008452930783964694, 0.010961198901049792, 0.007668224342986941, 0.00800932205721736, 0.008940089933760465, 0.010461867535933853, 0.006401099881846457, 0.006222792199850082, 0.010907364624198525, 0.010862350005153567, 0.008936974624432624, 0.0077826746601052585, 0.006847850502878427, 0.0070503081160970035, 0.004940050114654005, 0.008567878900524229, 0.008086348873088137, 0.007811788432262838, 0.006523184255938977, 0.006776447925874963, 0.008481563894711434, 0.00991069953918457, 0.008272279153894634, 0.004598550523109734, 0.0045243641326995565, 0.004396147626480088, 0.0038057115147449075, 0.0036529844732629134, 0.0029563882850762455, 0.002736067720623687, 0.002939940686104819, 0.0031948382100090386, 0.002914459978151135, 0.0026168918806314468, 0.0028275418936368076, 0.0025564206090988592, 0.0023378346067108213, 0.0025017234953935256, 0.0025879324285779147, 0.002489949743032921, 0.002148033957781736, 0.002757063147323206, 0.0018494503515399992, 0.0019789654012350366, 0.0018308276983257383, 0.0018808048046939075, 0.002096025255648419, 0.0021918878329358995, 0.0017694524821033702, 0.0021244470319664106, 0.0016549432499194518, 0.0018969674417050556, 0.0021622285532951354, 0.0019525778273981997, 0.0016175148657104, 0.0014529825463425368, 0.0016353127067256718, 0.001814679458842147, 0.0015428404107131063, 0.0017108596166130155, 0.0013075724559626543, 0.001822445719789248, 0.0018668365766433999, 0.0013259730344242417, 0.0014490682323044166, 0.0016433462350489573, 0.0016170063884463162, 0.0014300925000384449, 0.0015579820438381285, 0.0012349380147410557, 0.0014457991178985685, 0.0014886640775646084, 0.001677338962862268, 0.0013080405493220313, 0.0012750238198647275, 0.0014627084141667001, 0.0011650543983536773, 0.0014629930209647864, 0.001328215737636201, 0.001502426663984079, 0.0012343447059113533, 0.0016351473129843361, 0.0013021681821439415, 0.0013912056554481386, 0.001089428177634254, 0.0011195859431370628, 0.001380524252965115, 0.001344401730641257, 0.001500803350880742, 0.00139819248434389, 0.0016640481844334863, 0.0017049959130003118, 0.0011830507107870654, 0.0014266616259980946, 0.001048687795442529, 0.0012576710303896107, 0.0011776866323826834, 0.0011753538360935636, 0.001115959884491749, 0.0011557299004332161, 0.001630508403244894, 0.0010865784812613855, 0.001370992554668337, 0.0012949384562601334, 0.0012295748099940829, 0.0013241128947027027, 0.0012065872033243067, 0.0013273560802964494, 0.0012216348942602053, 0.0011467382614128291, 0.001093894811819773, 0.0010805412927945145, 0.0010654767240560613, 0.0011062116984813474, 0.001393197484506527, 0.0011460473611205817, 0.0011272219771915116, 0.001217189102540724, 0.0011236754672648386, 0.0011929936782782897, 0.001118840864042286, 0.0011062845075153745, 0.000883422456025146, 0.0009833265022165141, 0.00117912086985074, 0.0011554634702275507, 0.000806788104919251, 0.0009145165259041824, 0.0008209515476296656, 0.0011015559034468607, 0.0009583959922939539, 0.0009582472568959929, 0.0012480701283900998, 0.0009561729069449939, 0.0009081533171772026, 0.0010041455237008632, 0.001150608125514118, 0.001194972285355907, 0.0008977540278295055, 0.0007733232812210918, 0.0008799928484950214, 0.0009402462878613732, 0.0010193945293861908, 0.0011586696396465412, 0.001082285720363725, 0.0010382422080566175, 0.0011056962777860463, 0.0007960494689666666, 0.0008523470464255661, 0.0007502359446440824, 0.0010892181881424039, 0.0008616251983842812, 0.0008609397537028417, 0.000979051171351457, 0.0010075627590925432, 0.0008897305176057853, 0.000979232229006011, 0.0010587671353062614, 0.0008010513657843694, 0.000950559213811066, 0.0010273997415823396, 0.0009187168149882928, 0.0009505128298408817, 0.0008428059636813122, 0.00125227960516233, 0.0012198969802632929, 0.0009708714762877207, 0.0008617561420216225, 0.0007906571500771679, 0.0008908908029971644, 0.001036010312665021, 0.0009575143982842565, 0.000976765687657753, 0.0007591319711506367, 0.0008478846069960855, 0.0008153767387708649, 0.0009194050618913025, 0.0009414739356795326, 0.0007432547817891464, 0.0008766583348286804, 0.0009091466645500622, 0.0010445346595346927, 0.0007515740883140825, 0.0011095018901885487, 0.000898405267263297, 0.0008258092566812411, 0.0008640553710190579, 0.0007791281194495968, 0.0010741214961127845, 0.0007538776574056829, 0.0010389075330272317, 0.0008698484107432887, 0.0008184758686670102, 0.0009437377589964307, 0.0008823879165260587, 0.0009569382792583201, 0.0008511511719343253, 0.0008260899189230985, 0.0008371066312422045, 0.0008740763966180384, 0.0007967229529586621, 0.0008644854947528802, 0.0006682271717092954, 0.0009412699135160074, 0.0008857602535095065, 0.0011123330487380735, 0.0009130024728004355, 0.0008911090373736806, 0.0006508783298544586, 0.0010878776733903215, 0.0008551117759686895, 0.0009061037354753353, 0.0008423458331939765, 0.0010376481673750094, 0.0009133505377126857, 0.0008787349329038989, 0.0007688908422295935, 0.001134369604755193, 0.0008781483518215828, 0.0006956573053076863, 0.0010304269352706616, 0.0008478615742432884, 0.0010149592213623691, 0.001020064252235461], [41.35, 50.28, 59.01, 65.66, 67.99, 72.18, 74.48, 76.57, 79.59, 81.51, 83.28, 81.97, 84.51, 85.37, 84.28, 84.21, 86.67, 86.78, 86.09, 88.2, 88.61, 87.96, 88.38, 88.88, 88.88, 88.89, 88.6, 89.9, 89.72, 88.63, 89.71, 89.64, 89.33, 90.12, 90.09, 89.8, 90.49, 90.4, 90.44, 90.26, 90.59, 90.5, 90.92, 90.53, 90.7, 90.9, 90.39, 90.08, 90.74, 90.94, 90.91, 90.18, 90.98, 90.5, 90.73, 90.55, 90.84, 91.18, 91.33, 91.22, 91.29, 90.89, 90.89, 91.21, 91.25, 91.37, 90.63, 91.16, 91.46, 91.45, 91.46, 91.71, 91.43, 91.3, 91.43, 91.52, 91.14, 91.43, 91.48, 91.63, 91.65, 91.45, 91.66, 91.56, 91.63, 91.76, 92.01, 91.5, 91.85, 91.93, 91.32, 92.02, 91.85, 91.87, 91.76, 91.88, 92.08, 91.13, 92.22, 92.18, 91.61, 92.16, 92.2, 91.93, 91.96, 91.91, 91.67, 91.66, 91.75, 91.94, 92.07, 91.89, 91.91, 91.63, 92.51, 91.92, 91.88, 92.16, 91.86, 91.86, 92.18, 91.92, 91.95, 91.99, 91.96, 91.69, 92.02, 92.06, 92.65, 92.6, 92.09, 91.98, 92.28, 92.04, 92.12, 91.85, 91.8, 92.01, 91.87, 91.99, 92.06, 91.93, 91.99, 91.8, 92.19, 92.03, 92.19, 91.89, 91.86, 91.97, 91.96, 92.05, 92.02, 92.05, 92.16, 92.2, 92.09, 92.24, 92.25, 92.3, 92.28, 92.33, 92.33, 92.27, 92.35, 92.31, 92.35, 92.31, 92.37, 92.41, 92.4, 92.39, 92.41, 92.44, 92.32, 92.32, 92.38, 92.39, 92.45, 92.39, 92.4, 92.36, 92.33, 92.38, 92.39, 92.31, 92.49, 92.47, 92.48, 92.45, 92.39, 92.42, 92.52, 92.34, 92.37, 92.46, 92.42, 92.31, 92.42, 92.43, 92.46, 92.44, 92.47, 92.39, 92.49, 92.46, 92.41, 92.44, 92.47, 92.44, 92.4, 92.49, 92.46, 92.46, 92.51, 92.52, 92.47, 92.4, 92.49, 92.54, 92.41, 92.48, 92.45, 92.54, 92.43, 92.53, 92.51, 92.51, 92.41, 92.5, 92.5, 92.5, 92.39, 92.45, 92.52, 92.52, 92.46, 92.52, 92.46, 92.54, 92.47, 92.49, 92.49, 92.48, 92.47, 92.47, 92.45, 92.5, 92.49, 92.43, 92.53, 92.51, 92.53, 92.47, 92.5, 92.37, 92.43, 92.49, 92.35, 92.49, 92.57, 92.48, 92.47, 92.48, 92.5, 92.5, 92.53, 92.5, 92.44, 92.49, 92.42, 92.52, 92.57, 92.46, 92.52, 92.53, 92.5, 92.57, 92.5, 92.52, 92.49, 92.48, 92.51, 92.51, 92.56, 92.55, 92.52, 92.5, 92.52, 92.46, 92.52, 92.53, 92.52, 92.49, 92.5, 92.48, 92.56, 92.56, 92.56, 92.57, 92.55, 92.55, 92.57, 92.5, 92.53, 92.56, 92.52, 92.52, 92.5, 92.48, 92.57, 92.46, 92.42, 92.49, 92.48, 92.58, 92.52, 92.56, 92.5, 92.57, 92.56, 92.57, 92.59, 92.51, 92.61, 92.53, 92.57, 92.53, 92.44, 92.48, 92.55, 92.5, 92.54, 92.52, 92.49, 92.5, 92.58, 92.51, 92.54, 92.5, 92.54, 92.5, 92.51, 92.56, 92.53, 92.5, 92.55, 92.55, 92.51, 92.61], [1.6002440036773682, 1.3637541652679444, 1.122496475982666, 0.9916095047950745, 0.9241506803512574, 0.8097044280052185, 0.7635410425186158, 0.7015700113296509, 0.6118283900260926, 0.5546462029457092, 0.48975875835418703, 0.5206001238822937, 0.45276572380065916, 0.4332347784996033, 0.4913124729156494, 0.47804171590805056, 0.3996565265655518, 0.4120186575740576, 0.42103792845010757, 0.3781026517868042, 0.3608979164838791, 0.3847664947509766, 0.3722249032735825, 0.3436183381319046, 0.3480457203745842, 0.38199853663444516, 0.37564264919757845, 0.34481164691448213, 0.3371317119598389, 0.37459943928718564, 0.35902882919311524, 0.3689116663455963, 0.40393719611167905, 0.35331238889694216, 0.3640169636726379, 0.39237969188690186, 0.36078747720718385, 0.35763236780166624, 0.3666117311000824, 0.38182217741012575, 0.3656055517911911, 0.39472685597352686, 0.3472842577457428, 0.40236812858581544, 0.3864659935474396, 0.3872258269309998, 0.39858513751029967, 0.4256270893096924, 0.4164839302042499, 0.39491787037849424, 0.40356290691848845, 0.44310109167099, 0.3895274884700775, 0.42133205958604814, 0.4275642050743103, 0.442748348236084, 0.42970894527435305, 0.42184928102493285, 0.4198646369457245, 0.4275276225566864, 0.4208742258071899, 0.4257608214631677, 0.4162609549045563, 0.4516298224449158, 0.43575592470169067, 0.4414679579734802, 0.4774405455522239, 0.44306664485931396, 0.4414712538685184, 0.4420534257888794, 0.4452198508501053, 0.4216319538831711, 0.43296941261291505, 0.45342474555969237, 0.44291306352615356, 0.449690101146698, 0.46027855501174925, 0.45108736658096316, 0.4528598566055298, 0.44291152611374857, 0.4435308393478394, 0.45585258543491364, 0.45727177257537843, 0.44489598717689516, 0.4677279551506042, 0.4504254190498963, 0.44398099327087404, 0.47702207716703415, 0.4577018050193787, 0.4489691703796387, 0.48411723709106447, 0.4447233240127563, 0.4705564538955688, 0.45121953554153443, 0.4789312162399292, 0.4554515626081265, 0.4584567702293396, 0.48228504357337953, 0.46052383303642275, 0.4438074609041214, 0.46134672660827636, 0.4299877457618713, 0.460082214152813, 0.4631325495004654, 0.4838497913122177, 0.47833809138587674, 0.5062225881576539, 0.47109771020412444, 0.5046627959251404, 0.48191224444004477, 0.47427831597328185, 0.4924512774467468, 0.48634464458227156, 0.49936236066818235, 0.463576385140419, 0.4938975700378418, 0.5043308198057115, 0.4789623350583017, 0.49381520849466326, 0.5034647038459777, 0.4752401947975159, 0.48242675771713256, 0.4818876873016357, 0.48646080491542815, 0.5137816924571991, 0.5142843165874481, 0.5106329408168793, 0.507419432258606, 0.46321298313131665, 0.4738454917907715, 0.5062956875801087, 0.49233461809158324, 0.4870438451766968, 0.4992430195376277, 0.5346892502114177, 0.5204911134719848, 0.5378961399078369, 0.5249606122016907, 0.523647448348999, 0.5101089633032679, 0.5174965680122375, 0.5222468982696533, 0.49716467485427857, 0.5097866499900818, 0.504367268383503, 0.5045573281288147, 0.5231679471969605, 0.5345246664047241, 0.5228488333225251, 0.544263835811615, 0.5423200658321381, 0.5379812423706055, 0.5390893076896668, 0.5348419626712799, 0.5285354222200811, 0.5325612834018306, 0.5295753573417663, 0.5232853232860565, 0.5252590133011341, 0.5143170421600342, 0.5156034147450002, 0.5206707481384277, 0.5063935997009278, 0.5198754133701324, 0.5123927821397781, 0.5144199608802795, 0.5166762172698974, 0.5128922803141177, 0.5130136885643005, 0.5049778205096722, 0.5110129773558117, 0.5037298326030374, 0.5077987449645996, 0.5054889976501464, 0.5043928022741712, 0.5041605622291565, 0.5024714239396155, 0.5065213140487671, 0.5099069525718689, 0.5041151139736175, 0.5045081900596619, 0.5091186965942383, 0.5079846723556518, 0.5030230113983154, 0.5082928246259689, 0.5050587937355041, 0.504458274614811, 0.4987783289432526, 0.5033754172898829, 0.5039848876692354, 0.4994458773255348, 0.5033012260437012, 0.5065126094818115, 0.5021889297485351, 0.5012875652313232, 0.5000911418020725, 0.4924401082992554, 0.5002533953666687, 0.5029755922913551, 0.5007204961709678, 0.5006646733283997, 0.5039559561829082, 0.5037268901579198, 0.49749206417948005, 0.49861592688560485, 0.5015210085298022, 0.4947524384498596, 0.4970704421818256, 0.503240413570404, 0.5014245546340942, 0.4998767701629084, 0.5038405516028405, 0.4985026989936829, 0.5010758989833295, 0.49496920874118805, 0.504162864112854, 0.4958088150024414, 0.4907031253814697, 0.4990144828796387, 0.49823499314785, 0.49974944251775744, 0.49427323331832884, 0.5003503137588501, 0.4992194451093674, 0.4968342284679413, 0.4994637566566467, 0.49746156428456306, 0.5009931389793754, 0.49653634300231936, 0.49690578177422284, 0.4964125398159027, 0.49697835369110105, 0.49520286693572996, 0.49368781801611183, 0.4955414442181587, 0.492081582570076, 0.5012426206588745, 0.49844991245269776, 0.49706632122732697, 0.4989082829475403, 0.49399192600250247, 0.499608127617836, 0.4986194305419922, 0.494278391319135, 0.49835469851493835, 0.49028878307342527, 0.4886821178436279, 0.49873252844810484, 0.5043407167673111, 0.49778322315216067, 0.4954398931503296, 0.5005331241607666, 0.4961259419441223, 0.5026058487174822, 0.49514477751255037, 0.5007021752357483, 0.49419782571792603, 0.49728130869865417, 0.4992585096359253, 0.4958928731308202, 0.4945147864997387, 0.49605853490829466, 0.4936773470768705, 0.49422978296279907, 0.49564458603858946, 0.4988275800704956, 0.5017953913730336, 0.5010750581741333, 0.49660191898345946, 0.49460254793167113, 0.49472939596176146, 0.5007771946907044, 0.4969928770065308, 0.4951031653881073, 0.5003168713569641, 0.49910357200950384, 0.4956231808304787, 0.49507488050460813, 0.500536429977417, 0.49709819229841234, 0.5003631448626519, 0.4954243793487549, 0.5000476662880741, 0.49302969007492065, 0.49910639259815215, 0.4947288249015808, 0.49792629861831667, 0.49851753902435303, 0.4995585443479067, 0.49973024845123293, 0.5034127846650779, 0.49451574220657346, 0.49543590960502626, 0.49895245513916014, 0.5030110263541341, 0.5032692094326019, 0.501756610584259, 0.4953488002061844, 0.4987534576175021, 0.4961703248023987, 0.500008090209961, 0.497595471572876, 0.49354554938077927, 0.5007059649556875, 0.4964709421157837, 0.49832878856658935, 0.49780050468444825, 0.4965294972896576, 0.4991170044898987, 0.49994321308135986, 0.499010161781311, 0.49859759316444396, 0.5023359944218683, 0.4938433449745178, 0.4963987914085388, 0.5015745573997498, 0.5011041892766952, 0.5001261455309228, 0.49705874938964845, 0.49234700999222697, 0.49781843183636665, 0.4983688289806247, 0.4992128750085831, 0.5046542200088501, 0.4916610866069794, 0.5004808824539184, 0.4970121927857399, 0.4996062882423401, 0.5019387658596038, 0.4920229328373447, 0.4988120933532715, 0.49906497745513917, 0.4937784087896347, 0.4975861834526062, 0.4942630488522351, 0.5022497592802232, 0.4978881216049194, 0.4998597550630564, 0.4934244932174683, 0.49400891721233203, 0.4972594426630065, 0.5010594322293996, 0.49545883445739747, 0.495582569694519, 0.49970613737106323, 0.4995343474041671, 0.49670007572174074, 0.5027482861042023, 0.49686844952106474, 0.5039483748435974], ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+)]}
+
+16-09-2020:06:58:12 INFO     [base_orchestrator.py:19] 
+**** Ended training ****
+
+16-09-2020:06:58:12 INFO     [visualization_utils.py:7] 
+**** Started Plotting multigraph ****
+
+16-09-2020:06:58:12 INFO     [visualization_utils.py:21] 
+**** Ended Plotting multigraph ****
+
+16-09-2020:06:58:12 INFO     [visualization_utils.py:7] 
+**** Started Plotting multigraph ****
+
+16-09-2020:06:58:12 INFO     [visualization_utils.py:21] 
+**** Ended Plotting multigraph ****
+
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of plane : 95.23809523809524
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of car : 97.14285714285714
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of bird : 90.9090909090909
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of cat : 91.89189189189189
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of deer : 94.44444444444444
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of dog : 86.66666666666667
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of frog : 96.55172413793103
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of horse : 96.96969696969697
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of ship : 100.0
+16-09-2020:07:58:32 INFO     [base_orchestrator.py:38] Accuracy of truck : 90.47619047619048
