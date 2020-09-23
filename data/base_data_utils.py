@@ -1,8 +1,13 @@
 from torchvision import transforms
 from torchvision import datasets
+import numpy as np
+import matplotlib.pyplot as plt
+import torchvision
 
 from utils import logger_utils
 from data.data_loaders.base_data_loader import BaseDataLoader
+from data.data_transforms.base_data_transforms import UnNormalize
+from configs import basic_config
 
 logger = logger_utils.get_logger(__name__)
 
@@ -36,3 +41,13 @@ def get_data_stats(dataset_name=None, data_set_kind=None, datasets_location='./d
     logger.info(f' - mean: {torch.mean(exp_data)}')
     logger.info(f' - std: {torch.std(exp_data)}')
     logger.info(f' - var: {torch.var(exp_data)}')
+    
+def sample_data(data_loader, classes):
+  dataiter = iter(data_loader)
+  images, labels = dataiter.next()
+  # show images
+  unnorm_image_grid = UnNormalize(*basic_config.data['normalize_paras'])
+  unnorm_image_grid = unnorm_image_grid(torchvision.utils.make_grid(images))
+  plt.imshow(np.transpose(unnorm_image_grid, (1, 2, 0)))
+  # print labels
+  logger.info(' '.join('%5s' % classes[labels[j]] for j in range(4)))
