@@ -48,4 +48,4 @@ def generate_grad_cam_grid(configs, classes, test_loader, device, model, matched
   unnorm_image_grid = unnorm_image_grid(torchvision.utils.make_grid(images))
   plt.imshow(np.transpose(unnorm_image_grid, (1, 2, 0)))
   plt.show()
-  print(f"Prediction: {classes[predict[0]]}, Actual: {classes[label]}")
+  logger.info(f"Prediction: {classes[predict[0]]}, Actual: {classes[label]}")
