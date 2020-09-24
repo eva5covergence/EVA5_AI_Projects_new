@@ -11,6 +11,7 @@ img_augs = basic_config.data['img_augs']
 data_loader_args = basic_config.data['dataloader_args']
 data_kind = basic_config.data['data_kind']
 datasets_location = data_kind['datasets_location']
+agumentation_package = basic_config.agumentation_package
 
 class BaseDataLoader:
     def __init__(self, for_training=True, dataset_name='mnist'):
@@ -28,7 +29,11 @@ class BaseDataLoader:
             self.data_transforms = base_data_transforms.BaseDataTransforms(normalize_paras=normalize_paras, img_augs=img_augs)
         else:
             self.data_transforms = base_data_transforms.BaseDataTransforms(normalize_paras=normalize_paras, img_augs={})
-        self.data_transforms = self.data_transforms.tranform_data()
+        
+        if(agumentation_package == 'Albumentation'):
+            self.data_transforms = self.data_transforms.tranform_albumen_augumentation()
+        else:
+            self.data_transforms = self.data_transforms.tranform_data()
 
         if data_kind['dataset_type']=='open_datasets':
             if dataset_name =='mnist':
