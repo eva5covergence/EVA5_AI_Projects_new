@@ -48,6 +48,7 @@ def sample_data(data_loader, classes):
   # show images
   unnorm_image_grid = UnNormalize(*basic_config.data['normalize_paras'])
   unnorm_image_grid = unnorm_image_grid(torchvision.utils.make_grid(images))
+  plt.figure(figsize=(10,10))
   plt.imshow(np.transpose(unnorm_image_grid, (1, 2, 0)))
   # print labels
   logger.info(' '.join('%5s' % classes[labels[j]] for j in range(4)))
