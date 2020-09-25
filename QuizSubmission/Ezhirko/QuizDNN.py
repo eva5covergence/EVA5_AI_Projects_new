@@ -27,7 +27,7 @@ class Net(nn.Module):
         ) # output_size = 32
 
 
-        # TRANSITION BLOCK 1
+        # Maxpool1
         self.pool1 = nn.MaxPool2d(2, 2) # output_size = 16
         
         self.convblock3 = nn.Sequential(
@@ -58,7 +58,7 @@ class Net(nn.Module):
         ) # output_size = 16
 
 
-        # TRANSITION BLOCK 1
+        # Maxpool2
         self.pool2 = nn.MaxPool2d(2, 2) # output_size = 8
         
         self.convblock6 = nn.Sequential(
@@ -67,7 +67,7 @@ class Net(nn.Module):
             nn.BatchNorm2d(128)
         ) # output_size = 8
 
-        #Point wise convolution to increase the number of channel from 16 to 128 to support addition
+        #Point wise convolution to increase the number of channel from 64 to 128 to support addition
         self.pconvblock3 = nn.Sequential(
             nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(1, 1), padding=0, bias=False),
             nn.BatchNorm2d(128)
