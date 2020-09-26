@@ -1,0 +1,2 @@
+
+These are the code files that implement grid search to find the best hyperparameters for L1, L2 and L1 + L2 regularization for BatchNormalization and GhostBatchNormalization. The text file contains the logs that shows us the best lambda values for the given model with best validation accuracy.
