@@ -16,7 +16,7 @@ NAME = 'eva5_ai_projects'
 DESCRIPTION = 'eva5_ai_projects base packages to implement any AI project with pytorch framework underneath'
 URL = 'https://github.com/eva5covergence/EVA5_AI_Projects_new'
 EMAIL = 'nagapavan.kalepu@gmail.com'
-AUTHOR = '[Naga Pavan Kumar, Ezhirko, Varsha]'
+AUTHOR = '[Naga Pavan Kumar, Ezhirko]'
 REQUIRES_PYTHON = '>=3.0.0'
 VERSION = None
 
