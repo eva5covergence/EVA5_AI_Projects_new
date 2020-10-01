@@ -89,6 +89,19 @@ class BaseDataTransforms:
                                                
             if aug == 'HorizontalFlip':
                 self.img_aug_transforms.append(A.HorizontalFlip(p=0.5))
+            if aug == 'rotate':
+                rotate_limit = self.img_augs[aug]['rotate_limit']
+                self.img_aug_transforms.append(A.Rotate(limit=rotate_limit))
+            if aug == 'cutout':
+                num_holes=self.img_augs[aug]['num_holes']
+                max_h_size=self.img_augs[aug]['max_h_size']
+                max_w_size=self.img_augs[aug]['max_w_size']
+                fill_value = self.img_augs[aug]['fill_value']
+                always_apply=self.img_augs[aug]['always_apply']
+                p = self.img_augs[aug]['p']
+                self.img_aug_transforms.append(A.Cutout(num_holes=num_holes, max_h_size=max_h_size, max_w_size=max_w_size, 
+                fill_value=fill_value,always_apply=always_apply, p=p))
+                
 
         if self.img_aug_transforms:
             self.transforms_list.extend(self.img_aug_transforms)
