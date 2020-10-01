@@ -19,6 +19,14 @@ def plot_multigraph(lst_jobs,lst_jobsLegends,title, figsize=(10,8)):
     plt.legend()
     plt.show()
   logger.info("\n**** Ended Plotting multigraph ****\n")
+  
+def plot_LR_graph(lst_loss,lst_lr,title, figsize=(10,8)):
+  logger.info("\n**** Started Plotting Graph ****\n")
+  plt.figure(figsize=figsize)
+  plt.suptitle(title)
+  plt.plot(lst_lr, lst_loss)
+  plt.show()
+  logger.info("\n**** Ended Plotting multigraph ****\n")
 
 def plot_misclassified_images(model, device, test_loader, num_of_images = 25, figsize=(12,12)):
   logger.info("\n**** Started plot_misclassified_images ****\n")
