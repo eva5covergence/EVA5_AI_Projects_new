@@ -59,7 +59,7 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
   train_losses = []
   test_acc = []
   test_losses = []
-  learning_rate = []
+  learning_rates = []
   best_test_accuracy = 0
   scheduler = None
   best_model = None
@@ -77,7 +77,7 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
   for epoch in range(EPOCHS):
     logger.info(f"[EPOCH:{epoch}]")
     logger.info(f"\nCurrent LR: {ger_lr_scheduler.get_lr(optimizer)}\n")
-    learning_rate.append(ger_lr_scheduler.get_lr(optimizer))
+    learning_rates.append(ger_lr_scheduler.get_lr(optimizer))
     train_acc, train_losses = train(model, device, train_loader, optimizer, l1_lambda, train_acc, train_losses)
     test_acc, test_losses = test(model, device, test_loader, test_acc, test_losses)
     if scheduler:
@@ -87,4 +87,4 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
       best_model = model
     logger.info(f"best_test_accuracy {best_test_accuracy}")
     #print(f"best_test_accuracy {best_test_accuracy}")
-  return train_acc, train_losses, test_acc, test_losses, best_model,learning_rate
+  return train_acc, train_losses, test_acc, test_losses, best_model,learning_rates
