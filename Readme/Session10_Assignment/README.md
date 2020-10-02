@@ -85,3 +85,6 @@ The Trained model was made to do prediction on test data using test dataloader, 
 A custom Gradcam image visualization function is written which will display 25 misclassified images in a 5x5 image grid. The actual and predicted label will be printed above the gradcam image.
 
 ![](images/Missclassified.png)
+
+From the gradcam heat map overlay on the actual images we can see that the features which are used to classify is similar to features of predicted class as well. For example, lets take the image dog in 1st row 2nd column. The heatmap shows the dog's mouth area as the highly correlated feature identifier. Looking at the heatmap area, it also resembles like a feature of frog. So the model classified as frog. Many images are missclassified in the same fashion. 
+We could try to increase the probability of applying cutout so that network is able to learn more diversed features in that class. we can also try to increase the number of holes in the cutout so that model is able to generalize even better.
