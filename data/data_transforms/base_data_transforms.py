@@ -101,6 +101,33 @@ class BaseDataTransforms:
                 p = self.img_augs[aug]['p']
                 self.img_aug_transforms.append(A.Cutout(num_holes=num_holes, max_h_size=max_h_size, max_w_size=max_w_size, 
                 fill_value=fill_value,always_apply=always_apply, p=p))
+
+            if aug == 'PadIfNeeded':
+                min_height=self.img_augs[aug]['min_height']
+                min_width=self.img_augs[aug]['min_width']
+                border_mode=self.img_augs[aug]['border_mode']
+                value = self.img_augs[aug]['value']
+                p = self.img_augs[aug]['p']
+                self.img_aug_transforms.append(A.PadIfNeeded(min_height=min_height, min_width=min_width, 
+                                                border_mode=border_mode, value=value, p=p))
+            if aug == 'oneof_crop':
+                randomcrop=self.img_augs[aug]['randomcrop']
+                randomcrop_height=randomcrop['height']
+                randomcrop_width=randomcrop['width']
+                randomcrop_p=randomcrop['p']
+                centercrop=self.img_augs[aug]['centercrop']
+                centercrop_height=centercrop['height']
+                centercrop_width=centercrop['width']
+                centercrop_p=centercrop['p']
+                p = self.img_augs[aug]['p']
+                self.img_aug_transforms.append(A.OneOf([
+ 				                            A.RandomCrop(height=randomcrop_height, width=randomcrop_width, p=randomcrop_p),
+ 				                            A.CenterCrop(height=centercrop_height, width=centercrop_width, p=centercrop_p),], 
+                                             p=p))
+            if aug=='fliplr':
+                p = self.img_augs[aug]['p']
+                self.img_aug_transforms.append(A.IAAFliplr(p=p))
+
                 
 
         if self.img_aug_transforms:
