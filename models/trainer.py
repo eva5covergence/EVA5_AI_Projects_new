@@ -1,6 +1,7 @@
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
+from models.learning_rates import ger_lr_scheduler
 
 from utils import logger_utils
 logger = logger_utils.get_logger(__name__)
@@ -25,7 +26,7 @@ def get_current_train_acc(model, train_loader, device):
   train_acc = 100. * correct / len(train_loader.dataset)
   return train_acc, train_loss
 
-def train(model, device, train_loader, optimizer, lambda_l1=0, train_acc=[], train_losses=[]):
+def train(model, device, train_loader, optimizer, lambda_l1=0, train_acc=[], train_losses=[], epoch=0, scheduler=None, iteration=0):
   model.train()
   pbar = tqdm(train_loader)
   correct = 0
@@ -56,6 +57,11 @@ def train(model, device, train_loader, optimizer, lambda_l1=0, train_acc=[], tra
     # Backpropagation
     loss.backward()
     optimizer.step()
+    if scheduler:
+      #logger.info(f"\nCurrent LR: {ger_lr_scheduler.get_lr(optimizer)}\n")
+      iteration+=1
+      scheduler.step() # For CLR or OneCycleLR
+
 
     # Update pbar-tqdm
     
@@ -63,10 +69,16 @@ def train(model, device, train_loader, optimizer, lambda_l1=0, train_acc=[], tra
     correct += pred.eq(target.view_as(pred)).sum().item()
     processed += len(data)
 
-    pbar.set_description(desc= f'Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
+    if iteration:
+      pbar.set_description(desc= f'Epoch={epoch} Iteration={iteration} Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
+    else:
+      pbar.set_description(desc= f'Epoch={epoch} Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
     # logger.info(f'Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
     # print(f'Loss={loss.item()} Batch_id={batch_idx} Current_train_batch_accuracy={100*correct/processed:0.2f}')
   current_train_acc, current_train_loss = get_current_train_acc(model, train_loader, device)
   train_acc.append(current_train_acc)
   train_losses.append(current_train_loss)
-  return train_acc, train_losses
+  if scheduler:
+    return train_acc, train_losses, scheduler, optimizer, iteration
+  else:
+    return train_acc, train_losses
