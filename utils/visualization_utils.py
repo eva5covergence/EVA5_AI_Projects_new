@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 from utils import logger_utils
 logger = logger_utils.get_logger(__name__)
@@ -18,6 +19,7 @@ def plot_multigraph(lst_jobs,lst_jobsLegends,title, figsize=(10,8)):
       count += 1
     plt.legend()
     plt.show()
+    # plt.clf()
   logger.info("\n**** Ended Plotting multigraph ****\n")
   
 def plot_LR_graph(lst_loss,lst_lr,title, figsize=(10,8)):
@@ -26,6 +28,7 @@ def plot_LR_graph(lst_loss,lst_lr,title, figsize=(10,8)):
   plt.suptitle(title)
   plt.plot(lst_lr, lst_loss)
   plt.show()
+  # plt.clf()
   logger.info("\n**** Ended Plotting multigraph ****\n")
 
 def plot_misclassified_images(model, device, test_loader, num_of_images = 25, figsize=(12,12)):
@@ -59,3 +62,29 @@ def plot_misclassified_images(model, device, test_loader, num_of_images = 25, fi
       if num_images == num_of_images:
           break
   logger.info("\n**** Ended plot_misclassified_images ****\n")
+
+def get_clr(iter, lr_min, lr_max, step_size):
+  cycle = np.floor(1 + iter / (2 * step_size))
+  x = np.abs( iter/step_size - 2 * cycle + 1 )
+  lr_t = lr_min + (lr_max - lr_min) * (1 - x)
+  return lr_t
+
+def visualize_clr(num_cycles, step_size, lr_min, lr_max):
+  total_iters = step_size * 2 * num_cycles
+  x = np.linspace(0, total_iters, 1000)
+  y = np.array([get_clr(iter, lr_min, lr_max, step_size) for iter in x])
+  plt.figure(figsize=(12,6))
+  plt.plot(x, y)
+  plt.xlabel('Iterations')
+  plt.ylabel('Learning Rate')
+  plt.grid(b=None)
+  plt.show()
+
+if __name__ == "__main__":
+    pass
+  # 2 x step_size = 1 cycle
+#   num_cycles = 3
+#   step_size = 20
+#   lr_min = 0.1
+#   lr_max = 1.0
+#   visualize_clr(num_cycles, step_size, lr_min, lr_max)
