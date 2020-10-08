@@ -35,6 +35,8 @@ def get_lr_scheduler_paras():
       return basic_config.lr_scheduler['ReduceLROnPlateau']
     elif 'stepLR' in basic_config.lr_scheduler.keys():
       return basic_config.lr_scheduler['stepLR']
+    elif 'OneCycleLR' in basic_config.lr_scheduler.keys():
+      return basic_config.lr_scheduler['OneCycleLR']
   else:
     return use_scheduler
 
@@ -51,6 +53,8 @@ def select_lr_scheduler(optimizer, **lr_scheduler_paras):
     return ger_lr_scheduler.get_steplr_scheduler(optimizer, **lr_scheduler_paras)
   elif lr_scheduler_paras['name']=='ReduceLROnPlateau':
     return ger_lr_scheduler.get_reducelronplateau_scheduler(optimizer, **lr_scheduler_paras)
+  elif lr_scheduler_paras['name']=='OneCycleLR':
+    return ger_lr_scheduler.get_one_cycle_lr(optimizer, **lr_scheduler_paras)
   
   
 
@@ -61,6 +65,7 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
   test_losses = []
   learning_rates = []
   best_test_accuracy = 0
+  iteration=0
   scheduler = None
   best_model = None
   model = kwargs.get('model')
@@ -74,14 +79,20 @@ def build_model(EPOCHS, device, train_loader, test_loader, **kwargs):
     logger.info(f"LR Scheduler paras: {lr_scheduler_paras}")
     scheduler = select_lr_scheduler(optimizer, **lr_scheduler_paras) ## Selects the scheduler which is defined in configs
   l1_lambda = kwargs.get('l1_lambda', 0)
-  for epoch in range(EPOCHS):
+  for epoch in range(1,EPOCHS+1):
     logger.info(f"[EPOCH:{epoch}]")
     logger.info(f"\nCurrent LR: {ger_lr_scheduler.get_lr(optimizer)}\n")
     learning_rates.append(ger_lr_scheduler.get_lr(optimizer))
-    train_acc, train_losses = train(model, device, train_loader, optimizer, l1_lambda, train_acc, train_losses)
+    if scheduler and lr_scheduler_paras['name']=='OneCycleLR':
+      train_acc, train_losses, scheduler, optimizer, iteration = train(model, device, train_loader, optimizer, l1_lambda, train_acc, train_losses, epoch, scheduler,iteration)
+    else:
+      train_acc, train_losses = train(model, device, train_loader, optimizer, l1_lambda, train_acc, train_losses, epoch)
     test_acc, test_losses = test(model, device, test_loader, test_acc, test_losses)
     if scheduler:
-      scheduler.step(test_losses[-1]) if lr_scheduler_paras['name']=='ReduceLROnPlateau' else scheduler.step()
+      if lr_scheduler_paras['name']=='ReduceLROnPlateau':
+        scheduler.step(test_losses[-1])
+      elif lr_scheduler_paras['name']=='stepLR':
+        scheduler.step() 
     if test_acc[-1] > best_test_accuracy:
       best_test_accuracy = test_acc[-1]
       best_model = model
