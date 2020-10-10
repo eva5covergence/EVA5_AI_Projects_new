@@ -1,1 +1,16 @@
 
+## Session 11 Assignment - Team Submission
+Team Members
+1. S.A.Ezhirko
+2. Naga Pavan Kumar Kalepu
+
+**CLR(Cyclic Learning Rate) Curve:** <br />
+
+![](images/clr.png)
+
+**Modified Version of ResNet model summary:** <br />
+
+![](images/model.png)
+
+
+
