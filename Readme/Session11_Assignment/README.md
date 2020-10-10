@@ -18,7 +18,7 @@ Team Members
 
 **LR Range Test Results Graph:** <br />
 
-![](images/)
+![](images/lrRange_graph.png)
 
 **One Cycle LR Graph:**<br />
 
