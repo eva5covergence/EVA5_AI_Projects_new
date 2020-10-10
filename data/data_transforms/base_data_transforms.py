@@ -124,6 +124,14 @@ class BaseDataTransforms:
  				                            A.RandomCrop(height=randomcrop_height, width=randomcrop_width, p=randomcrop_p),
  				                            A.CenterCrop(height=centercrop_height, width=centercrop_width, p=centercrop_p),], 
                                              p=p))
+                                             
+            if aug == 'randomCrop':
+                randomcrop_height=self.img_augs[aug]['height']
+                randomcrop_width=self.img_augs[aug]['width']
+                randomcrop_p=self.img_augs[aug]['p']
+                self.img_aug_transforms.append(
+                    A.RandomCrop(height=randomcrop_height, width=randomcrop_width, p=randomcrop_p))
+                    
             if aug=='fliplr':
                 p = self.img_augs[aug]['p']
                 self.img_aug_transforms.append(A.IAAFliplr(p=p))
@@ -132,7 +140,7 @@ class BaseDataTransforms:
 
         if self.img_aug_transforms:
             self.transforms_list.extend(self.img_aug_transforms)
-        self.transforms_list.append(A.Normalize(means, stds, max_pixel_value=255.0,p=1.0))
+        self.transforms_list.append(A.Normalize(means, stds))
         self.transforms_list.append(ToTensor())
         self.transforms_result = A.Compose(self.transforms_list)
         return lambda img:self.transforms_result(image=np.array(img))["image"] 
