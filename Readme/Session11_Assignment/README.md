@@ -4,7 +4,7 @@ Team Members
 1. S.A.Ezhirko
 2. Naga Pavan Kumar Kalepu
 
-**CLR(Cyclic Learning Rate) Curve:** <br />TODO
+**CLR(Cyclic Learning Rate) Curve:** <br />
 
 ![](images/clr_plot.png)
 
@@ -16,8 +16,9 @@ Team Members
 
 ![](images/model_graph.png)
 
-**LR Range Test Results Graph:** <br />TODO
+**LR Range Test Results Graph:** <br />
 
+![](images/)
 
 **One Cycle LR Graph:**<br />
 
