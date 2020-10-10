@@ -36,5 +36,5 @@ Team Members
 
 3. Higher LR gives balanced class wise accuracy and reduced overfitting compare to lower LR model. So higher LRs are regularising the network.
 
-4. We got highest test accuracy of 90.78% and traning accuracy of 99.02%, but this experiment's model is overfit, so tried to change the hyper parameters of cutout and fliplr accordingly and made model regularized in a better way and we got test accuaracy of 90.55% and train accuracy of 95.99%.
+4. We got highest test accuracy of 90.78% and train accuracy of 99.02%, but this experiment's model is overfit, so tried to change the hyper parameters of cutout and fliplr accordingly and made model regularized in a better way and we got test accuaracy of 90.55% and train accuracy of 95.99%.
 
