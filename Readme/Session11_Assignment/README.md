@@ -24,6 +24,9 @@ Team Members
 
 ![](images/onecyclelr.png)
 
+**Experiments Results:**<br />
+
+![](images/Results.png)
 
 **Our observations or Learnings from this Assignment:**
 
