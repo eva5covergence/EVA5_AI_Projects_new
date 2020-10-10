@@ -6,7 +6,7 @@ Team Members
 
 **CLR(Cyclic Learning Rate) Curve:** <br />TODO
 
-![](images/clr.png)
+![](images/clr_plot.png)
 
 **Modified Version of ResNet model summary:** <br />
 
