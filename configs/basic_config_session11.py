@@ -22,11 +22,17 @@ data = {
   #              'cutout':dict(num_holes=1,max_h_size=16,max_w_size=16,fill_value=(0.4914, 0.4822, 0.4465),always_apply=False, p=0.5),
   #              'RandomSizedCrop':{'height':32,'width':32,'min_max_height':[28,28]},                                     
   #              'HorizontalFlip':{}},
+   #'img_augs':OrderedDict(
+   #        PadIfNeeded =dict(min_height=40, min_width=40, border_mode=cv2.BORDER_CONSTANT, value=(0.4914, 0.4822, 0.4465), p=1.0),
+   #        oneof_crop=dict(randomcrop=dict(height=32, width=32, p=0.9),centercrop=dict(height=32, width=32, p=0.1),p=1.0),
+   #        fliplr=dict(p=0.2),
+   #        cutout=dict(num_holes=1,max_h_size=16,max_w_size=16,fill_value=(0.4914, 0.4822, 0.4465),always_apply=False, p=0.1),
+   #  ),
    'img_augs':OrderedDict(
             PadIfNeeded =dict(min_height=40, min_width=40, border_mode=cv2.BORDER_CONSTANT, value=(0.4914, 0.4822, 0.4465), p=1.0),
             oneof_crop=dict(randomcrop=dict(height=32, width=32, p=0.9),centercrop=dict(height=32, width=32, p=0.1),p=1.0),
-            fliplr=dict(p=0.2),
-            cutout=dict(num_holes=1,max_h_size=8,max_w_size=8,fill_value=(0.4914, 0.4822, 0.4465),always_apply=False, p=0.1),
+            fliplr=dict(p=0.7),
+            cutout=dict(num_holes=3,max_h_size=8,max_w_size=8,fill_value=(0.4914, 0.4822, 0.4465),always_apply=False,p=0.6),
           ),
    'normalize_paras':[(0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)],
    'dataloader_args': dict(shuffle=True, batch_size=512, num_workers=16, pin_memory=True) if cuda else dict(shuffle=True, batch_size=512),
@@ -67,8 +73,8 @@ lr_scheduler = {
   # 'stepLR': dict(step_size=150, gamma=0.01, name='stepLR')
   'use_scheduler':True,
   # 'ReduceLROnPlateau': dict(mode='min', factor=0.2, patience=5, threshold=0.0001, threshold_mode='rel', cooldown=0, min_lr=0, name='ReduceLROnPlateau')
-  'OneCycleLR':dict(max_lr=0.0191752113095238, epochs=24, pct_start=5.0/24.0, steps_per_epoch = math.ceil(50000/512.0), 
-                  cycle_momentum=False, div_factor=8, final_div_factor=1, anneal_strategy="linear", name='OneCycleLR'),
+  'OneCycleLR':dict(max_lr=0.10004247448979592, epochs=24, pct_start=5.0/24.0, steps_per_epoch = math.ceil(50000/512.0), 
+                  cycle_momentum=False, div_factor=10, final_div_factor=1, anneal_strategy="linear", name='OneCycleLR'),
 }
 # 0.02002040714285714 - 88.29 - before applying suggested image aug
 # 0.6671251275510204 - bad acc in epoch1 itself - before applying suggested image aug
