@@ -24,11 +24,11 @@ Team Members
 
 ![](images/onecyclelr.png)
 
-**Experiments Results:**<br />
+**Experiments' Results:**<br />
 
 ![](images/Results.png)
 
-**Our observations or Learnings from this Assignment:**
+**Our observations and Learnings from this Assignment:**
 
 1. We should not apply too much image augumentation (higher probability of each image augmentation technique) and have to apply what its required, as we have seen model drops it's accuracy when we applied higher regulirisation. And when we reduced the probabilities for some image augmentation techniques, accuracies started increasing.
 
