@@ -38,60 +38,57 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 ## **Assignment B - Find out the best total numbers of clusters**
 
 We collected 60 images and 80 images individually. And annotated bounding boxes for a) hardhat, b) vest, c) mask, d) boots using VGG tool suggested in assignment instructions.
- 
- 
- **Object classes statistics from Ezhirko's images:**
+
+After we annotated and downloaded the json file from it and it has collected the data in the following format.
+
+**Bounding box information in json format:**
 
 ```
-**** Object class counts in all the images ****
-
- hardhat    198
-boots      184
-vest       182
-mask       135
-Name: object_name, dtype: int64
+     "img_003.jpg27690": {
+      "filename": "img_003.jpg",
+      "size": 27690,
+      "regions": [
+        {
+          "shape_attributes": {
+            "name": "rect",
+            "x": 164,
+            "y": 12,
+            "width": 76,
+            "height": 40
+          },
+          "region_attributes": {
+            "name": "hardhat"
+          }
+        },
+        {
+          "shape_attributes": {
+            "name": "rect",
+            "x": 322,
+            "y": 81,
+            "width": 124,
+            "height": 219
+          },
+          "region_attributes": {
+            "name": "vest"
+          }
+        }
+      ],
+    },
 ```
-
- **Visualisation of Ezhirko PPE data clusters:**
  
-![](images/EzhirkoScatterPlot.png)
+**Explanation of bounding box and other attributes in json file:**
  
- **Elbow method to find out K in Ezhirko PPE Dataset:**
+ **filename** - Name of the image
+ **size** - size of the image in bytes
+ **regions** - Collection of regions (bounding boxes)
+ **shape_attributes** - Attributes of the shape of the bounding box (name, x, y, width, height)
+ **name inside shape_attributes** - shape of the bounding box. Here it is rectangle.
+ **x,y** - Left top corner of the boudning box
+ **width, height** - bounding box's width and height
+ **region_attributes** - Attributes describing the about the region (name of the object class)
+ **name in region_attributes** - object's class name
  
-![](images/EzhirkoElbowPlot.png)
-
-
-
-**Object classes statistics from Pavan's images:**
-
-```
-**** Object class counts in all the images ****
-
- vest       170
-boots      156
-mask       130
-hardhat    116
-Name: object_name, dtype: int64
-```
-
-**Visualisation of Pavan PPE data clusters:**
- 
-![](images/scatter_plot_pavan.png)
- 
- **Elbow method to find out K in Pavan PPE Dataset:**
- 
-![](images/elbow_plot_pavan.png)
-
-**Based on above graph through elbow method, 2 or 3 anchor boxes per grid cell will be good.**
-
-
-
-
-
-
-
-
-
+**We processed the json data and created a dataframe as below:**
 
 Data columns (total 14 columns):
  #   Column           Non-Null Count  Dtype  
@@ -110,5 +107,75 @@ Data columns (total 14 columns):
  11  cy_s_img         572 non-null    float64
  12  bb_width_s_img   572 non-null    float64
  13  bb_height_s_img  572 non-null    float64
+ 
+ 
+**Explanation of the created dataframe from collected json data:**
+ 
+**img_name** - Image file name
+**img_width, img_height** - Height and Width of the image
+**object_name** - object's class name
+**x, y** - Left top corner of the boudning box
+**cx, cy** - Centroid of the bouding box calculated using x,y (left top corner of bounding box) and bb_width, bb_height - cx = x+(bb_width/2), cy = y+(bb_height/2)
+**bb_width** - Bounding box width relative to the image dimensions
+**bb_height** - Bounding box height relative to the image dimensions
+**cx_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's width
+**cy_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's height
+**bb_width_s_img** - Bounding box width relative to the image dimensions and normalized by image's width
+**bb_height_s_img** - Bounding box height relative to the image dimensions and normalized by image's height
+
+ **Object classes statistics from Ezhirko's images:**
+
+```
+**** Object class counts in all the images ****
+
+ hardhat    198
+boots      184
+vest       182
+mask       135
+Name: object_name, dtype: int64
+```
+
+ **Visualisation of Ezhirko PPE data k-means clusters:**
+ 
+![](images/EzhirkoScatterPlot.png)
+ 
+ **Elbow method to find out K in Ezhirko PPE Dataset:**
+ 
+![](images/EzhirkoElbowPlot.png)
+
+**Based on above graph through elbow method 3 anchor boxes per grid cell will be good.**
+
+
+**Object classes statistics from Pavan's images:**
+
+```
+**** Object class counts in all the images ****
+
+ vest       170
+boots      156
+mask       130
+hardhat    116
+Name: object_name, dtype: int64
+```
+
+**Visualisation of Pavan PPE data k-means clusters:**
+ 
+![](images/scatter_plot_pavan.png)
+ 
+ **Elbow method to find out K in Pavan PPE Dataset:**
+ 
+![](images/elbow_plot_pavan.png)
+
+**Based on above graph through elbow method, 2 or 3 anchor boxes per grid cell will be good.**
+
+
+
+
+
+
+
+
+
+
  
  
