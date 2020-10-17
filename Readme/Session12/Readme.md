@@ -52,11 +52,11 @@ mask       135
 Name: object_name, dtype: int64
 ```
 
- **Visualisation of Ezhirko PPE data clusters**
+ **Visualisation of Ezhirko PPE data clusters:**
  
 ![](images/EzhirkoScatterPlot.png)
  
- **Elbow method to find out K in Ezhirko PPE Dataset **
+ **Elbow method to find out K in Ezhirko PPE Dataset:**
  
 ![](images/EzhirkoElbowPlot.png)
 
@@ -74,11 +74,11 @@ hardhat    116
 Name: object_name, dtype: int64
 ```
 
-**Visualisation of Pavan PPE data clusters**
+**Visualisation of Pavan PPE data clusters:**
  
 ![](images/scatter_plot_pavan.png)
  
- **Elbow method to find out K in Pavan PPE Dataset **
+ **Elbow method to find out K in Pavan PPE Dataset:**
  
 ![](images/elbow_plot_pavan.png)
 
