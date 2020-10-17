@@ -78,15 +78,15 @@ After we annotated and downloaded the json file and it in the following format.
  
 **Explanation of bounding box and other attributes in json file:**
  
- **filename:** - Name of the image
- **size:** - size of the image in bytes
+ **filename:** - Name of the image <br />
+ **size:** - size of the image in bytes <br />
  **regions:** - Collection of regions (bounding boxes)
- **shape_attributes:** - Attributes of the shape of the bounding box (name, x, y, width, height)
- **name inside shape_attributes:** - shape of the bounding box. Here it is rectangle.
- **x,y:** - Left top corner of the boudning box
- **width, height:** - bounding box's width and height
- **region_attributes:** - Attributes describing the about the region (name of the object class)
- **name in region_attributes:** - object's class name
+ **shape_attributes:** - Attributes of the shape of the bounding box (name, x, y, width, height) <br />
+ **name inside shape_attributes:** - shape of the bounding box. Here it is rectangle. <br />
+ **x,y:** - Left top corner of the boudning box <br />
+ **width, height:** - bounding box's width and height <br />
+ **region_attributes:** - Attributes describing the about the region (name of the object class) <br />
+ **name in region_attributes:** - object's class name <br />
  
 **We processed the json data and created a dataframe as below:**
 
@@ -111,17 +111,17 @@ Data columns (total 14 columns):
  
 **Explanation of the created dataframe from collected json data:**
  
-**img_name** - Image file name
-**img_width, img_height** - Height and Width of the image
-**object_name** - object's class name
-**x, y** - Left top corner of the boudning box
-**cx, cy** - Centroid of the bouding box calculated using x,y (left top corner of bounding box) and bb_width, bb_height - cx = x+(bb_width/2), cy = y+(bb_height/2)
-**bb_width** - Bounding box width relative to the image dimensions
-**bb_height** - Bounding box height relative to the image dimensions
-**cx_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's width
-**cy_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's height
-**bb_width_s_img** - Bounding box width relative to the image dimensions and normalized by image's width
-**bb_height_s_img** - Bounding box height relative to the image dimensions and normalized by image's height
+**img_name** - Image file name <br />
+**img_width, img_height** - Height and Width of the image <br />
+**object_name** - object's class name <br />
+**x, y** - Left top corner of the boudning box <br />
+**cx, cy** - Centroid of the bouding box calculated using x,y (left top corner of bounding box) and bb_width, bb_height - cx = x+(bb_width/2), cy = y+(bb_height/2) <br />
+**bb_width** - Bounding box width relative to the image dimensions <br />
+**bb_height** - Bounding box height relative to the image dimensions <br />
+**cx_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's width <br />
+**cy_s_img** - Centroid of the boudning box scaled relative to image and normalized by image's height <br />
+**bb_width_s_img** - Bounding box width relative to the image dimensions and normalized by image's width <br />
+**bb_height_s_img** - Bounding box height relative to the image dimensions and normalized by image's height <br />
 
  **Object classes statistics from Ezhirko's images:**
 
