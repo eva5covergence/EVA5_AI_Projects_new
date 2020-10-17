@@ -21,7 +21,7 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 ### **Parameters**
 
 1. Agumentations - Horizontal flip, Padding , Random Crop, Center Crop, Normalisation, Cutout
-2. Batch Size - 126
+2. Batch Size - 128
 3. Model - Resnet 18 with 200 classes
 4. Optimiser - SGD(momentum - 0.9 )
 5. Scheduler - One Cycle (  max_lr=0.10004247448979592, epochs=50, pct_start=15.0/50.0, steps_per_epoch = math.ceil(77000/128.0), 
