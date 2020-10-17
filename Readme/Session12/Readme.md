@@ -34,3 +34,15 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 3. Accuracy Change Graph
 
 ![](images/AccuracyGraph.png)
+
+## **Assignment B - Find out the best total numbers of clusters**
+
+To download 50 images of people with Hard hat, Vest, Mask and Boots, annotate with vgg annotator, find out the best no of clusters
+ 
+ **Visualisation of data**
+ 
+![](images/EzhirkoScatterPlot.png)
+ 
+ **Elbow method to find out K**
+ 
+ ![](images/EzhirkoElbowPlot.png)
