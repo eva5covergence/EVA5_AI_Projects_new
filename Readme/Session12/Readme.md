@@ -89,7 +89,7 @@ After we annotated and downloaded the json file and it in the following format.
  **name in region_attributes:** - object's class name <br />
  
 **We processed the json data and created a dataframe as below:**
-
+```
 Data columns (total 14 columns):
  #   Column           Non-Null Count  Dtype  
 ---  ------           --------------  -----  
@@ -107,7 +107,7 @@ Data columns (total 14 columns):
  11  cy_s_img         572 non-null    float64
  12  bb_width_s_img   572 non-null    float64
  13  bb_height_s_img  572 non-null    float64
- 
+ ```
  
 **Explanation of the created dataframe from collected json data:**
  
