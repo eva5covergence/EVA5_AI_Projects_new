@@ -80,7 +80,7 @@ After we annotated and downloaded the json file and it in the following format.
  
  **filename:** - Name of the image <br />
  **size:** - size of the image in bytes <br />
- **regions:** - Collection of regions (bounding boxes)
+ **regions:** - Collection of regions (bounding boxes) <br />
  **shape_attributes:** - Attributes of the shape of the bounding box (name, x, y, width, height) <br />
  **name inside shape_attributes:** - shape of the bounding box. Here it is rectangle. <br />
  **x,y:** - Left top corner of the boudning box <br />
