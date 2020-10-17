@@ -78,15 +78,15 @@ After we annotated and downloaded the json file and it in the following format.
  
 **Explanation of bounding box and other attributes in json file:**
  
- **filename** - Name of the image
- **size** - size of the image in bytes
- **regions** - Collection of regions (bounding boxes)
- **shape_attributes** - Attributes of the shape of the bounding box (name, x, y, width, height)
- **name inside shape_attributes** - shape of the bounding box. Here it is rectangle.
- **x,y** - Left top corner of the boudning box
- **width, height** - bounding box's width and height
- **region_attributes** - Attributes describing the about the region (name of the object class)
- **name in region_attributes** - object's class name
+ **filename:** - Name of the image
+ **size:** - size of the image in bytes
+ **regions:** - Collection of regions (bounding boxes)
+ **shape_attributes:** - Attributes of the shape of the bounding box (name, x, y, width, height)
+ **name inside shape_attributes:** - shape of the bounding box. Here it is rectangle.
+ **x,y:** - Left top corner of the boudning box
+ **width, height:** - bounding box's width and height
+ **region_attributes:** - Attributes describing the about the region (name of the object class)
+ **name in region_attributes:** - object's class name
  
 **We processed the json data and created a dataframe as below:**
 
