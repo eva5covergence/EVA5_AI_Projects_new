@@ -37,24 +37,10 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 
 ## **Assignment B - Find out the best total numbers of clusters**
 
-To download 50 images of people with Hard hat, Vest, Mask and Boots, annotate with vgg annotator, find out the best no of clusters
+We collected 60 images and 80 images individually. And annotated bounding boxes for a) hardhat, b) vest, c) mask, d) boots using VGG tool suggested in assignment instructions.
  
- **Visualisation of Ezhirko PPE data clusters**
  
-![](images/EzhirkoScatterPlot.png)
- 
- **Elbow method to find out K in Ezhirko PPE Dataset **
- 
-![](images/EzhirkoElbowPlot.png)
-
-
-## **Assignment B - Dataset Creation**
-
-We collected 60 images and 70 images individually. And annotated bounding boxes for a) hardhat, b) vest, c) mask, d) boots using VGG tool suggested in assignment instructions.
-
-And below is the statistics of object classes across images.
-
-**Ezhriko's images statistics:**
+ **Object classes statistics from Ezhirko's images:**
 
 ```
 **** Object class counts in all the images ****
@@ -65,7 +51,18 @@ vest       182
 mask       135
 Name: object_name, dtype: int64
 ```
-**Pavan's images statistics:**
+
+ **Visualisation of Ezhirko PPE data clusters**
+ 
+![](images/EzhirkoScatterPlot.png)
+ 
+ **Elbow method to find out K in Ezhirko PPE Dataset **
+ 
+![](images/EzhirkoElbowPlot.png)
+
+
+
+**Object classes statistics from Pavan's images:**
 
 ```
 **** Object class counts in all the images ****
@@ -76,9 +73,24 @@ mask       130
 hardhat    116
 Name: object_name, dtype: int64
 ```
-![](images/kmeans_bboxes.png)
+
+**Visualisation of Pavan PPE data clusters**
+ 
+![](images/scatter_plot_pavan.png)
+ 
+ **Elbow method to find out K in Pavan PPE Dataset **
+ 
+![](images/elbow_plot_pavan.png)
 
 **Based on above graph through elbow method, 2 or 3 anchor boxes per grid cell will be good.**
+
+
+
+
+
+
+
+
 
 
 Data columns (total 14 columns):
