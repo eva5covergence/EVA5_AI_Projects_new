@@ -39,10 +39,10 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 
 To download 50 images of people with Hard hat, Vest, Mask and Boots, annotate with vgg annotator, find out the best no of clusters
  
- **Visualisation of data**
+ **Visualisation of Ezhirko PPE data clusters**
  
 ![](images/EzhirkoScatterPlot.png)
  
- **Elbow method to find out K**
+ **Elbow method to find out K in Ezhirko PPE Dataset **
  
- ![](images/EzhirkoElbowPlot.png)
+![](images/EzhirkoElbowPlot.png)
