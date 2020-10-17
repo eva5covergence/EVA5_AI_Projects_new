@@ -39,7 +39,7 @@ Used standard ResNet18 model architecture  on **Tiny ImageNetData Set**
 
 We collected 60 images and 80 images individually. And annotated bounding boxes for a) hardhat, b) vest, c) mask, d) boots using VGG tool suggested in assignment instructions.
 
-After we annotated and downloaded the json file from it and it has collected the data in the following format.
+After we annotated and downloaded the json file and it in the following format.
 
 **Bounding box information in json format:**
 
@@ -135,11 +135,11 @@ mask       135
 Name: object_name, dtype: int64
 ```
 
- **Visualisation of Ezhirko PPE data k-means clusters:**
+ **Visualisation of Ezhirko's PPE data k-means clusters:**
  
 ![](images/EzhirkoScatterPlot.png)
  
- **Elbow method to find out K in Ezhirko PPE Dataset:**
+ **Elbow method to find out K in Ezhirko's PPE Dataset:**
  
 ![](images/EzhirkoElbowPlot.png)
 
@@ -158,11 +158,11 @@ hardhat    116
 Name: object_name, dtype: int64
 ```
 
-**Visualisation of Pavan PPE data k-means clusters:**
+**Visualisation of Pavan's PPE data k-means clusters:**
  
 ![](images/scatter_plot_pavan.png)
  
- **Elbow method to find out K in Pavan PPE Dataset:**
+ **Elbow method to find out K in Pavan's PPE Dataset:**
  
 ![](images/elbow_plot_pavan.png)
 
