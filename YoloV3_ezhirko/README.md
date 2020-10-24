@@ -45,13 +45,6 @@ Annotated 150 images of people wearing below items using yoloV3 annotator tool.
 10. Passed the frame images to detect the bounding boxes and saved the tagged images back to different folder.
 11. Again used FFMPEG library to convert the frame images back to single video.
 
-## **Trained Samples**
-
-  ![](Images/train_batch0.png) 
-
-## **Results**
-  ![](Images/test_batch0.png) 
-
 ## **Video output**
 S.A.Ezhirko: https://www.youtube.com/watch?v=W5vej8zcso8
 
