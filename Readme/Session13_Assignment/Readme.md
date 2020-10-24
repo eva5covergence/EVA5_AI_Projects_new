@@ -28,7 +28,7 @@ Annotated 150 images of people wearing below items using yoloV3 annotator tool.
 4. boots
 
 ## Implementation
-1. Downloaded 3590 test images
+1. Downloaded 3590 images
 2. Refered [this](https://github.com/theschoolofai/YoloV3) repo for implementation.
 3. Modified custom.data file to have 4 classes and point to our train, validation and class names files as mentioned in the setup step.
 4. Updated the yolov3-custom.cfg to have 
