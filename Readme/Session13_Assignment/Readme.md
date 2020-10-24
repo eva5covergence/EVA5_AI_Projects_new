@@ -19,5 +19,39 @@ Team Members
 
   ![](Images/Detected.jpg) 
 
+**********************************************************************************************************************
+### Training Custom Dataset on Colab for YoloV3
+Annotated 150 images of people wearing below items using yoloV3 annotator tool.
+1. hardhat
+2. vest
+3. mask
+4. boots
+
+## Implementation
+1. Downloaded 3590 test images
+2. Refered [this](https://github.com/theschoolofai/YoloV3) repo for implementation.
+3. Modified custom.data file to have 4 classes and point to our train, validation and class names files as mentioned in the setup step.
+4. Updated the yolov3-custom.cfg to have 
+  - filters = 27
+  - classes = 4
+  - burn_in =16
+  - max_batches = 5000
+  - steps = 4000,4500
+  
+5. Created a script to detect the training image file size and updated the custom.shapes file
+6. Corrected the wrong file extension like image_001.txt instead of image_001.jpg and bounding box normalization values that were more than value 1.
+7. Ran the trainning for 50 epocs, due to colab constraint.
+8. Downloaded different variations of videos of people wearing hardhat, vest, mask and boots. Joint the videos making it a single video of 1 minute.
+9. Used FFMPEG library to split the video into image frames
+10. Passed the frame images to detect the bounding box and saved the tagged images back to different folder
+11. Again used FFMPEG library to convert the frame images back to video.
+
+## **Trained Samples**
+
+  ![](Images/train_batch0.png) 
+
+## **Results**
+  ![](Images/test_batch0.png) 
+
   
 
