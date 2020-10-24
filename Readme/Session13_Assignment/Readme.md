@@ -32,19 +32,18 @@ Annotated 150 images of people wearing below items using yoloV3 annotator tool.
 2. Refered [this](https://github.com/theschoolofai/YoloV3) repo for implementation.
 3. Modified custom.data file to have 4 classes and point to our train, validation and class names files as mentioned in the setup step.
 4. Updated the yolov3-custom.cfg to have 
-  - filters = 27
-  - classes = 4
-  - burn_in =16
-  - max_batches = 5000
-  - steps = 4000,4500
-  
-5. Created a script to detect the training image file size and updated the custom.shapes file
+    - filters = 27 ((4+1+4)*3 = 27)
+    - classes = 4
+    - burn_in = 16 (because i trained only for 50 epochs)
+    - max_batches = 5000
+    - steps = 4000,4500
+5. Created a script to detect the training image file size and updated the custom.shapes files. One for training and another one for testing.
 6. Corrected the wrong file extension like image_001.txt instead of image_001.jpg and bounding box normalization values that were more than value 1.
-7. Ran the trainning for 50 epocs, due to colab constraint.
+7. Ran the trainning for 50 epochs, due to colab constraint.
 8. Downloaded different variations of videos of people wearing hardhat, vest, mask and boots. Joint the videos making it a single video of 1 minute.
-9. Used FFMPEG library to split the video into image frames
-10. Passed the frame images to detect the bounding box and saved the tagged images back to different folder
-11. Again used FFMPEG library to convert the frame images back to video.
+9. Used FFMPEG library to split the video into image frames. Got about 1780 images and other team mate got 2691 images for his video.
+10. Passed the frame images to detect the bounding boxes and saved the tagged images back to different folder.
+11. Again used FFMPEG library to convert the frame images back to single video.
 
 ## **Trained Samples**
 
