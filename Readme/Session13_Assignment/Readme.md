@@ -53,5 +53,6 @@ Annotated 150 images of people wearing below items using yoloV3 annotator tool.
 ## **Results**
   ![](Images/test_batch0.png) 
 
-  
+## **Video output**
+https://www.youtube.com/watch?v=W5vej8zcso8
 
