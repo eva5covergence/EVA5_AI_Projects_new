@@ -54,5 +54,6 @@ Annotated 150 images of people wearing below items using yoloV3 annotator tool.
 
 ## **Video output**
 S.A.Ezhirko: https://www.youtube.com/watch?v=W5vej8zcso8
+
 Naga Pavan kumar: https://www.youtube.com/watch?v=PxkEbky1M1I&feature=youtu.be
 
