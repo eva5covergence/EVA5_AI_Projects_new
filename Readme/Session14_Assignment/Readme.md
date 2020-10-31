@@ -4,4 +4,8 @@ Team Members
 2. Naga Pavan Kumar Kalepu
 **********************************************************************************************************************
 # **Monocular Depth Estimation and Segmentation** 
-Architecture : ![](Images/version1.png)   
+Depth estimation :
+![](Images/Original.jpg)   
+![](Images/TestImage.png)
+Depth visualization with Color Map:
+![](Images/Depth.jpg)   
