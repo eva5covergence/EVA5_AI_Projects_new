@@ -33,4 +33,4 @@ Planer CNN generates plane surfaces for a given input image.
 
 Detectron2 model has been used to inference the segmentations in the video using Mask RCNN. Ran panoptic segmentation on a video.
 
-["Video"](https://www.youtube.com/watch?v=zQuygxwjMy0&feature=youtu.be)
+[![IMAGE ALT TEXT](Images/Detectron2.png)](https://www.youtube.com/watch?v=zQuygxwjMy0&feature=youtu.be "Video Title")
