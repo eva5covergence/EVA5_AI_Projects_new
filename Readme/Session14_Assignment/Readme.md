@@ -27,3 +27,10 @@ Planer CNN generates plane surfaces for a given input image.
 4. Since depth information was taken from Midas model, the code was modified to generate only surface plane images. 
 5. All the predicted images are stored along with their original image for comparision.
 6. This model is heavily dependent on GPU, we have to install CUDA version supporting our GPU architecture and the supporting version pytorch 0.4.1 has to installed to run the model.
+
+**********************************************************************************************************************
+# **Object segmentation using Mask RCNN through Detectron2** 
+
+Detectron2 model has been used to inference the segmentations in the video using Mask RCNN. Ran panoptic segmentation on a video.
+
+["Video"](https://www.youtube.com/watch?v=zQuygxwjMy0&feature=youtu.be)
