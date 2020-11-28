@@ -17,10 +17,16 @@ After the possibility of creating and executing Deep Neural Networks in modern w
   <img src="Images/Q44_BB.jpg">
 </p>
 
-In Depth Estimation, the machine has to extract the depth information of the foreground entities from a single image. Example below you can see how our well my model can extract the depth information (on the right) from an image (on the left).
+In Depth Estimation, the machine has to extract the depth information of the foreground entities from a single image. Example below shows the extracted depth information (on the right) from an image (on the left).
 
 <p align="center">
   <img src="Images/Q44.jpg">
   <img src="Images/Q44_Depth.png">
+</p>
+
+In Plane Surface Estimation, the machine has to detect the plane surface information from the depth and mask entities from a single image.
+<p align="center">
+  <img src="Images/InputImage.jpg">
+  <img src="Images/Segmentation_final.png">
 </p>
 
