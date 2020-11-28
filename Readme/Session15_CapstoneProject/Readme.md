@@ -17,3 +17,10 @@ After the possibility of creating and executing Deep Neural Networks in modern w
   <img src="Images/Q44_BB.jpg">
 </p>
 
+In Depth Estimation, the machine has to extract the depth information of the foreground entities from a single image. Example below you can see how our well my model can extract the depth information (on the right) from an image (on the left).
+
+<p align="center">
+  <img src="Images/Q44.jpg">
+  <img src="Images/Q44.png">
+</p>
+
