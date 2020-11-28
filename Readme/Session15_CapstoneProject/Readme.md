@@ -8,4 +8,12 @@ Author: S.A.Ezhirko
 
 Some of the biggest challenges in computer vission is to recognise and identify the objects present in the image, predict the depth between the objects in the image and identify the surface planes in a given image. For many years these task were challenging for researchers because the image seen by computer is just a array of pixel values.
 
-![](Images/Image1.jpg)   
+![](Images/Image1.jpg)
+
+After the possibility of creating and executing Deep Neural Networks in modern world, these problems which was challenging are now showing good results. In object detection the computer must identify the object of our interest in the given image and mark the bounding box surrounding the identified image.
+
+<p align="center">
+  <img src="Images/Q44.jpg">
+  <img src="Images/Q44_BB.jpg">
+</p>
+
