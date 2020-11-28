@@ -21,6 +21,6 @@ In Depth Estimation, the machine has to extract the depth information of the for
 
 <p align="center">
   <img src="Images/Q44.jpg">
-  <img src="Images/Q44_Depth.png">
+  <img src="Images/Q44.png">
 </p>
 
