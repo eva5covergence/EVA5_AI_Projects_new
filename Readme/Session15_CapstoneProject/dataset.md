@@ -4,6 +4,6 @@ The dataset used for this model is called PPE dataset. This dataset consists of 
 
 ## Preview
 
-![](Images/InputImage.jpg)
+![](Images/InputImages.jpg)
 
 Here the MIDAS pretrained network was run in evaluation mode to infer the 
