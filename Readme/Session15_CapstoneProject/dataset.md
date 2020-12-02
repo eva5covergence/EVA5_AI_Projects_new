@@ -19,3 +19,11 @@ Go to this link to view the [Input Images and Ground Truth](https://drive.google
 ### Plane Segmentation Image
 
 ![](Images/PlaneRCNN_Inputs.jpg)
+
+## Data Augumentation
+- The input images are resized to 448 x448, Letter box augumentation is applied.
+- The Bounding Box values are normalized and resized according the resized input image.
+- No augmentation are applied to the ground truth images as it would distort them from their corresponding labels.
+
+## Data Loading
+
