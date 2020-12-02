@@ -33,6 +33,10 @@ And to solve this kind of complex problem, we need to create encoder-decoder arc
         1) YOLOv3 excluding darknet
         2) Refinement & upsampling layers of Midas 
         3) FPN(Feature Pyramid Network), RPN(Region proposal network), Segmentation refinement network & Upsampling layers
+        
+<p align="center">
+  <img src="Images/ympnet1.jpg">
+</p>
 
 **Our detailed low level design architecture:**
 
