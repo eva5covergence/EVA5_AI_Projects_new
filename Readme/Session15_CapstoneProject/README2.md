@@ -40,6 +40,12 @@ And to solve this kind of complex problem, we need to create encoder-decoder arc
 
 **Our detailed low level design architecture:**
 
+1) Integration of ResNeXt101 to YoloV3
+    
+    - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
+    - Pass 3 outputs as input to the YOLO intermediate layers which connects the final output layer of YOLOv3.
+    
+    
 
 
 
