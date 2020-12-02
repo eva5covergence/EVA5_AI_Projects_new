@@ -19,9 +19,10 @@ So we filtered the collected images using maskRCNN object predition which traine
 **Model Building:**
 
 To create multi objective model, we considered 3 different models to merge.
-    - YoloV3
-    - Midas from Intel
-    - PlanerCNN from Nvidia
+
+    1) YoloV3
+    2) Midas from Intel
+    3) PlanerCNN from Nvidia
     
 And to solve this kind of complex problem, we need to create encoder-decoder architecture. So we created one-encoder and multi-decoder architecture. Above 3 model network architectures has different backbones except Midas and PlanerCNN has common backbone ResNeXt101 & YoloV3 is having DarkNet-53 as backbone.
 
