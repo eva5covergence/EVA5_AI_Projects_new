@@ -27,10 +27,14 @@ And to solve this kind of complex problem, we need to create encoder-decoder arc
 
 **Our high level design approach:**
 
-    A) Encoder - ResNeXt101 as encoder and 
-    B) created 3 decoders from corresponding layers of 
+    A) Encoder - ResNeXt101
+    B) Created 3 decoders from corresponding layers of 
         1) YOLOv3 excluding darknet
         2) Refinement & upsampling layers of Midas 
-        3) fpn, rpn, refinement network & upsampling layers
+        3) FPN(Feature Pyramid Network), RPN(Region proposal network), Segmentation refinement network & Upsampling layers
+
+**Our detailed low level design architecture:**
+
+
 
 
