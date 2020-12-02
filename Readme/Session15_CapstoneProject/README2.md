@@ -25,6 +25,12 @@ To create multi objective model, we considered 3 different models to merge.
     
 And to solve this kind of complex problem, we need to create encoder-decoder architecture. So we created one-encoder and multi-decoder architecture. Above 3 model network architectures has different backbones except Midas and PlanerCNN has common backbone ResNeXt101 & YoloV3 is having DarkNet-53 as backbone.
 
-Our high level design approach is taking ResNeXt101 as encoder and created 3 decoders from corresponding layers of 1) YOLOv3 excluding darknet, 2) Refinement & upsampling layers of Midas, and 3) fpn, rpn, refinement network & upsampling layers.
+**Our high level design approach:**
+
+    A) Encoder - ResNeXt101 as encoder and 
+    B) created 3 decoders from corresponding layers of 
+        1) YOLOv3 excluding darknet
+        2) Refinement & upsampling layers of Midas 
+        3) fpn, rpn, refinement network & upsampling layers
 
 
