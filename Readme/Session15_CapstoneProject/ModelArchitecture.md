@@ -12,7 +12,7 @@ After the encoding has been done, the encoded input is passed through two separa
 
 ![architecture](Images/PPEMultiModelArchitecture.jpg)
 
-The model has 119,409,234 parameters. Each of the encoder and decoder blocks are based on a ResNet block. The detailed diagram explaining the flow of each block can be seen below
+The model has 119,409,234 parameters.
 
 The code for the full architecture can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/Model/ppe_multimodel_net.py)
 
