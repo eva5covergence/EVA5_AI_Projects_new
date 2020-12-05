@@ -58,4 +58,4 @@ Stage 2 : Contains a model that is capable of predicting bounding box, depth and
 The reason for spliting into stages is to approach the problem step by step. In the first stage implementation of objection detection using YoloV3 and depth estimation using MIDAS was choosen. Plane surface detection was not choosen to implementation in stage 1 due to complexity. Below are the stage 1 contents
 
 - [Dataset](dataset.md)
-
+- [Model Architecture](ModelArchitecture.md)
