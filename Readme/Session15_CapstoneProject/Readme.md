@@ -55,7 +55,7 @@ This project explains a neural network model that performs object detection with
 Stage 1 : Contains a model that is capable of predicting bounding box and depth for a given image.<br>
 Stage 2 : Contains a model that is capable of predicting bounding box, depth and plane surface detection.
 
-The reason for spliting into stages is to approach the problem step by step. In the first stage implementation of objection detection using YoloV3 and depth estimation using MIDAS was choosen. Plane surface detection was not choosen to implementation in stage 1 due to complexity and understandability. Below are the stage 1 contents
+The reason for spliting into stages is to approach the problem step by step. In the first stage implementation of objection detection using YoloV3 and depth estimation using MIDAS was choosen. Plane surface detection was not choosen to implementation in stage 1 due to complexity. Below are the stage 1 contents
 
 - [Dataset](dataset.md)
 
