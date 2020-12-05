@@ -17,6 +17,7 @@ The model has 119,409,234 parameters. Each of the encoder and decoder blocks are
 The code for the full architecture can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/Model/ppe_multimodel_net.py)
 
 ## Model Summary
+```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
