@@ -4,19 +4,20 @@ The input and the outputs are of same resolution and the model has an encoder an
 
 After the encoding has been done, the encoded input is passed through two separate decoder networks which are responsible for predicting the bounding boxes for detected objects and the depth image. 
 
-- For the object detection, the yolo layers are added at 3 different encoder layers to obtain object detection output at 3 different scales.
+- For the object detection, the yolo layers are added at 3 different encoder layers to obtain object detection output at 3 different scales. The scales at which bounding box are predicted are at 
+        1. 14 x 14 x 9
+        2. 28 x 28 x 9
+        3. 56 x 56 x 9
+- For the depth prediction, the decoder layers are added at the end of encoder which gives the size of 14 x 14. The decoder contains FeatureFusionBlock that upscales the size of the image. The output of the last decoder is 1 x 448 x 448.
 
+![architecture](Images/PPEMultiModelArchitecture.jpg)
 
-![architecture](../images/architecture.jpg)
+The model has 119,409,234 parameters. Each of the encoder and decoder blocks are based on a ResNet block. The detailed diagram explaining the flow of each block can be seen below
 
-The model has `10,343,490` parameters. Each of the encoder and decoder blocks are based on a ResNet block. The detailed diagram explaining the flow of each block can be seen below
-
-![blocks](../images/blocks.jpg)
-
-The code for the full architecture can be found [here](../tensornet/model/dsresnet.py)
+The code for the full architecture can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/Model/ppe_multimodel_net.py)
 
 ## Model Summary
-Model Summary
+
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
