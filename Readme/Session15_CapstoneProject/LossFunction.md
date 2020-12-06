@@ -64,7 +64,7 @@ Two loss function SSIM and RMSE are combined to generate the loss for the depth 
     ```
 - Calculate RMSE loss between prediciton and target image
 ```
-sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
+    sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
 ```
 - Take weightage summation of RMSE and Gradient loss
 ```
