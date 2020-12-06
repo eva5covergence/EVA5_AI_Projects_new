@@ -77,4 +77,4 @@ Two loss function SSIM and RMSE are combined to generate the loss for the depth 
     Total_depth_Loss = rmse_grad_loss + SSIM_loss
 ```
  
-
+The code for all these loss functions can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/utils/utils.py).
