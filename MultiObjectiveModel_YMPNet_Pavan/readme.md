@@ -55,7 +55,7 @@ In Plane Surface Estimation, the machine has to detect the plane surface informa
 
 - [Dataset](dataset.md)
 - [Model Architecture](ModelArchitecture.md)
-- [Loss Function](LossFunction.md)
+- [Multi objective model Losses](LossFunction.md)
   - [Bounding box Prediction](LossFunction.md#bounding-box-prediction)
   - [Depth Prediction](LossFunction.md#depth-loss-function)
 - [Training](training.md)
