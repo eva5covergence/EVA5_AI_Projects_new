@@ -13,7 +13,7 @@ Recently, increasing interest has been shown in applying Pareto-based multi-obje
 2) Generating highly diverse multiple Pareto-optimal models for constructing ensembles and, 
 3) In achieving a desired trade-off between accuracy and interpretability of neural networks or fuzzy systems.
 
-## Application of Object Detection, Depth Estimation and Plane Surface Detection.
+## RealTime usecases of Object Detection, Depth Estimation and Plane Surface Detection.
 
 Object detection:
 
