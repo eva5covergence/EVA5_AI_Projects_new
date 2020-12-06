@@ -42,9 +42,11 @@ And to solve this kind of complex problem, we need to create encoder-decoder arc
 
 The inputs and the outputs are of same resolution for depthmaps and surface planes prediction and thus the model has an encoder-decoder architecture, where the model takes one input image  and returns three outputs 
 
+```
 a) Object's Boundingbox & it's class, 
 b) Depth Map and 
 c) Suface Plane. 
+```
 
 The input image is first processed through encoder block ResNeXt101, which in turn reduces their size to 52x52, 26x26, 13x13 at the last 3 layers. And these layer outputs directly processed through the intermediate layers of yolov3 to get yolov3 final outputs with shapes a) 27x52x52 b) 27x26x26 c) 27x13x13 given the input shapes are 3x416x416. 
 
@@ -52,7 +54,7 @@ And we use the same reduced outputs with shapes 52x52, 26x26 and 13x13 for getti
 
 To generate surface plane, we pass the same encoder (ResNext101) outputs mentioned above will be passed to FPN (Feature Pyramid network), RPN (Region proposal network), Refinement Network and Upsampling layers of PlanerCNN.
 
-1) Integration of Encoder ResNeXt101 to Decoder-1 (YoloV3)
+**1) Integration of Encoder ResNeXt101 to Decoder-1 (YoloV3)**
     
     - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass 3 outputs as input to the YOLO intermediate layers which connects the final output layer of YOLOv3.
@@ -61,7 +63,7 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     - Filter above outputs through non-max suppression to get the final outputs
     - To filter further, during detection, we can give the inputs a) confidence threshold and b) iou threshold as --conf-thres <value> --iou-thres <value> Ex: --conf-thres 0.1 --iou-thres 0.6
     
-2) Integration of Encoder ResNeXt101 to Decoder-2 (Midas)
+**2) Integration of Encoder ResNeXt101 to Decoder-2 (Midas)**
 
     - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass above outputs through Midas refinement blocks and get refinement outputs.
@@ -80,7 +82,8 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     ```
     
 
-3) Integration of Encoder ResNeXt101 to Decoder-3 (PlanerCNN)
+**3) Integration of Encoder ResNeXt101 to Decoder-3 (PlanerCNN)**
+
     - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass above outputs through FPN (Feature pyramid network) and get FPN outputs.
     - Pass FPN outputs through RPN (region proposal network) and get RPN outputs.
