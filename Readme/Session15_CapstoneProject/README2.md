@@ -609,15 +609,38 @@ As our model has 3 objectives, and each objective has it's own loss. For yolov3 
 - SSIM loss will look for similarities within pixels; i.e. if the pixels in the two images line up and or have similar pixel density values.
 - **Standardized Values**: SSIM puts everything in a scale of -1 to 1. A score of 1 meant they are very similar and a score of -1 meant they are very different.
 
-**RMSE (Root Mean squared Error) **
+**RMSE (Root Mean squared Error) and Gradient loss **
 
 - Compute scale and shift of the pixels of the predicted image
-- 
+- Calculate the gradient loss with below calculations.
+    ```
+    diff = prediction - target
+    diff = torch.mul(mask, diff)
 
+    grad_x = torch.abs(diff[:, :, 1:] - diff[:, :, :-1])
+    mask_x = torch.mul(mask[:, :, 1:], mask[:, :, :-1])
+    grad_x = torch.mul(mask_x, grad_x)
 
+    grad_y = torch.abs(diff[:, 1:, :] - diff[:, :-1, :])
+    mask_y = torch.mul(mask[:, 1:, :], mask[:, :-1, :])
+    grad_y = torch.mul(mask_y, grad_y)
+
+    image_loss = torch.sum(grad_x, (1, 2)) + torch.sum(grad_y, (1, 2))    
+    ```
+- Calculate RMSE loss between prediciton and target image
+```
+sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
+```
+- Take weightage summation of RMSE and Gradient loss
+```
+    rmse_grad_loss = alpha*grad_loss + rmse_loss # Here we used alpha=0.5
+```
+
+**Sample loss output during training:**
+
+```
 Epoch          gpu_mem             GIoU              obj              cls            total          targets          ImgSize RmseGradMeanLoss    SSIM_meanLoss
-   189/299     14.6G             7             2.42             3.91             19.2               25.53               448               0.042            0.152: 100% 346/346 [02:16<00:00,  1.57s/it]
+   152/299     14.6G             7             2.42             3.91             19.2               25.53               448               0.042            0.152: 100% 346/346 [02:16<00:00,  1.57s/it]
                Class           Images          Targets                P                R          mAP@0.5               F1 RmseGradientLoss         SSIMLoss            DLoss        TotalLoss: 100% 87/87 [00:12<00:00,  1.81it/s]
-                 all              692         3.06e+03                0                0                0                2.736                           16.9              19.636              19.636
-
-            
+                 all              692         3.06e+03                0.23                0.46                0.36356                2.736                           16.9              19.636              19.636
+```        
