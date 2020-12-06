@@ -95,7 +95,7 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     18. feature_map, 
     19. depth_np_pred
     ```
-**Model detailed architecture diagram:
+**Model detailed architecture diagram:**
 
 <p align="center">
   <img src="Images/ympnet_architecture.jpg">
