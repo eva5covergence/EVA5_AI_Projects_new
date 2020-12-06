@@ -14,7 +14,7 @@ After the encoding has been done, the encoded input is passed through two separa
         
 - For the depth prediction, the decoder layers are added at the end of encoder which gives the size of 14 x 14. The decoder contains FeatureFusionBlock that upscales the size of the image. The output of the last decoder is 1 x 448 x 448.
 
-![architecture](Images/PPEMultiModelArchitecture.jpg)
+![architecture](Images/PPEMultiModelArchitecture_Stage1.jpg)
 
 The model has 119,409,234 parameters.
 
