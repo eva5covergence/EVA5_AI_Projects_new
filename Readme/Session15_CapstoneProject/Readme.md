@@ -68,13 +68,13 @@ The reason for spliting into stages is to approach the problem step by step. In 
 ## Stage 2: Implementing Surface detection using PlaneRCNN and integrating it with Stage1 model.
 
 - ### Data collection
- - PPE Dataset contains more of human and their protective gear images. The number of plane surface that could be present in the dataset will be very less.
- - House interior videos from youtube was downloaded using automated script. The script does the following things.
-   - Collected Interior locations related videos youtube links (manual)
-   - Installed youtube-dl
-   - Installed Detectron2 and dependencies 
-   - Downloaded all youtube videos through youtube-dl
-   - Extracted the frames for every second
-   - Deleted the frames/images which are “having person” or “no objects yet all” by detecting through detectron2 using maskRCNN model
-  - Refer to the [link](https://github.com/eva5covergence/Ezhirko/blob/main/PlaneSurfaceDetection/plane_surface_data_preparation.ipynb) for automated downloading of videos.
+  - PPE Dataset contains more of human and their protective gear images. The number of plane surface that could be present in the dataset will be very less.
+  - House interior videos from youtube was downloaded using automated script. The script does the following things.
+    - Collected Interior locations related videos youtube links (manual)
+    - Installed youtube-dl
+    - Installed Detectron2 and dependencies 
+    - Downloaded all youtube videos through youtube-dl
+    - Extracted the frames for every second
+    - Deleted the frames/images which are “having person” or “no objects yet all” by detecting through detectron2 using maskRCNN model
+   - Refer to the [link](https://github.com/eva5covergence/Ezhirko/blob/main/PlaneSurfaceDetection/plane_surface_data_preparation.ipynb) for automated downloading of videos.
    
