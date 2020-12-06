@@ -86,6 +86,28 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     - Pass FPN outputs through RPN (region proposal network) and get RPN outputs.
     - Pass RPN outputs through refinement network to get better segmentation outputs.
     - Pass Segmentation outputs through Upsampling layers and get final surface plane outputs. 
+    - We get following outputs from the model
+    ```
+    1. rpn_class_logits, 
+    2. rpn_pred_bbox, 
+    3. target_class_ids, 
+    4. mrcnn_class_logits, 
+    5. target_deltas, 
+    6. mrcnn_bbox, 
+    7. target_mask, 
+    8. mrcnn_mask, 
+    9. target_parameters, 
+    10. mrcnn_parameters, 
+    11. detections, 
+    12. detection_masks, 
+    13. detection_gt_parameters, 
+    14. detection_gt_masks, 
+    15. rpn_rois, 
+    16. roi_features, 
+    17. roi_indices, 
+    18. feature_map, 
+    19. depth_np_pred
+    ```
 
 
 
