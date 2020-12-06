@@ -600,10 +600,11 @@ Estimated Total Size (MB): 4969.80
 ----------------------------------------------------------------
 ```
 
-**Multi objective model Losses:**
+### Multi objective model Losses:
 
-### The Structural Similarity Index (SSIM) Loss
+As our model has 3 objectives, and each objective has it's own loss. For yolov3 and PlanerCNN, we didn't change the loss function, we have used as it is that defined by authors of these networks. But for Midas there no loss or training details provided by author. So we came up with our own loss funciton. In midas, the output is depthmap which is an image and we need to compare with it's ground truth image. There are various techniques to compare the images similarities like Peak to Noise ratio, SSIM, MSE etc... But among them SSIM and RMSE worked well for us. 
+
+**The Structural Similarity Index (SSIM) Loss**
 
 - SSIM loss will look for similarities within pixels; i.e. if the pixels in the two images line up and or have similar pixel density values.
 - **Standardized Values**: SSIM puts everything in a scale of -1 to 1. A score of 1 meant they are very similar and a score of -1 meant they are very different.
-
