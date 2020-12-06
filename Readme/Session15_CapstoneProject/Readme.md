@@ -89,6 +89,12 @@ The reason for spliting into stages is to approach the problem step by step. In 
      <img src="Images/Stage2_Image3.jpg">
    </p>
    
+   The entire dataset can be viewed [here](https://drive.google.com/drive/u/0/folders/163knHweJJ5ERXLsedm9ZW3ahWkMzHPSl)
+   
+   The intension is to try and understand how to train the existing PlaneRCNN model with custom images. Once confidence on training custom image is gained, then integrating it to Stage1 model will be easier. The input images are split into test and train set, written into train.txt and test.txt in the same manner mentioned in the Stage 1 approach. The existing dataloader classes were modifed to take in our custom input image, MIDAS depth image, image_plane_mask.npy and image_plane_parameter.npy and create a dataloader for training the model. The dataloader classes modified can be viewed [here](https://github.com/eva5covergence/Ezhirko/tree/main/PlaneSurfaceDetection/datasets). Please refer to scannet_scene.py and plane_stereo_dataset.py for the modification.
+   
+   
+   
    
    
    
