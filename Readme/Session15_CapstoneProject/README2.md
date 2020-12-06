@@ -602,9 +602,22 @@ Estimated Total Size (MB): 4969.80
 
 ### Multi objective model Losses:
 
-As our model has 3 objectives, and each objective has it's own loss. For yolov3 and PlanerCNN, we didn't change the loss function, we have used as it is that defined by authors of these networks. But for Midas there no loss or training details provided by author. So we came up with our own loss funciton. In midas, the output is depthmap which is an image and we need to compare with it's ground truth image. There are various techniques to compare the images similarities like Peak to Noise ratio, SSIM, MSE etc... But among them SSIM and RMSE worked well for us. 
+As our model has 3 objectives, and each objective has it's own loss. For yolov3 and PlanerCNN, we didn't change the loss function, we have used as it is that defined by authors of these networks. But for Midas there no loss or training details provided by author. So we came up with our own loss funciton. In midas, the output is depthmap which is an image and we need to compare with it's ground truth image. There are various techniques to compare the images similarities like Peak to Noise ratio, SSIM, MSE, gradient loss etc... But among them SSIM, Gradient loss, and RMSE worked well for us. 
 
 **The Structural Similarity Index (SSIM) Loss**
 
 - SSIM loss will look for similarities within pixels; i.e. if the pixels in the two images line up and or have similar pixel density values.
 - **Standardized Values**: SSIM puts everything in a scale of -1 to 1. A score of 1 meant they are very similar and a score of -1 meant they are very different.
+
+**RMSE (Root Mean squared Error) **
+
+- Compute scale and shift of the pixels of the predicted image
+- 
+
+
+Epoch          gpu_mem             GIoU              obj              cls            total          targets          ImgSize RmseGradMeanLoss    SSIM_meanLoss
+   189/299     14.6G             7             2.42             3.91             19.2               25.53               448               0.042            0.152: 100% 346/346 [02:16<00:00,  1.57s/it]
+               Class           Images          Targets                P                R          mAP@0.5               F1 RmseGradientLoss         SSIMLoss            DLoss        TotalLoss: 100% 87/87 [00:12<00:00,  1.81it/s]
+                 all              692         3.06e+03                0                0                0                2.736                           16.9              19.636              19.636
+
+            
