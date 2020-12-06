@@ -59,9 +59,6 @@ The reason for spliting into stages is to approach the problem step by step. In 
 
 - [Dataset](dataset.md)
 - [Model Architecture](ModelArchitecture.md)
-- [Deciding Loss Function](docs/deciding_loss_function.md)
-  - [Mask Prediction](docs/deciding_loss_function.md#mask-prediction)
-  - [Depth and Segmentation Prediction](docs/deciding_loss_function.md#depth-and-segmentation-prediction)
-- [Loss Function](LossFunction.md)</br>
-  -[Bounding box Prediction](LossFunction.md#bounding-box-prediction)</br>
-  -[Depth Prediction](LossFunction.md#depth-loss-function)
+- [Loss Function](LossFunction.md)
+  - [Bounding box Prediction](LossFunction.md#bounding-box-prediction)
+  - [Depth Predictionn](LossFunction.md#depth-loss-function)
