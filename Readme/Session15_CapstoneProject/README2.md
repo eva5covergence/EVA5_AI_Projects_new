@@ -645,7 +645,7 @@ Epoch          gpu_mem             GIoU              obj              cls       
                  all              692         3.06e+03                0.23                0.46                0.36356                2.736                           16.9              19.636              19.636
 ```        
 
-**Predictions:**
+### Predictions:
 
 **Input:**
 
