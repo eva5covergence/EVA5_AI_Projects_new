@@ -44,8 +44,10 @@ And to solve this kind of complex problem, we need to create encoder-decoder arc
     
     - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass 3 outputs as input to the YOLO intermediate layers which connects the final output layer of YOLOv3.
+    - Yolo produces 3 outputs. Ex: If the input size is 3x416x416 with 4 target classes then outputs of yolov3 of shapes will be a) 27x52x52 b) 27x26x26 c) 27x13x13
     
 2) Integration of Encoder ResNeXt101 to Decoder-2 (Midas)
+    
 
 3) Integration of Encoder ResNeXt101 to Decoder-3 (PlanerCNN)
 
