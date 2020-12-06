@@ -1,3 +1,17 @@
+## Sesson 15 Build a Multiobjective model to do the following
+
+1.  Predict the boots, PPE, hardhat, and mask if there is an image
+2.  Predict the depth map of the image
+3.  Predict the Planar Surfaces in the region
+
+Most of the Deep Learning problems in the real time usually have to achieve multiple targets, which are often conflicting with each other. For example in feature selection, minimizing the number of features and the maximizing feature quality are two conflicting objectives. It is also well realized that model selection has to deal with the trade-off between model complexity and approximation or classification accuracy. Traditional learning algorithms attempt to deal with multiple objectives by combining them into a scalar cost function so that multi-objective machine learning problems are reduced to single-objective problems. 
+
+Recently, increasing interest has been shown in applying Pareto-based multi-objective optimization to machine learning, particularly inspired by the successful developments in evolutionary multi-objective optimization. It has been shown that the multi-objective approach to machine learning is particularly successful in 
+
+1) Improving the performance of the traditional single-objective machine learning methods 
+2) Generating highly diverse multiple Pareto-optimal models for constructing ensembles and, 
+3) In achieving a desired trade-off between accuracy and interpretability of neural networks or fuzzy systems.
+
 **Data Collection:**
 
 We are solving 3 different problems (Bounding box prediciton, Depthmap, and Planer surfaces detections) through single multi objective model. For object detection we collected images of workers who are wearing vest, hard-hat, mask and boots (3500 images approximately). But this data is not enough to train for depthmap and planer surfaces prediction. So we collected even more data of house interior images from youtube videos. Here the challenge is collecting images should have only interior objects without human beings.
