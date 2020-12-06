@@ -59,6 +59,6 @@ The reason for spliting into stages is to approach the problem step by step. In 
 
 - [Dataset](dataset.md)
 - [Model Architecture](ModelArchitecture.md)
-  -[Bounding box Prediction](ModelArchitecture.md#Bounding-box-prediction)
-  -[Depth Prediction](ModelArchitecture.md#Dept-Loss)
 - [Loss Function](LossFunction.md)
+  -[Bounding box Prediction](LossFunction.md#Bounding-box-prediction)
+  -[Depth Prediction](LossFunction.md#Dept-Loss)
