@@ -2,11 +2,11 @@
 
 As our model has 3 objectives, and each objective has it's own loss. For yolov3 and PlanerCNN, we didn't change the loss function, we have used as it is that defined by authors of these networks. But for Midas there no loss or training details provided by author. So we came up with our own loss funciton. In midas, the output is depthmap which is an image and we need to compare with it's ground truth image. There are various techniques to compare the images similarities like Peak to Noise ratio, SSIM, MSE, gradient loss etc... But among them SSIM, Gradient loss, and RMSE worked well for us.
 
-### Bounding box prediction for object detection
+### Bounding box prediction and it's classes
 
 Predicting just the bounding box and depth map. The bounding box cordinates were normalized to suit different aspect ratio of the images and 3 anchor boxes where choosen using K mean clustering. The model during training is going to predict the proportion of the bounding boxes and not the absolute bounding box based on the objectness probability. 
 
-### Yolo Loss function
+### YOLO Loss function
  <p align="center">
   <img src="Images/YoloLoss.jpg">
  </p>
