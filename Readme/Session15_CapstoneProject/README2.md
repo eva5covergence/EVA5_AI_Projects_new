@@ -16,7 +16,7 @@ So we filtered the collected images using maskRCNN object predition which traine
         - Deleted the frames/images which are “having person” or “no objects yet all” by detecting through detectron2 using maskRCNN model
         - Copied all filtered images to target location.      
 
-**Model Building:**
+**Model Architecture:**
 
 To create multi objective model, we considered 3 different models to merge.
 
