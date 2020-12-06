@@ -9,28 +9,28 @@ The first stage in building a model was to try out predicting just the bounding 
   <img src="Images/YoloLoss.jpg">
  </p>
  
- The output image is divided into multipled sections. Each section is a grid which will predict the objectness, probability of the class and its coordinates. The first two equations in the loss equation are responsible to predict the coordinates. Third equation gives the probabiliy of class being present. The fourth equation gives the probability of class not being present. For each grid, this equation is run to find the probability of objectness and only if the object is present, the class is going to be predicted and the bounding box coordinates are going to be predicted. 
+ The output image is divided into multipled sections. Each section is a grid which will predict the objectness, probability of the class and its coordinates. The first two equations in the loss equation are responsible to predict the coordinates. Third equation gives the probabiliy of object being present. The fourth equation gives the probability of object not being present. The fifth equation gives the probability of object belonging to specific class or not. For each grid, this equation is run to find the probability of objectness and only if the object is present, the class and the bounding box coordinates are going to be predicted. 
  
- x is the normalized value of center x-coordinate of the bounding box
- y is the normalized value of center y-coordinate of the bounding box
+ x is the normalized value of center x-coordinate of the bounding box </br>
+ y is the normalized value of center y-coordinate of the bounding box </br>
  
- ẋ is the predicted center x-coordinate of the bounding box
- ẏ is the predicted center y-coordinate of the bounding box
+ ẋ is the predicted center x-coordinate of the bounding box </br>
+ ẏ is the predicted center y-coordinate of the bounding box </br>
  
- w is the normalized value of width of the bounding box
- h is the normalized value of height of the bounding box
+ w is the normalized value of width of the bounding box </br>
+ h is the normalized value of height of the bounding box </br>
  
- ẇ is the predicted width of the bounding box
- ḣ is the predicted height of the bounding box
+ ẇ is the predicted width of the bounding box </br>
+ ḣ is the predicted height of the bounding box </br>
  
- c is the probability of object being present
- ċ is the predicted probability of object being present
+ c is the probability of object being present </br>
+ ċ is the predicted probability of object being present </br>
  
- p is the actual class
- ṗ is the predicted class
+ p is the actual class </br>
+ ṗ is the predicted class </br>
  
- i is the index of grid in the image
- j is the index of the bounding box
+ i is the index of grid in the image </br>
+ j is the index of the bounding box </br>
  
 Yolov3 instead of sending the class probabilty through Softmax it used Sigmoid function. Non-maximum Suppression technique is used that helps selects the best bounding box among overlapping proposals.
 
