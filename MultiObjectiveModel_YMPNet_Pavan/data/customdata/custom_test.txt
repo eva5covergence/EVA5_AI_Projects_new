@@ -1,0 +1,14 @@
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/Mimg_027.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/18.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/LImage_038.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/Jimg056.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/PImage71.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/SImage_8.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/img_013.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/architects-wearing-hardhats-gesturing-thumbsup-portrait-multiethnic-against-white-background-53148193.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/PImage74.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/Bimg_95.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/C08.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/E85.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/images363.jpg
+/content/drive/My Drive/computer_vision/capstone_project/yolo_v3/data/customdata/capstone_dataset/inputs/ppe_input_images/foreman-making-a-phone-call-on-a-building-site-england-picture-id976657530.jpg
