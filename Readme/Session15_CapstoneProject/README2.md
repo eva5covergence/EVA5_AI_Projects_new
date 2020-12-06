@@ -644,3 +644,29 @@ Epoch          gpu_mem             GIoU              obj              cls       
                Class           Images          Targets                P                R          mAP@0.5               F1 RmseGradientLoss         SSIMLoss            DLoss        TotalLoss: 100% 87/87 [00:12<00:00,  1.81it/s]
                  all              692         3.06e+03                0.23                0.46                0.36356                2.736                           16.9              19.636              19.636
 ```        
+
+**Predictions:**
+
+**Input:**
+
+<p align="center">
+  <img src="Images/TestImage.jpg">
+</p>
+
+**Bounding box and class predicitons:**
+
+<p align="center">
+  <img src="Images/PImage47.jpg">
+</p>
+
+**Depthmap:**
+
+<p align="center">
+  <img src="Images/PImage47.png">
+</p>
+
+**Surfacemap:**
+
+<p align="center">
+  <img src="Images/PImage47_segmentation_final.png">
+</p>
