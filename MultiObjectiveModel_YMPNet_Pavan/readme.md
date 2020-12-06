@@ -15,19 +15,20 @@ Recently, increasing interest has been shown in applying Pareto-based multi-obje
 
 ## RealTime usecases of Object Detection, Depth Estimation and Plane Surface Detection.
 
-Object detection:
+**Object detection:**
 
  - Object detection is a basic requirement that is needed in robotic industry to identify the object and perform useful task. 
  - The robot with the help of camera, scans the environment and detects the objects present and obtain its location on the scaned scene.
  - With the help of interested object location in a scene, the robot can choose to perform activities like moving towards it or away from it, picking the object or placing the object etc.
  
- Depth Estimation:
+**Depth Estimation:**
  
  - Depth estimation in robotic industry helps in findout the disparity among objects present in the given scene.
  - The depth information helps the robot to navigate in a given scene by avoiding colision with the objects, hitting any object, picking any object etc.
  - Based on the shift, scale and disparity information the robot makes the decision that has to be done with the objects present in the scene.
  
- Plane Detection:
+**Plane Detection:**
+
  - plane detection technique has been widely used in robot navigation in identifying wall, floor, steps, furniture etc.
  - Depth cameras or LIDAR are used to get the plane segmentation and detect the plane surface.
  - Plane Detection are widely used in Augumented reality application to identify the plane surface and bring in virtual objects into the virtual scene.
