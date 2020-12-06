@@ -1,13 +1,17 @@
 # Model Architecture
 
-The input and the outputs are of same resolution and the model has an encoder and mupliple decoder architecture, where the model takes one input image and returns multiple outputs: Object detected image with bounding box, Depth image and Plane segmentations. The input image of size 448 X 448 is first processed through RESNET101 encoder blocks, which in turn reduces their size to 14x14.
+The input and the outputs are of same resolution and the model has an encoder and mupliple decoder architecture, where the model takes one input image and returns multiple outputs: Object detected image with bounding box, Depth image and Plane segmentations. The input image of size 448 X 448 is first processed through RESNET101 encoder blocks, which in turn reduces their size to 56x56, 28x28, 14x14 towards the end.
 
 After the encoding has been done, the encoded input is passed through two separate decoder networks which are responsible for predicting the bounding boxes for detected objects and the depth image. 
 
-- For the object detection, the yolo layers are added at 3 different encoder layers to obtain object detection output at 3 different scales. The scales at which bounding box are predicted are at 
-        1. 14 x 14 x 9
-        2. 28 x 28 x 9
-        3. 56 x 56 x 9
+- For the object detection, the intermideate yolo layers are added at 3 different encoder layers to obtain object detection output at 3 different scales. The scales at which bounding box are predicted are at
+
+        1. 3 x 14 x 14 x 9
+        
+        2. 3 x 28 x 28 x 9
+        
+        3. 3 x 56 x 56 x 9
+        
 - For the depth prediction, the decoder layers are added at the end of encoder which gives the size of 14 x 14. The decoder contains FeatureFusionBlock that upscales the size of the image. The output of the last decoder is 1 x 448 x 448.
 
 ![architecture](Images/PPEMultiModelArchitecture.jpg)
