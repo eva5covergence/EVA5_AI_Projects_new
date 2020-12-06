@@ -54,7 +54,7 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
 
 1) Integration of Encoder ResNeXt101 to Decoder-1 (YoloV3)
     
-    - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
+    - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass 3 outputs as input to the YOLO intermediate layers which connects the final output layer of YOLOv3.
     - Yolo produces 3 outputs. Ex: If the input size is 3x416x416 with 4 target classes then outputs of yolov3 of shapes will be a) 27x52x52 b) 27x26x26 c) 27x13x13
     - Re-arrange yolo outputs to a) 3x52x52x9, b) 3x26x26x9, c) 3x13x13x9
@@ -63,7 +63,7 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     
 2) Integration of Encoder ResNeXt101 to Decoder-2 (Midas)
 
-    - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
+    - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass above outputs through Midas refinement blocks and get refinement outputs.
     - Pass the refinement outputs through upsampling blocks and get final depthmap outputs with shape match input shape.
     - While writing depth images, we need to make sure they are valid images with pixel values in acceptable range. So we apply following formula to get valid images. 
