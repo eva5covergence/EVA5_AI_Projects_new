@@ -53,6 +53,14 @@ In Plane Surface Estimation, the machine has to detect the plane surface informa
   <img src="Images/PImage47_segmentation_final.png">
 </p>
 
+- [Dataset](dataset.md)
+- [Model Architecture](ModelArchitecture.md)
+- [Loss Function](LossFunction.md)
+  - [Bounding box Prediction](LossFunction.md#bounding-box-prediction)
+  - [Depth Predictionn](LossFunction.md#depth-loss-function)
+- [Training](training.md)
+- [Steps to run](steps.md)
+
 **Data Collection:**
 
 We are solving 3 different problems (Bounding box prediciton, Depthmap, and Planer surfaces detections) through single multi objective model. For object detection we collected images of workers who are wearing vest, hard-hat, mask and boots (3500 images approximately). But this data is not enough to train for depthmap and planer surfaces prediction. So we collected even more data of house interior images from youtube videos. Here the challenge is collecting images should have only interior objects without human beings.
