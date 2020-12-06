@@ -1,34 +1,36 @@
-# Training
+**Training approach:**
 
-After finalizing the model architecture, dataset and loss functions, we can now start training the model. We have selected 4 loss functions: **SSIM + (RMSE & Gradient)** and **YoloV3 Loss**. So, we'll train our model with those 4 loss functions.
-
-Each experiment described below had the following common traits
-- The model was trained on smaller resolution images first and then gradually the image resolution was increased.
-- First Yolo branch was trained by freezing all other layers on 64x64 resolution till loss or accuracy metrics did not varry. Pre-trained weights on PPE dataset for 50 epochs was taken which was trained during Session 13 assignment. Midas loss was set to zeros (lambda = 0) and only yolo loss was backpropagated to only yolo unfreezed layers and adjust it's weights. From the 110 epoch, the loss was stable and the best weights were saved.
-- With the best trained weights from above step, the training was resumed on resolution 128 x 128 yolo branch only by freezing all other layers on MIDAS branch for 300 epochs.
-- With the best trained weights from above step, the training was performed on subsequent 256x256 and 448x448
-- After completely training the yolo branch, MIDAS was unfreezed and yolo branch was freezed. With image size of 448x448 and last best trained weight, MIDAS branch was trained.
-- One cycle LR with burnout of 100, batch_size - 8 and lr of 0.01 was used.
-- Auto model checkpointing which saved the model weights after every epoch.
-
-The code used for training the model can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/PPEMultiModel.ipynb)
+1. Trained yolo branch only by freezing all other layers on 64x64 resolution till loss or accuracy metrics get plateaued and observed it got plateaued at 89th epoch. Here I took already trained weights on PPE dataset for 150+ epochs instead of Yolov3 default weights which trained on coco dataset. And midas and planerCNN loss lambda parameters get set to zeros and only yolo loss will be backpropagated to only yolo unfreezed layers and adjust it's weights.
+2. With the trained weights from step1, resumed training the yolo branch only by freezing all other layers on 128x128 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 30 epochs.
+3. With the trained weights from step2, resumed training the yolo branch only by freezing all other layers on 256x256 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 60 epochs.
+4. With the trained weights from step3, resumed training the yolo branch only by freezing all other layers on 448x448 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 15 epochs.
+5. With the trained weights from step4, resumed training the yolo branch only by freezing all other layers on 512x512 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 6 epochs.
+6. With the trained weights from step5, resumed training on midas network by freezing the yolo branch with small learning rate 0.0001 as it's already having good weights as loaded with midas pre-trained weights. And it got trained for 11 epochs and observed good results.
+7. Trained planerCNN separately by converting our dataset into the Scannet format and trained for 30 epochs.
+8. Eventually we got the below predictions.
 
 ### Predictions:
 
 **Input:**
 
 <p align="center">
-  <img src="Images/Q44.jpg">
+  <img src="Images/TestImage.jpg">
 </p>
 
 **Bounding box and class predicitons:**
 
 <p align="center">
-  <img src="Images/TestImage_BB.jpg">
+  <img src="Images/PImage47.jpg">
 </p>
 
 **Depthmap:**
 
 <p align="center">
-  <img src="Images/TestImageDepth_1.png">
+  <img src="Images/PImage47.png">
+</p>
+
+**Surfacemap:**
+
+<p align="center">
+  <img src="Images/PImage47_segmentation_final.png">
 </p>
