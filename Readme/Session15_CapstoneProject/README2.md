@@ -81,7 +81,7 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
     
 
 3) Integration of Encoder ResNeXt101 to Decoder-3 (PlanerCNN)
-    - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
+    - Extract 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
     - Pass above outputs through FPN (Feature pyramid network) and get FPN outputs.
     - Pass FPN outputs through RPN (region proposal network) and get RPN outputs.
     - Pass RPN outputs through refinement network to get better segmentation outputs.
