@@ -62,3 +62,4 @@ The reason for spliting into stages is to approach the problem step by step. In 
 - [Loss Function](LossFunction.md)
   - [Bounding box Prediction](LossFunction.md#bounding-box-prediction)
   - [Depth Predictionn](LossFunction.md#depth-loss-function)
+- [Training](training.md)
