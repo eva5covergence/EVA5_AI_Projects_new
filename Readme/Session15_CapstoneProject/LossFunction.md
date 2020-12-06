@@ -35,7 +35,7 @@ The first stage in building a model was to try out predicting just the bounding 
 Yolov3 instead of sending the class probabilty through Softmax it used Sigmoid function. Non-maximum Suppression technique is used that helps selects the best bounding box among overlapping proposals.
 
 
-### Depth Loss function
+## Depth Loss function
 
 Two loss function SSIM and RMSE are combined to generate the loss for the depth image.
 
