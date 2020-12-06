@@ -636,6 +636,14 @@ sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
     rmse_grad_loss = alpha*grad_loss + rmse_loss # Here we used alpha=0.5
 ```
 
+**Depth Loss:**
+
+```
+    Total_depth_Loss = rmse_grad_loss + SSIM_loss
+```
+
+
+
 **Sample losses output during the training:**
 
 ```
@@ -643,7 +651,18 @@ Epoch          gpu_mem             GIoU              obj              cls       
    152/299     14.6G             7             2.42             3.91             19.2               25.53               448               0.042            0.152: 100% 346/346 [02:16<00:00,  1.57s/it]
                Class           Images          Targets                P                R          mAP@0.5               F1 RmseGradientLoss         SSIMLoss            DLoss        TotalLoss: 100% 87/87 [00:12<00:00,  1.81it/s]
                  all              692         3.06e+03                0.23                0.46                0.36356                2.736                           16.9              19.636              19.636
-```        
+```  
+
+**Training approach:**
+
+1. Trained yolo branch only by freezing all other layers on 64x64 resolution till loss or accuracy metrics get plateaued and observed it got plateaued at 89th epoch. Here I took already trained weights on PPE dataset for 150+ epochs instead of Yolov3 default weights which trained on coco dataset. And midas and planerCNN loss lambda parameters get set to zeros and only yolo loss will be backpropagated to only yolo unfreezed layers and adjust it's weights.
+2. With the trained weights from step1, resumed training the yolo branch only by freezing all other layers on 128x128 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 30 epochs.
+3. With the trained weights from step2, resumed training the yolo branch only by freezing all other layers on 256x256 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 60 epochs.
+4. With the trained weights from step3, resumed training the yolo branch only by freezing all other layers on 448x448 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 15 epochs.
+5. With the trained weights from step4, resumed training the yolo branch only by freezing all other layers on 512x512 resolution input image till loss or accuracy metrics get plateaued and observed it got plateaued after around 6 epochs.
+6. With the trained weights from step5, resumed training on midas network by freezing the yolo branch with small learning rate 0.0001 as it's already having good weights as loaded with midas pre-trained weights. And it got trained for 11 epochs and observed good results.
+7. Trained planerCNN separately by converting our dataset into the Scannet format for 30 epochs.
+8. Eventually we got the below predictions.
 
 ### Predictions:
 
