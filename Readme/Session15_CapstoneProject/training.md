@@ -24,7 +24,7 @@ The code used for training the model can be found [here](https://github.com/eva5
 **Bounding box and class predicitons:**
 
 <p align="center">
-  <img src="Images/TestImage_1.jpg">
+  <img src="Images/TestImage_BB.jpg">
 </p>
 
 **Depthmap:**
