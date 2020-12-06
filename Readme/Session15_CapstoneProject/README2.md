@@ -636,7 +636,7 @@ sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
     rmse_grad_loss = alpha*grad_loss + rmse_loss # Here we used alpha=0.5
 ```
 
-**Sample loss output during training:**
+**Sample losses output during the training:**
 
 ```
 Epoch          gpu_mem             GIoU              obj              cls            total          targets          ImgSize RmseGradMeanLoss    SSIM_meanLoss
