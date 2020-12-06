@@ -71,7 +71,7 @@ sqrt(mse_loss(prediction, target, mask, reduction=self.__reduction))
     rmse_grad_loss = alpha*grad_loss + rmse_loss # Here we used alpha=0.5
 ```
 
-**Depth Loss:**
+### Depth Loss:
 
 ```
     Total_depth_Loss = rmse_grad_loss + SSIM_loss
