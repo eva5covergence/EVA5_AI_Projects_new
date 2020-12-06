@@ -78,3 +78,17 @@ The reason for spliting into stages is to approach the problem step by step. In 
     - Deleted the frames/images which are “having person” or “no objects yet all” by detecting through detectron2 using maskRCNN model
    - Refer to the [link](https://github.com/eva5covergence/Ezhirko/blob/main/PlaneSurfaceDetection/plane_surface_data_preparation.ipynb) for automated downloading of videos.
    
+   #### Input Image, Ground truth data - Depth map and Plane Segmentation
+   <p align="center">
+     <img src="Images/Stage2_Image1.jpg">
+   </p>
+   <p align="center">
+     <img src="Images/Stage2_Image2.jpg">
+   </p>
+   <p align="center">
+     <img src="Images/Stage2_Image3.jpg">
+   </p>
+   
+   
+   
+   
