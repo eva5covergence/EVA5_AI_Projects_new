@@ -93,6 +93,26 @@ The reason for spliting into stages is to approach the problem step by step. In 
    
    The intension is to try and understand how to train the existing PlaneRCNN model with custom images. Once confidence on training custom image is gained, then integrating it to Stage1 model will be easier. The input images are split into test and train set, written into train.txt and test.txt in the same manner mentioned in the Stage 1 approach. The existing dataloader classes were modifed to take in our custom input image, MIDAS depth image, image_plane_mask.npy and image_plane_parameter.npy and create a dataloader for training the model. The dataloader classes modified can be viewed [here](https://github.com/eva5covergence/Ezhirko/tree/main/PlaneSurfaceDetection/datasets). Please refer to scannet_scene.py and plane_stereo_dataset.py for the modification.
    
+- ### Training the model
+ - Training the model involves installing old version of torch libraries and building the roi and nms code and then start the training script.
+ - While training, training from pre-trained mask-rcnn model weights didnot work and had to start the training from saved checkpoint file.
+ - Lot of errors related to depth was thrown during the training and was able to by pass the issue by training the model from scratch and not from saved check point.
+ The code for training can be found [here](https://github.com/eva5covergence/Ezhirko/blob/main/PlaneSurfaceDetection/Train_PlaneRCNN.ipynb)
+
+- ### Challenges Observed
+ - The dataloader need Plane_info.npy which was completely missing in our dataset. Had to modify lot of code to accomodate its non existence.
+ - The segmentation image what we derived out of running the evaluate.py script cannot be used as ground truth for this model.
+ - The segmentation image should contain different colors for different planes and black color for non annotated portion of the image. Code was written in the dataloader class to create such a segmentation ground truth for given image using plane_mask.npy. 
+ - When tried to integrate with Stage 1 Model, PlaneRCNN started giving torch version issues and could not be integrated successfully.
+ 
+- ### Take aways
+ - Learnt to develop Multimodel architecture.
+ - Got good knowledge of Encoder and multiple Decoder architecture and challenges involved in integrating.
+ - Learnt how to collect sensible data and create data pipeling to model.
+ - Realised that we need to choose augumentation statergy that is commonly suitable for all connected decoders.
+ - Could have tried the approach of keeping the PlaneRCNN as main branch and Yolo decoder and MIDAS decoder could have been connected to PlaneRCNN Encoder.
+ 
+   
    
    
    
