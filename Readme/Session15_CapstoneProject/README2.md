@@ -64,11 +64,28 @@ To generate surface plane, we pass the same encoder (ResNext101) outputs mention
 2) Integration of Encoder ResNeXt101 to Decoder-2 (Midas)
 
     - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
-    - Pass above outputs through Midas refinement blocks and refinement outputs.
-    - Pass the refinement block outputs through upsampling blocks.
+    - Pass above outputs through Midas refinement blocks and get refinement outputs.
+    - Pass the refinement outputs through upsampling blocks and get final depthmap outputs with shape match input shape.
+    - While writing depth images, we need to make sure they are valid images with pixel values in acceptable range. So we apply following formula to get valid images. 
+    ```
+    depth_min = depth.min()
+    depth_max = depth.max()
+
+    max_val = (2**(8*bits))-1
+
+    if depth_max - depth_min > np.finfo("float").eps:
+        out = max_val * (depth - depth_min) / (depth_max - depth_min)
+    else:
+        out = np.zeros(depth.shape, dtype=depth.type)
+    ```
     
 
 3) Integration of Encoder ResNeXt101 to Decoder-3 (PlanerCNN)
+    - Extracted 3 outputs from last 3 blocks of ResNeXt101's last layers from corresponding blocks
+    - Pass above outputs through FPN (Feature pyramid network) and get FPN outputs.
+    - Pass FPN outputs through RPN (region proposal network) and get RPN outputs.
+    - Pass RPN outputs through refinement network to get better segmentation outputs.
+    - Pass Segmentation outputs through Upsampling layers and get final surface plane outputs. 
 
 
 
