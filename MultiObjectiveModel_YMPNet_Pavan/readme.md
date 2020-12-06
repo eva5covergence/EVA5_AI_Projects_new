@@ -43,13 +43,11 @@ In object detection the computer must identify the object of our interest in the
 In Depth Estimation, the machine has to extract the depth information of the foreground entities from a single image. Example below shows the extracted depth information (on the right) from an image (on the left).
 
 <p align="center">
-  <img src="Images/TestImage.jpg">
   <img src="Images/PImage47.png">
 </p>
 
 In Plane Surface Estimation, the machine has to detect the plane surface information from the depth and mask entities from a single image.
 <p align="center">
-  <img src="Images/TestImage.jpg">
   <img src="Images/PImage47_segmentation_final.png">
 </p>
 
